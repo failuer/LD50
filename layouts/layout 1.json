@@ -86,7 +86,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 8,
+					"uid": 9,
 					"instanceVariables": {},
 					"behaviors": {},
 					"ownData": {
@@ -219,8 +219,37 @@
 					"world": {
 						"x": 2000,
 						"y": 2000,
-						"width": 48,
-						"height": 48,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Rover",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "still",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2181,
+						"y": -263,
+						"width": 24,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

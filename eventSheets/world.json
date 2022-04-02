@@ -26,72 +26,72 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 739431734016538,
+					"sid": 491974415053587,
 					"parameters": {
 						"object-to-create": "ScienceItem1",
 						"layer": "4",
-						"x": "2112",
-						"y": "2112",
+						"x": "1980",
+						"y": "1907",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 274280327836191,
+					"sid": 846358307714659,
 					"parameters": {
 						"object-to-create": "ScienceItem2",
 						"layer": "4",
-						"x": "2160",
-						"y": "2160",
+						"x": "1980",
+						"y": "1639",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 160898785016992,
+					"sid": 645815064552019,
 					"parameters": {
 						"object-to-create": "ScienceItem3",
 						"layer": "4",
-						"x": "2208",
-						"y": "2208",
+						"x": "1534",
+						"y": "1760",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 321420115468539,
+					"sid": 526119861943271,
 					"parameters": {
 						"object-to-create": "ScienceItem4",
 						"layer": "4",
-						"x": "2160",
-						"y": "2208",
+						"x": "1470",
+						"y": "1980",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 679414885670333,
+					"sid": 886861764934500,
 					"parameters": {
 						"object-to-create": "ScienceItem5",
 						"layer": "4",
-						"x": "2112",
-						"y": "2208",
+						"x": "1711",
+						"y": "1833",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 102003883787286,
+					"sid": 486401045571358,
 					"parameters": {
 						"object-to-create": "ScienceItem6",
 						"layer": "4",
-						"x": "2160",
-						"y": "2112",
+						"x": "2026",
+						"y": "2026",
 						"create-hierarchy": false
 					}
 				}

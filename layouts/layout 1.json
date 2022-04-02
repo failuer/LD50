@@ -99,7 +99,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "HUDScienceScore",
+					"type": "HUDSciencePoints",
 					"properties": {
 						"text": "0 SCIENCE POINTS",
 						"enable-bbcode": true,

@@ -1,4 +1,63 @@
 {
 	"name": "WIP_Kellie",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SciencePoints",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 845113716505035
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 892474820135732
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "HUDSciencePoints",
+					"sid": 930193474254623,
+					"parameters": {
+						"text": "SciencePoints & \" SCIENCE POINTS\""
+					}
+				}
+			],
+			"sid": 130202103904732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 318713894487922,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 605943109046159,
+					"parameters": {
+						"variable": "SciencePoints",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 831481010098397
+		}
+	],
 	"sid": 544800799845031
 }

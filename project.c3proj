@@ -75,7 +75,10 @@
 		"items": [
 			"Main",
 			"RoverBehavior",
-			"WIP_Kellie"
+			"WIP_Kellie",
+			"UI",
+			"World",
+			"Items"
 		],
 		"subfolders": []
 	},

@@ -3,11 +3,33 @@
 	"events": [
 		{
 			"eventType": "include",
+			"includeSheet": "UI"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "World"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Items"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "RoverBehavior"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "WIP_Kellie"
+		},
+		{
+			"eventType": "variable",
+			"name": "SciencePoints",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 310689374811507
 		},
 		{
 			"eventType": "block",

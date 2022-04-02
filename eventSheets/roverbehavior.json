@@ -101,10 +101,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 191727569564192,
+					"sid": 184016930270601,
 					"parameters": {
 						"variable": "RoverAngleSpeed",
-						"value": "RoverPlaceholder.MoveTo.MovingAngle-LastRoverAngle"
+						"value": "(RoverPlaceholder.MoveTo.MovingAngle-LastRoverAngle)/dt"
 					}
 				},
 				{
@@ -171,11 +171,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 712936654249431,
+					"sid": 206373535942539,
 					"parameters": {
 						"variable": "RoverAngleSpeed",
 						"comparison": 2,
-						"value": "-0.5"
+						"value": "-50"
 					}
 				}
 			],
@@ -198,11 +198,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 913620472661737,
+					"sid": 269728401978947,
 					"parameters": {
 						"variable": "RoverAngleSpeed",
 						"comparison": 4,
-						"value": "0.5"
+						"value": "50"
 					}
 				}
 			],

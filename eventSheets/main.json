@@ -46,6 +46,16 @@
 			"sid": 556421426097518
 		},
 		{
+			"eventType": "variable",
+			"name": "RoverAngle",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 888459731150796
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

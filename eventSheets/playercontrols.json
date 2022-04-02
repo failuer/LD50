@@ -14,17 +14,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "SpaceGhost",
-					"sid": 556808442883732,
-					"parameters": {
-						"x": "Mouse.X",
-						"y": "Mouse.Y"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 344141803865609
 		}
 	],

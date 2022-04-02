@@ -32,14 +32,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -53,8 +45,6 @@
 			"Keyboard",
 			"Audio",
 			"Mouse",
-			"Sprite",
-			"SpaceGhost",
 			"HUDSciencePoints"
 		],
 		"subfolders": []

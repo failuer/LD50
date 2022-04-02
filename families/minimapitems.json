@@ -1,0 +1,18 @@
+{
+	"name": "MinimapItems",
+	"plugin-id": "Sprite",
+	"sid": 108263824553464,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ScienceItem1",
+		"ScienceItem2",
+		"ScienceItem3",
+		"ScienceItem4",
+		"ScienceItem5",
+		"ScienceItem6",
+		"RoverPlaceholder",
+		"EnergyItem"
+	]
+}

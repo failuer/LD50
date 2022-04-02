@@ -26,6 +26,10 @@
 			"includeSheet": "ScreenEvents"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Minimap"
+		},
+		{
 			"eventType": "variable",
 			"name": "SciencePoints",
 			"type": "number",

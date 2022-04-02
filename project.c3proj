@@ -5,10 +5,30 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		}
+	],
 	"uniqueId": "10rs782j7bt",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Keyboard",
+			"Audio"
+		],
 		"subfolders": []
 	},
 	"autosaveData": null,
@@ -35,7 +55,13 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "20279__koops__apple-crunch-16.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 377705885658600
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

@@ -436,9 +436,9 @@
 						"text": "0 SCIENCE POINTS",
 						"enable-bbcode": true,
 						"font": "Retro Gaming",
-						"size": 12,
+						"size": 5,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
 							1,

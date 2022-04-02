@@ -168,6 +168,53 @@
 					}
 				},
 				{
+					"type": "RoverShadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "still",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"BlackWhite": {
+							"parameters": {
+								"threshold": 0.5
+							}
+						},
+						"RadialPixellate": {
+							"parameters": {
+								"size": 1
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.025,
+								"intensity": 1
+							}
+						}
+					},
+					"world": {
+						"x": 2000.550848586047,
+						"y": 1999.570406863539,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Rover",
 					"properties": {
 						"initially-visible": true,
@@ -180,8 +227,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2181,
-						"y": -263,
+						"x": 2000,
+						"y": 2000,
 						"width": 24,
 						"height": 24,
 						"originX": 0.5,

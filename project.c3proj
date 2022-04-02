@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "shadowlight",
+			"name": "Shadow light",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -82,6 +90,30 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blacknwhite",
+			"name": "Black & white",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialpixellate",
+			"name": "Radial pixellate",
+			"author": "Brad Larson",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialblur",
+			"name": "Radial blur",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -111,7 +143,9 @@
 			"ScienceItem4",
 			"ScienceItem5",
 			"ScienceItem6",
-			"Computer"
+			"Computer",
+			"ShadowLight",
+			"RoverShadow"
 		],
 		"subfolders": []
 	},

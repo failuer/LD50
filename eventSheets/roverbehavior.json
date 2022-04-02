@@ -115,6 +115,40 @@
 						"variable": "LastRoverAngle",
 						"value": "RoverPlaceholder.MoveTo.MovingAngle"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "RoverShadow",
+					"sid": 165797771887878,
+					"parameters": {
+						"x": "RoverPlaceholder.X + 3",
+						"y": "RoverPlaceholder.Y + 3"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "RoverShadow",
+					"sid": 768538376519416,
+					"parameters": {
+						"angle": "RoverPlaceholder.Angle"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "RoverShadow",
+					"sid": 301338422019993,
+					"parameters": {
+						"animation": "Rover.AnimationName",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "RoverShadow",
+					"sid": 767177670886291,
+					"parameters": {
+						"frame-number": "Rover.AnimationFrame"
+					}
 				}
 			],
 			"sid": 107793892035618

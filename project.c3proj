@@ -21,13 +21,32 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "10rs782j7bt",
 	"objectTypes": {
 		"items": [
 			"Keyboard",
-			"Audio"
+			"Audio",
+			"Mouse",
+			"Sprite",
+			"SpaceGhost"
 		],
 		"subfolders": []
 	},
@@ -45,7 +64,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Main",
+			"PlayerControls"
 		],
 		"subfolders": []
 	},
@@ -143,7 +163,13 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "spaceghost2.png",
+					"type": "image/png",
+					"sid": 237884268699457
+				}
+			],
 			"subfolders": []
 		}
 	},

@@ -1,6 +1,10 @@
 {
-	"name": "Event sheet 1",
+	"name": "Main",
 	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "PlayerControls"
+		},
 		{
 			"eventType": "block",
 			"conditions": [

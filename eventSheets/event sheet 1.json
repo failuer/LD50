@@ -27,6 +27,39 @@
 				}
 			],
 			"sid": 110870701543303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 974861537777551
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 129841813413042,
+					"parameters": {
+						"audio-file": "ambiance",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"music\""
+					}
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "Audio",
+					"sid": 223129197812321,
+					"parameters": {
+						"tag": "\"music\"",
+						"state": "looping"
+					}
+				}
+			],
+			"sid": 622969069551614
 		}
 	],
 	"sid": 220466056769178

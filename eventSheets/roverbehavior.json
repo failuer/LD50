@@ -80,6 +80,15 @@
 						"variable": "BatteryEnergy",
 						"value": "(RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed) * dt"
 					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Rover",
+					"sid": 301932000434326,
+					"parameters": {
+						"object": "RoverPlaceholder",
+						"image-point-optional": "0"
+					}
 				}
 			],
 			"sid": 107793892035618

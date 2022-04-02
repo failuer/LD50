@@ -1,6 +1,16 @@
 {
-	"name": "TitleScreen",
+	"name": "ScreenEvents",
 	"events": [
+		{
+			"eventType": "variable",
+			"name": "isGameOver",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 721093967276917
+		},
 		{
 			"eventType": "block",
 			"conditions": [
@@ -103,9 +113,89 @@
 						"layer": "8",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 856493978397470,
+					"parameters": {
+						"layer": "8",
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-layer-transparent",
+					"objectClass": "System",
+					"sid": 969481728495325,
+					"parameters": {
+						"layer": "8",
+						"mode": "transparent"
+					}
 				}
 			],
 			"sid": 683578069358113
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 751069639196415,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 258013443673413,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 736663629487506,
+					"parameters": {
+						"variable": "isGameOver",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 246897041579982,
+					"parameters": {
+						"layer": "6",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "GameOverScreenText",
+					"sid": 770710001661809,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "GameOverScreenText",
+					"sid": 288873959127314,
+					"parameters": {
+						"text": "\"... getting ... dark ...\"",
+						"duration": "4"
+					}
+				}
+			],
+			"sid": 701491773499881
 		}
 	],
 	"sid": 479293197521303

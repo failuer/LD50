@@ -61,6 +61,28 @@
 				}
 			],
 			"sid": 856755711598844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 103463149969340
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 683348075514547,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "(RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed) * dt"
+					}
+				}
+			],
+			"sid": 107793892035618
 		}
 	],
 	"sid": 438801549688592

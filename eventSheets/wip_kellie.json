@@ -19,6 +19,7 @@
 					"id": "add-to-eventvar",
 					"objectClass": "System",
 					"sid": 605943109046159,
+					"disabled": true,
 					"parameters": {
 						"variable": "SciencePoints",
 						"value": "1"

@@ -89,9 +89,127 @@
 						"object": "RoverPlaceholder",
 						"image-point-optional": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 191727569564192,
+					"parameters": {
+						"variable": "RoverAngleSpeed",
+						"value": "RoverPlaceholder.MoveTo.MovingAngle-LastRoverAngle"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 566680745967665,
+					"parameters": {
+						"variable": "LastRoverAngle",
+						"value": "RoverPlaceholder.MoveTo.MovingAngle"
+					}
 				}
 			],
 			"sid": 107793892035618
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "RoverPlaceholder",
+					"sid": 556868525232068,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Rover",
+					"sid": 752352443381666,
+					"parameters": {
+						"animation": "\"rolling\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 132601009957553
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-arrived",
+					"objectClass": "RoverPlaceholder",
+					"sid": 502236373119033,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Rover",
+					"sid": 611137338120259,
+					"parameters": {
+						"animation": "\"still\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 975517574231169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 712936654249431,
+					"parameters": {
+						"variable": "RoverAngleSpeed",
+						"comparison": 2,
+						"value": "-0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Rover",
+					"sid": 490529487122457,
+					"parameters": {
+						"animation": "\"left\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 989591317886604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 913620472661737,
+					"parameters": {
+						"variable": "RoverAngleSpeed",
+						"comparison": 4,
+						"value": "0.5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Rover",
+					"sid": 350713736902704,
+					"parameters": {
+						"animation": "\"right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 455469305590896
 		}
 	],
 	"sid": 438801549688592

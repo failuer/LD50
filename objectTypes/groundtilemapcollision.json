@@ -1,0 +1,27 @@
+{
+	"name": "GroundTileMapCollision",
+	"plugin-id": "Tilemap",
+	"sid": 719099322130283,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 518067592535655
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 480,
+		"height": 384,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7881233,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

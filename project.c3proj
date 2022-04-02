@@ -103,6 +103,7 @@
 			"TitleScreenText1",
 			"TitleScreenBackground",
 			"TitleScreenText2",
+			"GroundTileMapCollision",
 			"Rover"
 		],
 		"subfolders": []

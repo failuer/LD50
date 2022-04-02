@@ -169,13 +169,7 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [
-				{
-					"name": "spaceghost2.png",
-					"type": "image/png",
-					"sid": 237884268699457
-				}
-			],
+			"items": [],
 			"subfolders": []
 		}
 	},

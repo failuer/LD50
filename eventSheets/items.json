@@ -55,8 +55,8 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "ScienceItem",
-					"sid": 310450681131071
+					"objectClass": "EnergyItem",
+					"sid": 545700213578052
 				}
 			],
 			"sid": 794689643366042

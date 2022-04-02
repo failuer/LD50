@@ -32,6 +32,16 @@
 			"sid": 310689374811507
 		},
 		{
+			"eventType": "variable",
+			"name": "BatteryEnergy",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 556421426097518
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

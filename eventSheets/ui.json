@@ -18,6 +18,14 @@
 					"parameters": {
 						"text": "SciencePoints & \" SCIENCE POINTS\""
 					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "HUDBatteryProgressBar",
+					"sid": 164956555528003,
+					"parameters": {
+						"value": "BatteryEnergy"
+					}
 				}
 			],
 			"sid": 130202103904732

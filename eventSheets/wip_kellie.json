@@ -5,12 +5,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
+					"id": "mouse-button-is-down",
 					"objectClass": "Mouse",
-					"sid": 318713894487922,
+					"sid": 588564340733587,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"mouse-button": "left"
 					}
 				}
 			],
@@ -22,6 +21,15 @@
 					"disabled": true,
 					"parameters": {
 						"variable": "SciencePoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 684891913894950,
+					"parameters": {
+						"variable": "BatteryEnergy",
 						"value": "1"
 					}
 				}

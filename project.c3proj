@@ -53,6 +53,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "10rs782j7bt",
@@ -64,7 +72,8 @@
 			"HUDSciencePoints",
 			"RoverPlaceholder",
 			"RoverTarget",
-			"Item"
+			"Item",
+			"HUDBatteryProgressBar"
 		],
 		"subfolders": []
 	},

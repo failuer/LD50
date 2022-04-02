@@ -402,6 +402,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Computer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 420,
+						"height": 240,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "HUDSciencePoints",
 					"properties": {
 						"text": "0 SCIENCE POINTS",
@@ -500,239 +529,11 @@
 			"global": false
 		},
 		{
-			"name": "Screens",
+			"name": "GameOver",
 			"overriden": 0,
-			"subLayers": [
-				{
-					"name": "GameOver",
-					"overriden": 0,
-					"subLayers": [],
-					"instances": [
-						{
-							"type": "GameOverScreenText",
-							"properties": {
-								"text": "... getting ... dark ...",
-								"enable-bbcode": true,
-								"font": "Retro Gaming",
-								"size": 12,
-								"line-height": 0,
-								"bold": false,
-								"italic": false,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"horizontal-alignment": "center",
-								"vertical-alignment": "center",
-								"wrapping": "word",
-								"initially-visible": true,
-								"origin": "center"
-							},
-							"uid": 16,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": 418,
-								"y": 224,
-								"width": 274,
-								"height": 44,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 1
-							}
-						}
-					],
-					"sid": 451643955927175,
-					"effectTypes": [],
-					"isInitiallyVisible": false,
-					"isInitiallyInteractive": false,
-					"color": [
-						1,
-						1,
-						1,
-						1
-					],
-					"backgroundColor": [
-						0.26666666666666666,
-						0.5843137254901961,
-						0.6549019607843137,
-						1
-					],
-					"isTransparent": false,
-					"parallaxX": 0,
-					"parallaxY": 0,
-					"scaleRate": 0,
-					"forceOwnTexture": false,
-					"renderingMode": "3d",
-					"drawOrder": "z-order",
-					"useRenderCells": false,
-					"blendMode": "normal",
-					"zElevation": 0,
-					"global": false
-				},
-				{
-					"name": "PauseScreen",
-					"overriden": 0,
-					"subLayers": [],
-					"instances": [],
-					"sid": 584002359732690,
-					"effectTypes": [],
-					"isInitiallyVisible": false,
-					"isInitiallyInteractive": true,
-					"color": [
-						1,
-						1,
-						1,
-						1
-					],
-					"backgroundColor": [
-						0.5294117647058824,
-						0.3411764705882353,
-						0.5803921568627451,
-						1
-					],
-					"isTransparent": false,
-					"parallaxX": 0,
-					"parallaxY": 0,
-					"scaleRate": 0,
-					"forceOwnTexture": false,
-					"renderingMode": "3d",
-					"drawOrder": "z-order",
-					"useRenderCells": false,
-					"blendMode": "normal",
-					"zElevation": 0,
-					"global": false
-				},
-				{
-					"name": "Start",
-					"overriden": 0,
-					"subLayers": [],
-					"instances": [
-						{
-							"type": "TitleScreenText1",
-							"properties": {
-								"text": "... my battery is low ...",
-								"enable-bbcode": true,
-								"font": "Retro Gaming",
-								"size": 12,
-								"line-height": 0,
-								"bold": false,
-								"italic": false,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"horizontal-alignment": "center",
-								"vertical-alignment": "center",
-								"wrapping": "word",
-								"initially-visible": true,
-								"origin": "center"
-							},
-							"uid": 8,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": 428,
-								"y": 197,
-								"width": 274,
-								"height": 43.266615305567875,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 1
-							}
-						},
-						{
-							"type": "TitleScreenText2",
-							"properties": {
-								"text": "... and it is getting dark ...",
-								"enable-bbcode": true,
-								"font": "Retro Gaming",
-								"size": 12,
-								"line-height": 0,
-								"bold": false,
-								"italic": false,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"horizontal-alignment": "center",
-								"vertical-alignment": "center",
-								"wrapping": "word",
-								"initially-visible": true,
-								"origin": "center"
-							},
-							"uid": 13,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": 428,
-								"y": 265,
-								"width": 274,
-								"height": 43.266615305567875,
-								"originX": 0.5,
-								"originY": 0.5,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 1
-							}
-						}
-					],
-					"sid": 532945092880347,
-					"effectTypes": [],
-					"isInitiallyVisible": false,
-					"isInitiallyInteractive": true,
-					"color": [
-						1,
-						1,
-						1,
-						1
-					],
-					"backgroundColor": [
-						0.5764705882352941,
-						0.4470588235294118,
-						0.08235294117647059,
-						1
-					],
-					"isTransparent": false,
-					"parallaxX": 0,
-					"parallaxY": 0,
-					"scaleRate": 0,
-					"forceOwnTexture": false,
-					"renderingMode": "3d",
-					"drawOrder": "z-order",
-					"useRenderCells": false,
-					"blendMode": "normal",
-					"zElevation": 0,
-					"global": false
-				}
-			],
+			"subLayers": [],
 			"instances": [],
-			"sid": 951196371533914,
+			"sid": 451643955927175,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -743,9 +544,193 @@
 				1
 			],
 			"backgroundColor": [
-				0.07058823529411765,
-				0.12156862745098039,
-				0.13333333333333333,
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "PauseScreen",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 584002359732690,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Start",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "TitleScreenBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 12,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 854,
+						"height": 481,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TitleScreenText1",
+					"properties": {
+						"text": "... my battery is low ...",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 8,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 428,
+						"y": 197,
+						"width": 274,
+						"height": 43.266615305567875,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "TitleScreenText2",
+					"properties": {
+						"text": "... and it is getting dark ...",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 428,
+						"y": 265,
+						"width": 274,
+						"height": 43.266615305567875,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 1
+					}
+				}
+			],
+			"sid": 532945092880347,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,

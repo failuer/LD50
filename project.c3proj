@@ -57,9 +57,14 @@
 		"sound": {
 			"items": [
 				{
-					"name": "20279__koops__apple-crunch-16.webm",
+					"name": "crunch.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 377705885658600
+				},
+				{
+					"name": "pin.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 929022032547025
 				}
 			],
 			"subfolders": []

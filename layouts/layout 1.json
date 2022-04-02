@@ -135,7 +135,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 10,
+					"uid": 9,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {

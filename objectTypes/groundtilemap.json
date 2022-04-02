@@ -1,5 +1,5 @@
 {
-	"name": "WorldTilemp",
+	"name": "GroundTileMap",
 	"plugin-id": "Tilemap",
 	"sid": 885555881841572,
 	"isGlobal": false,
@@ -7,14 +7,14 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 352,
-		"height": 224,
+		"width": 480,
+		"height": 384,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 529275,
+		"imageSpriteId": 3761867,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

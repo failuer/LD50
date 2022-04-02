@@ -91,7 +91,7 @@
 			"ScienceItem",
 			"HUDBatteryProgressBar",
 			"EnergyItem",
-			"WorldTilemp"
+			"GroundTileMap"
 		],
 		"subfolders": []
 	},

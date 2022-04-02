@@ -38,56 +38,7 @@
 			"name": "WorldCollision",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "WorldTilemp",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 24,
-						"tile-height": 24,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 10,
-					"instanceVariables": {},
-					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 125,
-							"height": 125,
-							"max-width": 125,
-							"max-height": 125,
-							"data": "15625x0"
-						},
-						"tile-width": 24,
-						"tile-height": 24,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 4000,
-						"height": 4000,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 398164249109182,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -122,7 +73,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "WorldTilemp",
+					"type": "GroundTileMap",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 24,
@@ -135,16 +86,16 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 9,
+					"uid": 8,
 					"instanceVariables": {},
 					"behaviors": {},
 					"ownData": {
 						"tilemapData": {
 							"width": 166,
 							"height": 166,
-							"max-width": 178,
-							"max-height": 169,
-							"data": "30082x0"
+							"max-width": 166,
+							"max-height": 166,
+							"data": "27556x1"
 						},
 						"tile-width": 24,
 						"tile-height": 24,
@@ -202,56 +153,7 @@
 			"name": "WorldDecoration",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "WorldTilemp",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 24,
-						"tile-height": 24,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 11,
-					"instanceVariables": {},
-					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 125,
-							"height": 125,
-							"max-width": 125,
-							"max-height": 125,
-							"data": "15625x0"
-						},
-						"tile-width": 24,
-						"tile-height": 24,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 4000,
-						"height": 4000,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 653801285963571,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -348,7 +250,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,

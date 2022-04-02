@@ -35,39 +35,6 @@
 			"global": false
 		},
 		{
-			"name": "WorldCollision",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 398164249109182,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "WorldGround",
 			"overriden": 0,
 			"subLayers": [],
@@ -86,7 +53,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 9,
+					"uid": 11,
 					"instanceVariables": {},
 					"behaviors": {},
 					"ownData": {
@@ -95,7 +62,7 @@
 							"height": 166,
 							"max-width": 166,
 							"max-height": 166,
-							"data": "27556x1"
+							"data": "12871x1,246,266,286,163x1,247,267,287,163x1,189,209,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,162x1,21,1,190,210,158x1,4x2,22,1,190,210,153x1,228,3x188,168,188,168,188,3x168,188,271,162x1,21,2x1,272,158x1,4x2,22,12362x1"
 						},
 						"tile-width": 24,
 						"tile-height": 24,
@@ -183,6 +150,95 @@
 			"global": false
 		},
 		{
+			"name": "WorldCollision",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "GroundTileMapCollision",
+					"properties": {
+						"initially-visible": false,
+						"tile-width": 24,
+						"tile-height": 24,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 166,
+							"height": 166,
+							"max-width": 166,
+							"max-height": 166,
+							"data": "13038x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,153x0,13x115,12691x0"
+						},
+						"tile-width": 24,
+						"tile-height": 24,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 4000,
+						"height": 4000,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 398164249109182,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				0.5
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Objects",
 			"overriden": 0,
 			"subLayers": [],
@@ -206,7 +262,7 @@
 								"deceleration": 400,
 								"rotate-speed": 100,
 								"set-angle": true,
-								"stop-on-solids": false,
+								"stop-on-solids": true,
 								"enabled": true
 							}
 						},

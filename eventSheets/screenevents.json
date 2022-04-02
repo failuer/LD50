@@ -24,9 +24,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 539417541255398,
+					"sid": 235784787377448,
 					"parameters": {
-						"layer": "8",
+						"layer": "7",
 						"visibility": "visible"
 					}
 				},
@@ -83,9 +83,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 349259708506627,
+					"sid": 182060224970202,
 					"parameters": {
-						"layer": "8",
+						"layer": "7",
 						"visibility": "invisible"
 					}
 				}
@@ -108,28 +108,10 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 643615398392891,
+					"sid": 533832668528331,
 					"parameters": {
-						"layer": "8",
+						"layer": "7",
 						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-opacity",
-					"objectClass": "System",
-					"sid": 856493978397470,
-					"parameters": {
-						"layer": "8",
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-layer-transparent",
-					"objectClass": "System",
-					"sid": 969481728495325,
-					"parameters": {
-						"layer": "8",
-						"mode": "transparent"
 					}
 				}
 			],
@@ -171,9 +153,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 246897041579982,
+					"sid": 526022778816409,
 					"parameters": {
-						"layer": "6",
+						"layer": "5",
 						"visibility": "visible"
 					}
 				},

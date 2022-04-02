@@ -37,6 +37,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "10rs782j7bt",
@@ -45,7 +53,9 @@
 			"Keyboard",
 			"Audio",
 			"Mouse",
-			"HUDSciencePoints"
+			"HUDSciencePoints",
+			"RoverPlaceholder",
+			"RoverTarget"
 		],
 		"subfolders": []
 	},

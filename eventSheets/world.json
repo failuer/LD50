@@ -14,24 +14,24 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 697090071355195,
+					"sid": 600350966901230,
 					"parameters": {
 						"object-to-create": "ScienceItem",
-						"layer": "1",
-						"x": "200",
-						"y": "200",
+						"layer": "4",
+						"x": "2050",
+						"y": "2050",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 771289215906114,
+					"sid": 595262009639826,
 					"parameters": {
 						"object-to-create": "EnergyItem",
-						"layer": "1",
-						"x": "400",
-						"y": "400",
+						"layer": "4",
+						"x": "1950",
+						"y": "1950",
 						"create-hierarchy": false
 					}
 				}

@@ -62,7 +62,7 @@
 							"height": 166,
 							"max-width": 166,
 							"max-height": 166,
-							"data": "12871x1,246,266,286,163x1,247,267,287,163x1,189,209,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,164x1,190,210,162x1,21,1,190,210,158x1,4x2,22,1,190,210,153x1,228,3x188,168,188,168,188,3x168,188,271,162x1,21,2x1,272,158x1,4x2,22,12362x1"
+							"data": "12362x2,4,4x2,44,64,164x2,45,65,336x2,2x0,286,155x2,1,7x2,2x0,287,149x2,7,2x2,41,61,9x2,189,0,153x2,42,62,9x2,190,0,164x2,190,0,161x2,41,61,2,190,0,148x2,44,64,11x2,42,62,2,190,0,148x2,45,65,14x2,190,0,159x2,1,4x2,190,0,2x2,44,64,160x2,190,0,2x2,45,65,145x2,41,61,11x2,21,2,190,0,149x2,42,62,11x2,22,2,190,0,153x2,13x0,162x2,21,2x2,272,162x2,22,325x2,44,64,6x2,44,64,156x2,45,65,6x2,45,65,11861x2"
 						},
 						"tile-width": 24,
 						"tile-height": 24,
@@ -99,45 +99,12 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				0.5647058823529412,
+				0.22745098039215686,
+				0.1450980392156863,
 				1
 			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "WorldDecoration",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 653801285963571,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
+			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -184,7 +151,7 @@
 							"height": 166,
 							"max-width": 166,
 							"max-height": 166,
-							"data": "13038x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,153x0,13x115,12691x0"
+							"data": "13038x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,165x0,115,155x0,2x135,164x0,2x135,164x0,2x135,8x0,115,12857x0"
 						},
 						"tile-width": 24,
 						"tile-height": 24,
@@ -320,6 +287,88 @@
 				}
 			],
 			"sid": 203569823122601,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "WorldDecoration",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "DecorationTileMap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 24,
+						"tile-height": 24,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 166,
+							"height": 166,
+							"max-width": 166,
+							"max-height": 166,
+							"data": "12362x2,4,4x2,44,64,164x2,45,65,336x2,2x0,286,155x2,1,7x2,2x0,287,149x2,7,2x2,41,61,9x2,189,0,153x2,42,62,9x2,190,0,164x2,190,0,161x2,41,61,2,190,0,148x2,44,64,3x2,3x0,5x2,42,62,2,190,0,148x2,45,65,3x2,3x0,8x2,190,0,153x2,3x0,3x2,1,4x2,190,0,2x2,44,64,150x2,127,147,167,7x2,190,0,2x2,45,65,145x2,41,61,3x2,128,148,168,5x2,21,2,190,0,149x2,42,62,3x2,129,149,169,5x2,22,2,190,0,153x2,13x0,162x2,21,2x2,272,162x2,22,325x2,44,64,6x2,44,64,156x2,45,65,6x2,45,65,11861x2"
+						},
+						"tile-width": 24,
+						"tile-height": 24,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 4000,
+						"height": 4000,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 653801285963571,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

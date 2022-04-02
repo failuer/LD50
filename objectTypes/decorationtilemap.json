@@ -1,7 +1,7 @@
 {
-	"name": "GroundTileMap",
+	"name": "DecorationTileMap",
 	"plugin-id": "Tilemap",
-	"sid": 885555881841572,
+	"sid": 909123108174799,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9755671,
+		"imageSpriteId": 4228659,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}

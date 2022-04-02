@@ -112,7 +112,8 @@
 			"TitleScreenBackground",
 			"TitleScreenText2",
 			"GroundTileMapCollision",
-			"Rover"
+			"Rover",
+			"DecorationTileMap"
 		],
 		"subfolders": []
 	},

@@ -91,6 +91,14 @@
 					}
 				},
 				{
+					"id": "set-angle",
+					"objectClass": "Rover",
+					"sid": 370945752114799,
+					"parameters": {
+						"angle": "RoverPlaceholder.Angle"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 191727569564192,

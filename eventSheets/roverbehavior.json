@@ -14,10 +14,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 571664624018358,
+					"sid": 339280673432095,
 					"parameters": {
 						"object-to-create": "RoverPlaceholder",
-						"layer": "0",
+						"layer": "1",
 						"x": "ViewportWidth(0) / 2",
 						"y": "ViewportHeight(0) / 2",
 						"create-hierarchy": false
@@ -26,10 +26,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 309479033714234,
+					"sid": 625332910716782,
 					"parameters": {
 						"object-to-create": "RoverTarget",
-						"layer": "0",
+						"layer": "1",
 						"x": "0",
 						"y": "0",
 						"create-hierarchy": false

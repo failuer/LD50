@@ -21,13 +21,32 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "10rs782j7bt",
 	"objectTypes": {
 		"items": [
 			"Keyboard",
-			"Audio"
+			"Audio",
+			"Mouse",
+			"Sprite",
+			"SpaceGhost"
 		],
 		"subfolders": []
 	},
@@ -45,7 +64,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"PlayerControls"
 		],
 		"subfolders": []
 	},
@@ -60,11 +80,6 @@
 					"name": "20279__koops__apple-crunch-16.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 377705885658600
-				},
-				{
-					"name": "ambiance.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 834746901796780
 				}
 			],
 			"subfolders": []
@@ -143,7 +158,13 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "spaceghost2.png",
+					"type": "image/png",
+					"sid": 237884268699457
+				}
+			],
 			"subfolders": []
 		}
 	},

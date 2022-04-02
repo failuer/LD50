@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "PlayerControls"
+			"includeSheet": "RoverBehavior"
 		},
 		{
 			"eventType": "include",

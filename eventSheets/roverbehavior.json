@@ -1,0 +1,99 @@
+{
+	"name": "RoverBehavior",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 954088805076023
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 571664624018358,
+					"parameters": {
+						"object-to-create": "RoverPlaceholder",
+						"layer": "0",
+						"x": "ViewportWidth(0) / 2",
+						"y": "ViewportHeight(0) / 2",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 309479033714234,
+					"parameters": {
+						"object-to-create": "RoverTarget",
+						"layer": "0",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 202999105665634
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 445756184987516
+				}
+			],
+			"actions": [
+				{
+					"id": "rotate-toward-position",
+					"objectClass": "RoverPlaceholder",
+					"sid": 763254712570812,
+					"parameters": {
+						"degrees": "3",
+						"x": "RoverTarget.X",
+						"y": "RoverTarget.Y"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "RoverPlaceholder",
+					"sid": 720147504601614,
+					"parameters": {
+						"distance": "3"
+					}
+				}
+			],
+			"sid": 645393724794428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 381425054085982,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "RoverTarget",
+					"sid": 967314574822297,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 856755711598844
+		}
+	],
+	"sid": 438801549688592
+}

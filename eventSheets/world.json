@@ -14,24 +14,84 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 600350966901230,
+					"sid": 985083793380519,
 					"parameters": {
-						"object-to-create": "ScienceItem",
+						"object-to-create": "EnergyItem",
 						"layer": "4",
-						"x": "2050",
-						"y": "2050",
+						"x": "1950",
+						"y": "1950",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 595262009639826,
+					"sid": 739431734016538,
 					"parameters": {
-						"object-to-create": "EnergyItem",
+						"object-to-create": "ScienceItem1",
 						"layer": "4",
-						"x": "1950",
-						"y": "1950",
+						"x": "2112",
+						"y": "2112",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 274280327836191,
+					"parameters": {
+						"object-to-create": "ScienceItem2",
+						"layer": "4",
+						"x": "2160",
+						"y": "2160",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 160898785016992,
+					"parameters": {
+						"object-to-create": "ScienceItem3",
+						"layer": "4",
+						"x": "2208",
+						"y": "2208",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 321420115468539,
+					"parameters": {
+						"object-to-create": "ScienceItem4",
+						"layer": "4",
+						"x": "2160",
+						"y": "2208",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 679414885670333,
+					"parameters": {
+						"object-to-create": "ScienceItem5",
+						"layer": "4",
+						"x": "2112",
+						"y": "2208",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 102003883787286,
+					"parameters": {
+						"object-to-create": "ScienceItem6",
+						"layer": "4",
+						"x": "2160",
+						"y": "2112",
 						"create-hierarchy": false
 					}
 				}

@@ -104,7 +104,7 @@
 			"HUDSciencePoints",
 			"RoverPlaceholder",
 			"RoverTarget",
-			"ScienceItem",
+			"ScienceItem1",
 			"HUDBatteryProgressBar",
 			"EnergyItem",
 			"GroundTileMap",
@@ -113,7 +113,12 @@
 			"TitleScreenText2",
 			"GroundTileMapCollision",
 			"Rover",
-			"DecorationTileMap"
+			"DecorationTileMap",
+			"ScienceItem2",
+			"ScienceItem3",
+			"ScienceItem4",
+			"ScienceItem5",
+			"ScienceItem6"
 		],
 		"subfolders": []
 	},

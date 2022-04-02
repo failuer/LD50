@@ -7,9 +7,39 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "RoverPlaceholder",
+					"sid": 863713141218084,
+					"parameters": {
+						"object": "EnergyItem"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 224581838646165,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "100"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EnergyItem",
+					"sid": 439268920911267
+				}
+			],
+			"sid": 239432750274780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
 					"sid": 155928461760558,
 					"parameters": {
-						"object": "ScienceItem"
+						"object": "ScienceItem1"
 					}
 				}
 			],
@@ -25,7 +55,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "ScienceItem",
+					"objectClass": "ScienceItem1",
 					"sid": 282423673408509
 				}
 			],
@@ -37,9 +67,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "RoverPlaceholder",
-					"sid": 416207321670288,
+					"sid": 976208217568316,
 					"parameters": {
-						"object": "EnergyItem"
+						"object": "ScienceItem2"
 					}
 				}
 			],
@@ -47,19 +77,139 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 306294988570304,
+					"sid": 130348191676766,
 					"parameters": {
-						"variable": "BatteryEnergy",
-						"value": "100"
+						"variable": "SciencePoints",
+						"value": "1"
 					}
 				},
 				{
 					"id": "destroy",
-					"objectClass": "EnergyItem",
-					"sid": 545700213578052
+					"objectClass": "ScienceItem2",
+					"sid": 274459616616341
 				}
 			],
-			"sid": 794689643366042
+			"sid": 877849674080063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
+					"sid": 474226189836906,
+					"parameters": {
+						"object": "ScienceItem3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 818801393401755,
+					"parameters": {
+						"variable": "SciencePoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ScienceItem3",
+					"sid": 306718228099271
+				}
+			],
+			"sid": 488337963115836
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
+					"sid": 237474562782106,
+					"parameters": {
+						"object": "ScienceItem4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 589864212095599,
+					"parameters": {
+						"variable": "SciencePoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ScienceItem4",
+					"sid": 885768331254143
+				}
+			],
+			"sid": 574322104878132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
+					"sid": 238275959367099,
+					"parameters": {
+						"object": "ScienceItem5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 853184186565256,
+					"parameters": {
+						"variable": "SciencePoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ScienceItem5",
+					"sid": 463454005864979
+				}
+			],
+			"sid": 373880239389080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
+					"sid": 873847278746816,
+					"parameters": {
+						"object": "ScienceItem6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 175300841925661,
+					"parameters": {
+						"variable": "SciencePoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ScienceItem6",
+					"sid": 807560094661499
+				}
+			],
+			"sid": 298146244508452
 		}
 	],
 	"sid": 213212216511034

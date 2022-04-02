@@ -16,10 +16,22 @@
 					"objectClass": "System",
 					"sid": 697090071355195,
 					"parameters": {
-						"object-to-create": "Item",
+						"object-to-create": "ScienceItem",
 						"layer": "1",
 						"x": "200",
 						"y": "200",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 771289215906114,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "1",
+						"x": "400",
+						"y": "400",
 						"create-hierarchy": false
 					}
 				}

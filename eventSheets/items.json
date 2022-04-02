@@ -9,7 +9,7 @@
 					"objectClass": "RoverPlaceholder",
 					"sid": 155928461760558,
 					"parameters": {
-						"object": "Item"
+						"object": "ScienceItem"
 					}
 				}
 			],
@@ -25,11 +25,41 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Item",
+					"objectClass": "ScienceItem",
 					"sid": 282423673408509
 				}
 			],
 			"sid": 876500545748601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
+					"sid": 416207321670288,
+					"parameters": {
+						"object": "EnergyItem"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 306294988570304,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "100"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ScienceItem",
+					"sid": 310450681131071
+				}
+			],
+			"sid": 794689643366042
 		}
 	],
 	"sid": 213212216511034

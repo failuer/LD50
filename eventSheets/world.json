@@ -14,22 +14,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 985083793380519,
-					"parameters": {
-						"object-to-create": "EnergyItem",
-						"layer": "4",
-						"x": "1950",
-						"y": "1950",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 491974415053587,
+					"sid": 283742652871374,
 					"parameters": {
 						"object-to-create": "ScienceItem1",
-						"layer": "4",
+						"layer": "2",
 						"x": "1980",
 						"y": "1907",
 						"create-hierarchy": false
@@ -38,10 +26,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 846358307714659,
+					"sid": 482668752237920,
 					"parameters": {
 						"object-to-create": "ScienceItem2",
-						"layer": "4",
+						"layer": "2",
 						"x": "1980",
 						"y": "1639",
 						"create-hierarchy": false
@@ -50,10 +38,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 645815064552019,
+					"sid": 170041136592547,
 					"parameters": {
 						"object-to-create": "ScienceItem3",
-						"layer": "4",
+						"layer": "2",
 						"x": "1534",
 						"y": "1760",
 						"create-hierarchy": false
@@ -62,10 +50,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 526119861943271,
+					"sid": 710335721986812,
 					"parameters": {
 						"object-to-create": "ScienceItem4",
-						"layer": "4",
+						"layer": "2",
 						"x": "1470",
 						"y": "1980",
 						"create-hierarchy": false
@@ -74,10 +62,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 886861764934500,
+					"sid": 731200206822746,
 					"parameters": {
 						"object-to-create": "ScienceItem5",
-						"layer": "4",
+						"layer": "2",
 						"x": "1711",
 						"y": "1833",
 						"create-hierarchy": false
@@ -86,12 +74,84 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 486401045571358,
+					"sid": 222455998540356,
 					"parameters": {
 						"object-to-create": "ScienceItem6",
-						"layer": "4",
+						"layer": "2",
 						"x": "2026",
 						"y": "2026",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 176894509538880,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "2",
+						"x": "2029",
+						"y": "1858",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 447612049930839,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "2",
+						"x": "1833",
+						"y": "1778",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 689514392193524,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "2",
+						"x": "1712",
+						"y": "1622",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 248651687888764,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "2",
+						"x": "1550",
+						"y": "1923",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 909563546363429,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "2",
+						"x": "1666",
+						"y": "2045",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 569906774655351,
+					"parameters": {
+						"object-to-create": "EnergyItem",
+						"layer": "2",
+						"x": "1740",
+						"y": "1858",
 						"create-hierarchy": false
 					}
 				}

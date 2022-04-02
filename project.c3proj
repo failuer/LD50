@@ -145,14 +145,17 @@
 			"ScienceItem6",
 			"Computer",
 			"ShadowLight",
-			"RoverShadow"
+			"RoverShadow",
+			"Minitilemap"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"MinimapItems"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -169,7 +172,8 @@
 			"UI",
 			"World",
 			"Items",
-			"ScreenEvents"
+			"ScreenEvents",
+			"Minimap"
 		],
 		"subfolders": []
 	},

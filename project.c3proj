@@ -55,7 +55,8 @@
 			"Mouse",
 			"HUDSciencePoints",
 			"RoverPlaceholder",
-			"RoverTarget"
+			"RoverTarget",
+			"Item"
 		],
 		"subfolders": []
 	},

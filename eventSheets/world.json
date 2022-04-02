@@ -1,5 +1,31 @@
 {
 	"name": "World",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 738556446140348
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 963864579845122,
+					"parameters": {
+						"object-to-create": "Item",
+						"layer": "0",
+						"x": "200",
+						"y": "200",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 450173094292714
+		}
+	],
 	"sid": 654866358727230
 }

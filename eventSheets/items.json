@@ -1,5 +1,36 @@
 {
 	"name": "Items",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RoverPlaceholder",
+					"sid": 155928461760558,
+					"parameters": {
+						"object": "Item"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 743962724759735,
+					"parameters": {
+						"variable": "SciencePoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Item",
+					"sid": 282423673408509
+				}
+			],
+			"sid": 876500545748601
+		}
+	],
 	"sid": 213212216511034
 }

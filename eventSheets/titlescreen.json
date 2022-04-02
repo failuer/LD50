@@ -1,0 +1,112 @@
+{
+	"name": "TitleScreen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 407584179546584
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 539417541255398,
+					"parameters": {
+						"layer": "8",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TitleScreenText1",
+					"sid": 316645576498167,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TitleScreenText2",
+					"sid": 355186663539675,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TitleScreenText1",
+					"sid": 610098191637463,
+					"parameters": {
+						"text": "\"... My battery is low ...\"",
+						"duration": "4"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 957189503556966,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TitleScreenText2",
+					"sid": 253490205257045,
+					"parameters": {
+						"text": "\"... and it is getting dark ...\"",
+						"duration": "4"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 158239822781059,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 349259708506627,
+					"parameters": {
+						"layer": "8",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 801788442606558
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 690740051338141,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 643615398392891,
+					"parameters": {
+						"layer": "8",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 683578069358113
+		}
+	],
+	"sid": 479293197521303
+}

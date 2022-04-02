@@ -109,8 +109,8 @@
 			"EnergyItem",
 			"GroundTileMap",
 			"TitleScreenText1",
-			"TitleScreenBackground",
 			"TitleScreenText2",
+			"GameOverScreenText",
 			"GroundTileMapCollision",
 			"Rover",
 			"DecorationTileMap",
@@ -142,7 +142,7 @@
 			"UI",
 			"World",
 			"Items",
-			"TitleScreen"
+			"ScreenEvents"
 		],
 		"subfolders": []
 	},

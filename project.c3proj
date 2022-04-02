@@ -64,7 +64,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
+			"Main",
 			"PlayerControls"
 		],
 		"subfolders": []

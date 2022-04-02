@@ -108,7 +108,13 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Retro Gaming.ttf",
+					"type": "application/font-sfnt",
+					"sid": 501323833147540
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

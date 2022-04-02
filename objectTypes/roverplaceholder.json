@@ -9,6 +9,11 @@
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
 			"sid": 479401737519358
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 871751396420820
 		}
 	],
 	"effectTypes": [],

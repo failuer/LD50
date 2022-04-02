@@ -6,6 +6,10 @@
 			"includeSheet": "PlayerControls"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "WIP_Kellie"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

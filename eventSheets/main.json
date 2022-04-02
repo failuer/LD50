@@ -47,13 +47,23 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "RoverAngle",
+			"name": "RoverAngleSpeed",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 888459731150796
+		},
+		{
+			"eventType": "variable",
+			"name": "LastRoverAngle",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 388282501674860
 		},
 		{
 			"eventType": "block",

@@ -22,6 +22,10 @@
 			"includeSheet": "WIP_Kellie"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "TitleScreen"
+		},
+		{
 			"eventType": "variable",
 			"name": "SciencePoints",
 			"type": "number",

@@ -50,11 +50,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "mouse-button-is-down",
-					"objectClass": "Mouse",
-					"sid": 381425054085982,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 950614573688162,
 					"parameters": {
-						"mouse-button": "left"
+						"object": "GroundTileMap"
 					}
 				},
 				{

@@ -132,6 +132,191 @@
 				}
 			],
 			"sid": 805110016907573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 892686185041066
+				},
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 647401926995469,
+					"parameters": {
+						"object": "HUDMenuButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 730129958080470,
+					"parameters": {
+						"layer": "\"GameOver\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 264606450084487,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 929278096636771,
+					"parameters": {
+						"layer": "\"VictoryText\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 536077668326857,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 715814888612789,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "false"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 782437496774424,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 861676998516362
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 576057565962799
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 725781799747925
+				}
+			],
+			"sid": 888814260387846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 315395380571929
+				},
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 828671677839482,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 725620408398371,
+					"parameters": {
+						"layer": "\"GameOver\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 148364803648459,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 506613047228126,
+					"parameters": {
+						"layer": "\"VictoryText\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 835854486351090,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 242460946935833
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 903267621791146
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 772593941397178,
+					"parameters": {
+						"layer": "\"GameOver\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 187054986455096,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 388871137717970,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "true"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 574055463435713
+				}
+			],
+			"sid": 502841886048895
 		}
 	],
 	"sid": 481527273385569

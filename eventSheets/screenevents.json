@@ -12,6 +12,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 807999932495569
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 978992991270014,

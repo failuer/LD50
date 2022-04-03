@@ -17,10 +17,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 222672301569758,
+					"sid": 681420543516953,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "clamp(BatteryEnergy+60, 0, MaxBatteryEnergy)"
+						"value": "clamp(BatteryEnergy+BatteryEnergyRecharge, 0, MaxBatteryEnergy)"
 					}
 				},
 				{

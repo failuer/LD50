@@ -35,9 +35,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 496449780529562,
+					"sid": 980624987235347,
 					"parameters": {
-						"audio-file": "Driveloop1",
+						"audio-file": "Driveloop1LOUDER",
 						"loop": "looping",
 						"volume": "-Infinity",
 						"tag-optional": "\"drivingsound\""
@@ -276,19 +276,19 @@
 				{
 					"id": "set-volume",
 					"objectClass": "Audio",
-					"sid": 217000326375306,
+					"sid": 596636919894723,
 					"parameters": {
 						"tag": "\"drivingsound\"",
-						"db": "0"
+						"db": "-10"
 					}
 				},
 				{
 					"id": "set-playback-rate",
 					"objectClass": "Audio",
-					"sid": 921312571044656,
+					"sid": 207362089249807,
 					"parameters": {
 						"tag": "\"drivingsound\"",
-						"playback-rate": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed"
+						"playback-rate": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed"
 					}
 				}
 			],
@@ -742,6 +742,69 @@
 				}
 			],
 			"sid": 588147220148797
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rover Terrain Collision",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-hit-solid",
+							"objectClass": "RoverPlaceholder",
+							"sid": 175487086512658,
+							"behaviorType": "MoveTo"
+						},
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 742375530315971,
+							"parameters": {
+								"tag": "\"crashSound\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-volume",
+							"objectClass": "Audio",
+							"sid": 365645971321098,
+							"parameters": {
+								"tag": "\"drivingsound\"",
+								"db": "-Infinity"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Rover",
+							"sid": 127190522303881,
+							"parameters": {
+								"animation": "\"still\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 933572777527704,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "choose(\"Crash1\", \"Crash2\", \"Crash3\")",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"crashSound\""
+							}
+						}
+					],
+					"sid": 329954197970729
+				}
+			],
+			"sid": 820785477135592
 		}
 	],
 	"sid": 438801549688592

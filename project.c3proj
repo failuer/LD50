@@ -181,7 +181,9 @@
 			"HUDScienceLid",
 			"Touch",
 			"VictoryRoverEnd",
-			"TitleScreenVictory2"
+			"TitleScreenVictory2",
+			"MainMenuBackground",
+			"MainMenuStartButton"
 		],
 		"subfolders": []
 	},

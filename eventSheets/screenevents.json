@@ -494,9 +494,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 409729398015223,
+					"sid": 710744666186583,
 					"parameters": {
-						"layout": "Layout 1"
+						"layout": "MainMenu"
 					}
 				}
 			],

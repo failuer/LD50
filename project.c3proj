@@ -197,7 +197,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"MainMenu"
 		],
 		"subfolders": []
 	},
@@ -211,7 +212,8 @@
 			"Items",
 			"ScreenEvents",
 			"Minimap",
-			"Music"
+			"Music",
+			"MainMenu"
 		],
 		"subfolders": []
 	},
@@ -456,5 +458,5 @@
 	},
 	"viewportWidth": 420,
 	"viewportHeight": 240,
-	"firstLayout": null
+	"firstLayout": "MainMenu"
 }

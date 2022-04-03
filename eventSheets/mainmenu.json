@@ -1,0 +1,27 @@
+{
+	"name": "MainMenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 950888202566498
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 808632612603594,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 427950729072956
+		}
+	],
+	"sid": 667171540167617
+}

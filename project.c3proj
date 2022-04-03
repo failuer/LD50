@@ -146,7 +146,9 @@
 			"Computer",
 			"ShadowLight",
 			"RoverShadow",
-			"Minitilemap"
+			"Minitilemap",
+			"ComputerSide",
+			"ComputerSideBackground"
 		],
 		"subfolders": []
 	},

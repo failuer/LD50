@@ -21,9 +21,27 @@
 					}
 				},
 				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 344348288488438,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 404760793324805,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "true"
+					}
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
 					"sid": 828948045646602,
+					"disabled": true,
 					"parameters": {
 						"layer": "\"Start\"",
 						"visibility": "visible"
@@ -33,6 +51,7 @@
 					"id": "set-text",
 					"objectClass": "TitleScreenText1",
 					"sid": 316645576498167,
+					"disabled": true,
 					"parameters": {
 						"text": "\"\""
 					}
@@ -41,6 +60,7 @@
 					"id": "set-text",
 					"objectClass": "TitleScreenText2",
 					"sid": 355186663539675,
+					"disabled": true,
 					"parameters": {
 						"text": "\"\""
 					}
@@ -49,6 +69,7 @@
 					"id": "typewriter-text",
 					"objectClass": "TitleScreenText1",
 					"sid": 610098191637463,
+					"disabled": true,
 					"parameters": {
 						"text": "\"... My battery is low ...\"",
 						"duration": "4"
@@ -58,6 +79,7 @@
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 957189503556966,
+					"disabled": true,
 					"parameters": {
 						"seconds": "6"
 					}
@@ -66,6 +88,7 @@
 					"id": "typewriter-text",
 					"objectClass": "TitleScreenText2",
 					"sid": 253490205257045,
+					"disabled": true,
 					"parameters": {
 						"text": "\"... and it is getting dark ...\"",
 						"duration": "4"
@@ -75,6 +98,7 @@
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 158239822781059,
+					"disabled": true,
 					"parameters": {
 						"seconds": "6"
 					}
@@ -83,6 +107,7 @@
 					"id": "set-layer-visible",
 					"objectClass": "System",
 					"sid": 515224522004662,
+					"disabled": true,
 					"parameters": {
 						"layer": "\"Start\"",
 						"visibility": "invisible"
@@ -172,6 +197,71 @@
 				}
 			],
 			"sid": 701491773499881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 429986907828296
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 956543742145939,
+					"parameters": {
+						"layer": "\"GameOver\""
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 270366504370788,
+					"parameters": {
+						"variable": "isGameOver"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 553438369603504
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 825953327199020
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 952386847302095,
+					"parameters": {
+						"layer": "\"GameOver\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 655316767313303,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 297404502628564,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 548250408931560
 		},
 		{
 			"eventType": "block",
@@ -400,87 +490,12 @@
 				{
 					"id": "on-tap",
 					"objectClass": "Touch",
-					"sid": 832642293773654
-				}
-			],
-			"actions": [],
-			"sid": 508642113533138,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 736390719331298,
-							"parameters": {
-								"layer": "\"Start\""
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 995941928822648,
-							"parameters": {
-								"layer": "\"GameOver\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 674796505294804,
-							"parameters": {
-								"layer": "\"Start\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 413599681606772,
-							"parameters": {
-								"layer": "\"GameOver\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 755632721607269,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 471001168859326,
-							"parameters": {
-								"variable": "isPlayerRoverInteractionEnabled",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 719214815943493,
-					"isOrBlock": true
-				}
-			],
-			"isOrBlock": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap",
-					"objectClass": "Touch",
 					"sid": 858792529616722
 				},
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 615101158446443,
+					"sid": 270713755961855,
 					"parameters": {
 						"layer": "\"VictoryPicture\""
 					}
@@ -488,31 +503,12 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 447690519515105
-				},
-				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 892249052153072
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 679826868319890,
+					"sid": 919800828775758,
 					"parameters": {
-						"layer": "\"VictoryPicture\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 122914735487255,
-					"parameters": {
-						"layer": "\"VictoryText\"",
-						"visibility": "invisible"
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "false"
 					}
 				},
 				{
@@ -522,6 +518,34 @@
 					"parameters": {
 						"layout": "MainMenu"
 					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 612726508445548,
+					"parameters": {
+						"layer": "\"VictoryPicture\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 557546444375180,
+					"parameters": {
+						"layer": "\"VictoryText\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 770727798866066
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 300231458987992
 				}
 			],
 			"sid": 784466847788897

@@ -1,0 +1,65 @@
+{
+	"name": "MainMenuBehavior",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 997776550697888
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 518742748624430,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 972550239842430,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 130246729142681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 950888202566498
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 925743182909874,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 808632612603594,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 427950729072956
+		}
+	],
+	"sid": 667171540167617
+}

@@ -213,7 +213,7 @@
 			"ScreenEvents",
 			"Minimap",
 			"Music",
-			"MainMenu"
+			"MainMenuBehavior"
 		],
 		"subfolders": []
 	},

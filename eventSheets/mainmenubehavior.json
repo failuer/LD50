@@ -12,6 +12,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 548634471129484,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "false"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 518742748624430,

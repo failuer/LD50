@@ -158,7 +158,9 @@
 			"HUDBatteryProgressBar",
 			"HUDScienceProgressBar",
 			"TitleScreenVictory",
-			"Particles"
+			"Particles",
+			"Scanmap",
+			"Scanmapback"
 		],
 		"subfolders": []
 	},

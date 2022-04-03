@@ -398,13 +398,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 480521807598998,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 832642293773654
 				}
 			],
 			"actions": [],
@@ -492,9 +488,37 @@
 			],
 			"actions": [
 				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 447690519515105
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 892249052153072
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 679826868319890,
+					"parameters": {
+						"layer": "\"VictoryPicture\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 122914735487255,
+					"parameters": {
+						"layer": "\"VictoryText\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 710744666186583,
+					"sid": 954866601303175,
 					"parameters": {
 						"layout": "MainMenu"
 					}

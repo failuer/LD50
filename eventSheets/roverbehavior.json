@@ -393,13 +393,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 738252998548399,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 267210407293911
 				},
 				{
 					"id": "layer-is-visible",
@@ -445,13 +441,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 677455136438353,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 810905881112624
 				},
 				{
 					"id": "layer-is-visible",

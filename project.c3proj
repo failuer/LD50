@@ -111,14 +111,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Flash",
-			"name": "Flash",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "blacknwhite",
 			"name": "Black & white",

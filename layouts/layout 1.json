@@ -771,7 +771,7 @@
 				{
 					"type": "ScienceItem6",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "default",
 						"initial-frame": 0,
 						"enable-collisions": true,

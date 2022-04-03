@@ -187,7 +187,8 @@
 			"IntroRover",
 			"TitleScreenIntro1",
 			"TitleScreenIntro2",
-			"TitleScreenIntro3"
+			"TitleScreenIntro3",
+			"IntroEye"
 		],
 		"subfolders": []
 	},

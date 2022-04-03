@@ -252,6 +252,56 @@
 					"name": "Track5-AmbianceDiscordaddition.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 639055242106140
+				},
+				{
+					"name": "death.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 365676814090201
+				},
+				{
+					"name": "energy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 456281079389043
+				},
+				{
+					"name": "hello.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 594646157248507
+				},
+				{
+					"name": "Itsgettingdark.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 331018679166746
+				},
+				{
+					"name": "joy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 722367171901011
+				},
+				{
+					"name": "littlesong.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 201228994934349
+				},
+				{
+					"name": "mybatteryisrunninglow.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 201288302033700
+				},
+				{
+					"name": "scansound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 843298930181618
+				},
+				{
+					"name": "science.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 582401881624435
+				},
+				{
+					"name": "woah.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 103135471064147
 				}
 			],
 			"subfolders": []

@@ -54,11 +54,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 444739290811983,
+					"sid": 112377863346978,
 					"parameters": {
 						"audio-file": "Track4-RobotalkAmbiance",
 						"loop": "looping",
-						"volume": "-5",
+						"volume": "-10",
 						"tag-optional": "\"ambiance\""
 					}
 				},
@@ -377,10 +377,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 803267514146768,
+					"sid": 930959535144265,
 					"parameters": {
 						"tag": "\"bell\"",
-						"db": "0",
+						"db": "-5",
 						"duration": "3",
 						"ending": "keep-playing"
 					}

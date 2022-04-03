@@ -17,10 +17,10 @@
 				{
 					"id": "set-tile",
 					"objectClass": "Minitilemap",
-					"sid": 440746649952542,
+					"sid": 202732521861102,
 					"parameters": {
 						"tile-x": "floor(MinimapItems.X / (GroundTileMap.Width / Minitilemap.Width))",
-						"tile-y": "floor(MinimapItems.Y / (GroundTileMap.Width / Minitilemap.Width))",
+						"tile-y": "floor(MinimapItems.Y / (GroundTileMap.Height / Minitilemap.Height))",
 						"tile": "1",
 						"state": "normal"
 					}

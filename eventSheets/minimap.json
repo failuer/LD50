@@ -22,6 +22,52 @@
 			"sid": 446330124793026
 		},
 		{
+			"functionName": "MinimapSetTile",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "X",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 814664661558531
+				},
+				{
+					"name": "Y",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 145641331925085
+				},
+				{
+					"name": "Tile",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 129640928792258
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-tile",
+					"objectClass": "Minitilemap",
+					"sid": 138791626000227,
+					"parameters": {
+						"tile-x": "Minitilemap.PositionToTileX((X - Computer.ImagePointX(0) - MinimapViewport.X) * MinimapScaleX + Minitilemap.X)",
+						"tile-y": "Minitilemap.PositionToTileY((Y - Computer.ImagePointY(0) - MinimapViewport.Y) * MinimapScaleY + Minitilemap.Y)",
+						"tile": "Tile",
+						"state": "normal"
+					}
+				}
+			],
+			"sid": 180697018810103
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -66,18 +112,38 @@
 			],
 			"actions": [
 				{
-					"id": "set-tile",
-					"objectClass": "Minitilemap",
-					"sid": 960537824797210,
-					"parameters": {
-						"tile-x": "Minitilemap.PositionToTileX((MinimapItems.X - Computer.ImagePointX(0) - MinimapViewport.X) * MinimapScaleX + Minitilemap.X)",
-						"tile-y": "Minitilemap.PositionToTileY((MinimapItems.Y - Computer.ImagePointY(0) - MinimapViewport.Y) * MinimapScaleY + Minitilemap.Y)",
-						"tile": "1",
-						"state": "normal"
-					}
+					"callFunction": "MinimapSetTile",
+					"sid": 364988951338995,
+					"parameters": [
+						"MinimapItems.X",
+						"MinimapItems.Y",
+						"1"
+					]
 				}
 			],
 			"sid": 526939829326464
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 456973006272442
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "MinimapSetTile",
+					"sid": 572381284370356,
+					"parameters": [
+						"RoverPlaceholder.X",
+						"RoverPlaceholder.Y",
+						"2"
+					]
+				}
+			],
+			"sid": 713497417495531
 		}
 	],
 	"sid": 403520120466049

@@ -12,6 +12,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 978992991270014,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "false"
+					}
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
 					"sid": 828948045646602,
@@ -86,85 +95,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 220544915767164,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 683578069358113,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 248389012972328,
-							"parameters": {
-								"layer": "\"Start\""
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 181844229912446,
-							"parameters": {
-								"layer": "\"Victory\""
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 181661166403484,
-							"parameters": {
-								"layer": "\"GameOver\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 337416972815081,
-							"parameters": {
-								"layer": "\"Start\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 914345491659971,
-							"parameters": {
-								"layer": "\"Victory\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 847213113883038,
-							"parameters": {
-								"layer": "\"GameOver\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 956358961153634,
-					"isOrBlock": true
-				}
-			],
-			"isOrBlock": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 595719603419798,
@@ -185,6 +115,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 422546272330159,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "false"
+					}
+				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
@@ -238,6 +177,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 508361644073155,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled",
+						"value": "false"
+					}
+				},
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
@@ -298,6 +246,102 @@
 				}
 			],
 			"sid": 639903112270976
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 480521807598998,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 508642113533138,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 736390719331298,
+							"parameters": {
+								"layer": "\"Start\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 722328247285683,
+							"parameters": {
+								"layer": "\"Victory\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 995941928822648,
+							"parameters": {
+								"layer": "\"GameOver\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 674796505294804,
+							"parameters": {
+								"layer": "\"Start\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 953235734010918,
+							"parameters": {
+								"layer": "\"Victory\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 413599681606772,
+							"parameters": {
+								"layer": "\"GameOver\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 755632721607269,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 471001168859326,
+							"parameters": {
+								"variable": "isPlayerRoverInteractionEnabled",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 719214815943493,
+					"isOrBlock": true
+				}
+			],
+			"isOrBlock": true
 		}
 	],
 	"sid": 479293197521303

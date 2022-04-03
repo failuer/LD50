@@ -49,6 +49,14 @@
 				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
+					"sid": 406338670925405,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
 					"sid": 789474505943321,
 					"parameters": {
 						"variable": "isGameOver"

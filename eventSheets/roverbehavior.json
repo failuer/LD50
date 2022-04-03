@@ -212,6 +212,15 @@
 					"parameters": {
 						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / MaxBatteryEnergy)"
 					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 979652406845505,
+					"parameters": {
+						"x": "RoverPlaceholder.X - Computer.LeftInset/2 + Computer.RightInset/2",
+						"y": "RoverPlaceholder.Y - Computer.TopInset/2 + Computer.BottomInset/2"
+					}
 				}
 			],
 			"sid": 107793892035618

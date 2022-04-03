@@ -148,7 +148,8 @@
 			"ComputerSide",
 			"ComputerSideBackground",
 			"HUDBatteryProgressBar",
-			"HUDScienceProgressBar"
+			"HUDScienceProgressBar",
+			"TitleScreenVictory"
 		],
 		"subfolders": []
 	},

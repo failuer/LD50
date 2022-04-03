@@ -52,9 +52,9 @@
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
-					"sid": 950614573688162,
+					"sid": 492892026841452,
 					"parameters": {
-						"object": "GroundTileMap"
+						"object": "TouchInputObjects"
 					}
 				},
 				{

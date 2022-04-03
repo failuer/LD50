@@ -212,15 +212,6 @@
 					"parameters": {
 						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / MaxBatteryEnergy)"
 					}
-				},
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 979652406845505,
-					"parameters": {
-						"x": "RoverPlaceholder.X - Computer.LeftInset/2 + Computer.RightInset/2",
-						"y": "RoverPlaceholder.Y - Computer.TopInset/2 + Computer.BottomInset/2"
-					}
 				}
 			],
 			"sid": 107793892035618
@@ -617,6 +608,85 @@
 				}
 			],
 			"sid": 387087381016054
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rover tracks",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "RoverPlaceholder",
+							"sid": 642285710256493,
+							"behaviorType": "MoveTo"
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 351027711825131
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 591789622364616,
+							"parameters": {
+								"object-to-create": "TrackLeft",
+								"layer": "\"Objects\"",
+								"x": "Rover.ImagePointX(\"LeftWheelPoint\")",
+								"y": "Rover.ImagePointY(\"LeftWheelPoint\")",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 329511984395059,
+							"parameters": {
+								"object-to-create": "TrackRight",
+								"layer": "\"Objects\"",
+								"x": "Rover.ImagePointX(\"RightWheelPoint\")",
+								"y": "Rover.ImagePointY(\"RightWheelPoint\")",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "TrackLeft",
+							"sid": 840426735958168,
+							"parameters": {
+								"angle": "Rover.Angle"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "TrackRight",
+							"sid": 392296138560249,
+							"parameters": {
+								"angle": "Rover.Angle"
+							}
+						},
+						{
+							"id": "move-to-bottom",
+							"objectClass": "TrackLeft",
+							"sid": 199171540337127
+						},
+						{
+							"id": "move-to-bottom",
+							"objectClass": "TrackRight",
+							"sid": 870079612308010
+						}
+					],
+					"sid": 425422573070335
+				}
+			],
+			"sid": 588147220148797
 		}
 	],
 	"sid": 438801549688592

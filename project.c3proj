@@ -88,6 +88,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",

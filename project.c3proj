@@ -402,12 +402,12 @@
 		]
 	},
 	"properties": {
-		"description": "",
+		"description": "Help the rover finish its mission before its battery is depleted. ",
 		"version": "1.0.0.0",
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "",
-		"appId": "",
+		"appId": "se.dubiouspotions.batterylow",
 		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,

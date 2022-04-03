@@ -14,10 +14,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 344361039878133,
+					"sid": 484689377530595,
 					"parameters": {
 						"object-to-create": "RoverTarget",
-						"layer": "1",
+						"layer": "\"WorldGround\"",
 						"x": "-100",
 						"y": "-100",
 						"create-hierarchy": false
@@ -369,9 +369,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 114285089205144,
+					"sid": 840148100850182,
 					"parameters": {
-						"layer": "6",
+						"layer": "\"GameOver\"",
 						"visibility": "invisible"
 					}
 				}

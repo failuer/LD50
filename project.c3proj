@@ -174,7 +174,9 @@
 			"Scanmap",
 			"Scanmapback",
 			"WorldReferenceSprite",
-			"MinimapViewport"
+			"MinimapViewport",
+			"TrackRight",
+			"TrackLeft"
 		],
 		"subfolders": []
 	},

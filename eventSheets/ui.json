@@ -12,19 +12,19 @@
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "HUDSciencePoints",
-					"sid": 930193474254623,
+					"id": "set-width",
+					"objectClass": "HUDBatteryProgressBar",
+					"sid": 340570175971629,
 					"parameters": {
-						"text": "SciencePoints & \" SCIENCE POINTS\""
+						"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
 					}
 				},
 				{
-					"id": "set-progress",
-					"objectClass": "HUDBatteryProgressBar",
-					"sid": 164956555528003,
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 636866997636325,
 					"parameters": {
-						"value": "BatteryEnergy"
+						"width": "clamp((SciencePoints/7)*62, 0, 62)"
 					}
 				}
 			],

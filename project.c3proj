@@ -32,24 +32,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "progressbar",
-			"name": "Progress bar",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -64,8 +48,24 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "shadowlight",
 			"name": "Shadow light",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -125,11 +125,9 @@
 			"Keyboard",
 			"Audio",
 			"Mouse",
-			"HUDSciencePoints",
 			"RoverPlaceholder",
 			"RoverTarget",
 			"ScienceItem1",
-			"HUDBatteryProgressBar",
 			"EnergyItem",
 			"GroundTileMap",
 			"TitleScreenText1",
@@ -148,7 +146,9 @@
 			"RoverShadow",
 			"Minitilemap",
 			"ComputerSide",
-			"ComputerSideBackground"
+			"ComputerSideBackground",
+			"HUDBatteryProgressBar",
+			"HUDScienceProgressBar"
 		],
 		"subfolders": []
 	},

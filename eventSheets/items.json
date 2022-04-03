@@ -17,10 +17,10 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 224581838646165,
+					"sid": 339964882721716,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "100"
+						"value": "MaxBatteryEnergy - BatteryEnergy"
 					}
 				},
 				{

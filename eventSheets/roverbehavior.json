@@ -31,6 +31,17 @@
 					"parameters": {
 						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 496449780529562,
+					"parameters": {
+						"audio-file": "Driveloop1",
+						"loop": "looping",
+						"volume": "-Infinity",
+						"tag-optional": "\"drivingsound\""
+					}
 				}
 			],
 			"sid": 202999105665634
@@ -261,6 +272,24 @@
 						"animation": "\"rolling\"",
 						"from": "current-frame"
 					}
+				},
+				{
+					"id": "set-volume",
+					"objectClass": "Audio",
+					"sid": 217000326375306,
+					"parameters": {
+						"tag": "\"drivingsound\"",
+						"db": "0"
+					}
+				},
+				{
+					"id": "set-playback-rate",
+					"objectClass": "Audio",
+					"sid": 921312571044656,
+					"parameters": {
+						"tag": "\"drivingsound\"",
+						"playback-rate": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed"
+					}
 				}
 			],
 			"sid": 132601009957553
@@ -292,6 +321,15 @@
 					"parameters": {
 						"animation": "\"still\"",
 						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-volume",
+					"objectClass": "Audio",
+					"sid": 863832628545035,
+					"parameters": {
+						"tag": "\"drivingsound\"",
+						"db": "-Infinity"
 					}
 				}
 			],

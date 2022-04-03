@@ -54,11 +54,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 112377863346978,
+					"sid": 659272866204381,
 					"parameters": {
 						"audio-file": "Track4-RobotalkAmbiance",
 						"loop": "looping",
-						"volume": "-10",
+						"volume": "-15",
 						"tag-optional": "\"ambiance\""
 					}
 				},

@@ -135,19 +135,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 208463610858335,
-					"parameters": {
-						"audio-file": "crunch",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 110870701543303
 		},
 		{
@@ -162,19 +150,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 106721064038440,
-					"parameters": {
-						"audio-file": "pin",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 215527374446500
 		}
 	],

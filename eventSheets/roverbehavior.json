@@ -106,10 +106,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "RoverTarget",
-					"sid": 967314574822297,
+					"sid": 464454870754090,
 					"parameters": {
-						"x": "Mouse.X",
-						"y": "Mouse.Y"
+						"x": "Touch.X",
+						"y": "Touch.Y"
 					}
 				},
 				{

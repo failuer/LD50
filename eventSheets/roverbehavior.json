@@ -429,6 +429,185 @@
 				}
 			],
 			"sid": 347072653161390
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rover particles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 204176042526322
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "ParticlesRightWheel",
+							"sid": 185133189166106,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Rover",
+								"image-point": "\"RightWheelPoint\"",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "ParticlesLeftWheel",
+							"sid": 101843316389045,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Rover",
+								"image-point": "\"LeftWheelPoint\"",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "ParticlesLeftWheelFront",
+							"sid": 583217503868019,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Rover",
+								"image-point": "\"LeftWheelPointFront\"",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "ParticlesRightWheelFront",
+							"sid": 667846934344084,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Rover",
+								"image-point": "\"RightWheelPointFront\"",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "move-to-bottom",
+							"objectClass": "WheelParticles",
+							"sid": 665371841507261
+						}
+					],
+					"sid": 748988502032487
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "RoverPlaceholder",
+							"sid": 394961411732328,
+							"behaviorType": "MoveTo"
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 891197569641737
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 110180021223015,
+							"parameters": {
+								"object-to-create": "ParticlesLeftWheel",
+								"layer": "\"Objects\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 191053292699445,
+							"parameters": {
+								"object-to-create": "ParticlesLeftWheelFront",
+								"layer": "\"Objects\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 732379864557435,
+							"parameters": {
+								"object-to-create": "ParticlesRightWheel",
+								"layer": "\"Objects\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 846446649769071,
+							"parameters": {
+								"object-to-create": "ParticlesRightWheelFront",
+								"layer": "\"Objects\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 156098248511015
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "RoverPlaceholder",
+							"sid": 323335966574585,
+							"behaviorType": "MoveTo",
+							"isInverted": true
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 903419796039047
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "WheelParticles",
+							"sid": 818174543304648,
+							"parameters": {
+								"opacity": "lerp(self.opacity,self.opacity-100,5*dt)"
+							}
+						}
+					],
+					"sid": 781390615040732
+				}
+			],
+			"sid": 387087381016054
 		}
 	],
 	"sid": 438801549688592

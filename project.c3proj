@@ -170,7 +170,7 @@
 			"ParticlesLeftWheel",
 			"ParticlesRightWheelFront",
 			"ParticlesLeftWheelFront",
-			"TitleScreenVictory",
+			"TitleScreenVictory1",
 			"Scanmap",
 			"Scanmapback",
 			"WorldReferenceSprite",
@@ -180,7 +180,8 @@
 			"HUDScienceProgressBulbFinal",
 			"HUDScienceLid",
 			"Touch",
-			"VictoryRoverEnd"
+			"VictoryRoverEnd",
+			"TitleScreenVictory2"
 		],
 		"subfolders": []
 	},

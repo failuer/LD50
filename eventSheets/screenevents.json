@@ -225,11 +225,103 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "TitleScreenVictory1",
+					"sid": 804027960095335,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 701577153317833,
+					"parameters": {
+						"variable": "TypewriterText",
+						"value": "TitleScreenVictory1.Text"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TitleScreenVictory1",
+					"sid": 598449582465200,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TitleScreenVictory1",
+					"sid": 801928501659021,
+					"parameters": {
+						"text": "TypewriterText",
+						"duration": "6"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 627966774360454,
+					"sid": 615117582775130,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TitleScreenVictory2",
+					"sid": 685844118037277,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 460810469239059,
+					"parameters": {
+						"variable": "TypewriterText",
+						"value": "TitleScreenVictory2.Text"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TitleScreenVictory2",
+					"sid": 374161042369196,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TitleScreenVictory2",
+					"sid": 277611335663227,
+					"parameters": {
+						"text": "TypewriterText",
+						"duration": "6"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 820467863203594,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TitleScreenVictory1",
+					"sid": 534464701448273,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TitleScreenVictory2",
+					"sid": 433328750829164,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				},
 				{

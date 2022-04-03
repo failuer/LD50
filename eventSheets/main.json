@@ -124,6 +124,16 @@
 			"sid": 894614790548159
 		},
 		{
+			"eventType": "variable",
+			"name": "TypewriterText",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 715964412734084
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

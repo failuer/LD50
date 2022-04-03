@@ -45,6 +45,33 @@
 					"parameters": {
 						"mouse-button": "left"
 					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 789474505943321,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 284524093902159,
+					"parameters": {
+						"layer": "6"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 523481444984911,
+					"parameters": {
+						"layer": "7"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -78,6 +105,24 @@
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 103463149969340
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 592302410737589,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 916015315571722,
+					"parameters": {
+						"layer": "6"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -179,6 +224,15 @@
 					"objectClass": "RoverPlaceholder",
 					"sid": 556868525232068,
 					"behaviorType": "MoveTo"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 529992198284934,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -202,6 +256,15 @@
 					"objectClass": "RoverPlaceholder",
 					"sid": 502236373119033,
 					"behaviorType": "MoveTo"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 397634805674391,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -270,6 +333,50 @@
 				}
 			],
 			"sid": 455469305590896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 738252998548399,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 104345911657412,
+					"parameters": {
+						"variable": "isGameOver"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 811084332832721
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 558048172488491
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 114285089205144,
+					"parameters": {
+						"layer": "6",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 595123706738236
 		}
 	],
 	"sid": 438801549688592

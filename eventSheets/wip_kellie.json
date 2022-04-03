@@ -42,10 +42,10 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 926324304193651,
+					"sid": 502588019058673,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "1"
+						"value": "100"
 					}
 				}
 			],

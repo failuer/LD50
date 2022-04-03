@@ -8,6 +8,15 @@
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 892474820135732
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 656039267676893,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [

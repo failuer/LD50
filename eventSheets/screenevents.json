@@ -153,16 +153,16 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 526022778816409,
+					"sid": 420655778877342,
 					"parameters": {
-						"layer": "5",
+						"layer": "6",
 						"visibility": "visible"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "GameOverScreenText",
-					"sid": 770710001661809,
+					"sid": 959642526652016,
 					"parameters": {
 						"text": "\"\""
 					}

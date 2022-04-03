@@ -77,27 +77,27 @@
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 284524093902159,
+					"sid": 377222820489037,
 					"parameters": {
-						"layer": "6"
+						"layer": "\"PauseScreen\""
 					},
 					"isInverted": true
 				},
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 523481444984911,
+					"sid": 501719404535809,
 					"parameters": {
-						"layer": "7"
+						"layer": "\"GameOver\""
 					},
 					"isInverted": true
 				},
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 655526807615645,
+					"sid": 437658870017158,
 					"parameters": {
-						"layer": "5"
+						"layer": "\"Darkness\""
 					},
 					"isInverted": true
 				}

@@ -456,9 +456,9 @@
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 919760426400762,
+					"sid": 907358351043071,
 					"parameters": {
-						"layer": "\"Victory\""
+						"layer": "\"VictoryPicture\""
 					}
 				}
 			],

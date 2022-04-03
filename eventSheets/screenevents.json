@@ -174,6 +174,24 @@
 						"comparison": 5,
 						"value": "6"
 					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 272628779602182,
+					"parameters": {
+						"layer": "\"VictoryText\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 222938646475158,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -189,10 +207,36 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 502067379029899,
+					"sid": 199596404548519,
 					"parameters": {
-						"layer": "\"Victory\"",
+						"layer": "\"VictoryText\"",
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 627966774360454,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 957098094198019,
+					"parameters": {
+						"layer": "\"VictoryPicture\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "VictoryRoverEnd",
+					"sid": 194128088869129,
+					"parameters": {
+						"animation": "\"animation\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -277,17 +321,17 @@
 						{
 							"id": "layer-is-visible",
 							"objectClass": "System",
-							"sid": 722328247285683,
+							"sid": 995941928822648,
 							"parameters": {
-								"layer": "\"Victory\""
+								"layer": "\"GameOver\""
 							}
 						},
 						{
 							"id": "layer-is-visible",
 							"objectClass": "System",
-							"sid": 995941928822648,
+							"sid": 615101158446443,
 							"parameters": {
-								"layer": "\"GameOver\""
+								"layer": "\"VictoryPicture\""
 							}
 						}
 					],
@@ -304,9 +348,18 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 953235734010918,
+							"sid": 507767400979796,
 							"parameters": {
-								"layer": "\"Victory\"",
+								"layer": "\"VictoryText\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 749573535537873,
+							"parameters": {
+								"layer": "\"VictoryPicture\"",
 								"visibility": "invisible"
 							}
 						},

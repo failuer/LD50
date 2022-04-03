@@ -1106,7 +1106,7 @@
 					"global": false
 				},
 				{
-					"name": "Victory",
+					"name": "VictoryText",
 					"overriden": 0,
 					"subLayers": [],
 					"instances": [
@@ -1789,6 +1789,69 @@
 					"sid": 831298812854621,
 					"effectTypes": [],
 					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 0,
+					"parallaxY": 0,
+					"scaleRate": 0,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				},
+				{
+					"name": "VictoryPicture",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [
+						{
+							"type": "VictoryRoverEnd",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "static",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 45,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 210,
+								"y": 120,
+								"width": 420,
+								"height": 240,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						}
+					],
+					"sid": 138902319205631,
+					"effectTypes": [],
+					"isInitiallyVisible": false,
 					"isInitiallyInteractive": true,
 					"color": [
 						1,

@@ -179,7 +179,8 @@
 			"TrackLeft",
 			"HUDScienceProgressBulbFinal",
 			"HUDScienceLid",
-			"Touch"
+			"Touch",
+			"VictoryRoverEnd"
 		],
 		"subfolders": []
 	},

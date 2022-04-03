@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -148,7 +156,8 @@
 			"ComputerSide",
 			"ComputerSideBackground",
 			"HUDBatteryProgressBar",
-			"HUDScienceProgressBar"
+			"HUDScienceProgressBar",
+			"Particles"
 		],
 		"subfolders": []
 	},

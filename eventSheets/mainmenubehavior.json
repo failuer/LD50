@@ -49,6 +49,14 @@
 					"sid": 479830341218847
 				},
 				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 859768389796979,
+					"parameters": {
+						"object": "MainMenuStartButton"
+					}
+				},
+				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
 					"sid": 151818583077613,

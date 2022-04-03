@@ -2,16 +2,6 @@
 	"name": "ScreenEvents",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "isGameOver",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 721093967276917
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{

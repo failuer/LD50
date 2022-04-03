@@ -57,7 +57,7 @@
 			"eventType": "variable",
 			"name": "BatteryEnergy",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "60",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

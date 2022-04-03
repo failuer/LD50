@@ -177,11 +177,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 751069639196415,
+					"sid": 595719603419798,
 					"parameters": {
 						"variable": "BatteryEnergy",
 						"comparison": 3,
-						"value": "0"
+						"value": "0.5"
 					}
 				},
 				{

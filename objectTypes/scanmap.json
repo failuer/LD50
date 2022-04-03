@@ -1,0 +1,37 @@
+{
+	"name": "Scanmap",
+	"plugin-id": "Sprite",
+	"sid": 225999438655922,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 54,
+						"originX": 0.015625,
+						"originY": 0.12962962962962962,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9080142,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 312572311668435,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

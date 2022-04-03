@@ -103,28 +103,73 @@
 						"mouse-button": "left",
 						"click-type": "clicked"
 					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 988258431376642,
-					"parameters": {
-						"layer": "\"Start\""
-					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 683578069358113,
+			"children": [
 				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 255368737934946,
-					"parameters": {
-						"layer": "\"Start\"",
-						"visibility": "invisible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 248389012972328,
+							"parameters": {
+								"layer": "\"Start\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 181844229912446,
+							"parameters": {
+								"layer": "\"Victory\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 181661166403484,
+							"parameters": {
+								"layer": "\"GameOver\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 337416972815081,
+							"parameters": {
+								"layer": "\"Start\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 914345491659971,
+							"parameters": {
+								"layer": "\"Victory\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 847213113883038,
+							"parameters": {
+								"layer": "\"GameOver\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 956358961153634,
+					"isOrBlock": true
 				}
 			],
-			"sid": 683578069358113
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -187,6 +232,33 @@
 				}
 			],
 			"sid": 701491773499881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 981411797810577,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 5,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 502067379029899,
+					"parameters": {
+						"layer": "\"Victory\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 364816967768396
 		}
 	],
 	"sid": 479293197521303

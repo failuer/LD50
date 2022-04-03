@@ -347,6 +347,14 @@
 					}
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 785339687437998,
+					"parameters": {
+						"layer": "\"GameOver\""
+					}
+				},
+				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 104345911657412,
@@ -377,6 +385,50 @@
 				}
 			],
 			"sid": 595123706738236
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 677455136438353,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 919760426400762,
+					"parameters": {
+						"layer": "\"Victory\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 217981775025627
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 166188432590976
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 792167742939623,
+					"parameters": {
+						"layer": "\"Victory\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 347072653161390
 		}
 	],
 	"sid": 438801549688592

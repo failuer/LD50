@@ -2,12 +2,63 @@
 	"name": "Minimap",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "MinimapScaleX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 652262687685001
+		},
+		{
+			"eventType": "variable",
+			"name": "MinimapScaleY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 446330124793026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 552026448632970
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 207222792120764,
+					"parameters": {
+						"variable": "MinimapScaleX",
+						"value": "Minitilemap.Width / GroundTileMap.Width"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 537198833665999,
+					"parameters": {
+						"variable": "MinimapScaleY",
+						"value": " (Minitilemap.Height / GroundTileMap.Height)"
+					}
+				}
+			],
+			"sid": 290115732141458
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "for-each",
 					"objectClass": "System",
-					"sid": 875261040164276,
+					"sid": 445140091328212,
 					"parameters": {
 						"object": "MinimapItems"
 					}
@@ -17,16 +68,16 @@
 				{
 					"id": "set-tile",
 					"objectClass": "Minitilemap",
-					"sid": 202732521861102,
+					"sid": 183691959218533,
 					"parameters": {
-						"tile-x": "floor(MinimapItems.X / (GroundTileMap.Width / Minitilemap.Width))",
-						"tile-y": "floor(MinimapItems.Y / (GroundTileMap.Height / Minitilemap.Height))",
+						"tile-x": "Minitilemap.PositionToTileX((MinimapItems.X - Computer.ImagePointX(0)) * MinimapScaleX + Minitilemap.x)",
+						"tile-y": "Minitilemap.PositionToTileY((MinimapItems.Y - Computer.ImagePointY(0)) * MinimapScaleY+ Minitilemap.Y)",
 						"tile": "1",
 						"state": "normal"
 					}
 				}
 			],
-			"sid": 398913540576023
+			"sid": 526939829326464
 		}
 	],
 	"sid": 403520120466049

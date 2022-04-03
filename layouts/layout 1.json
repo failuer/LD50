@@ -1676,10 +1676,72 @@
 							"world": {
 								"x": 13,
 								"y": 84,
-								"width": 62,
+								"width": 44,
 								"height": 8,
 								"originX": 0,
 								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "HUDScienceProgressBulbFinal",
+							"properties": {
+								"initially-visible": false,
+								"origin": "top-left",
+								"wrap-horizontal": "clamp-to-edge",
+								"wrap-vertical": "clamp-to-edge",
+								"image-offset-x": 0,
+								"image-offset-y": 0,
+								"image-scale-x": 1,
+								"image-scale-y": 1,
+								"image-angle": 0
+							},
+							"uid": 42,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 64,
+								"y": 84,
+								"width": 8,
+								"height": 8,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "HUDScienceLid",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 43,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 68.61140180970541,
+								"y": 87.55154324415095,
+								"width": 17,
+								"height": 11,
+								"originX": 0.5,
+								"originY": 0.5,
 								"color": [
 									1,
 									1,

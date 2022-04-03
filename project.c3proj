@@ -174,7 +174,9 @@
 			"Scanmap",
 			"Scanmapback",
 			"WorldReferenceSprite",
-			"MinimapViewport"
+			"MinimapViewport",
+			"HUDScienceProgressBulbFinal",
+			"HUDScienceLid"
 		],
 		"subfolders": []
 	},

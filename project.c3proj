@@ -188,7 +188,8 @@
 	"families": {
 		"items": [
 			"MinimapItems",
-			"WheelParticles"
+			"WheelParticles",
+			"TouchInputObjects"
 		],
 		"subfolders": []
 	},

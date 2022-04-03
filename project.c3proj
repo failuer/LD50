@@ -111,6 +111,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "blacknwhite",
 			"name": "Black & white",
@@ -183,7 +191,11 @@
 			"VictoryRoverEnd",
 			"TitleScreenVictory2",
 			"MainMenuBackground",
-			"MainMenuStartButton"
+			"MainMenuStartButton",
+			"IntroRover",
+			"TitleScreenIntro1",
+			"TitleScreenIntro2",
+			"TitleScreenIntro3"
 		],
 		"subfolders": []
 	},

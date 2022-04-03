@@ -169,9 +169,8 @@
 			"Particle",
 			"ParticlesLeftWheel",
 			"ParticlesRightWheelFront",
-			"ParticlesLeftWheelFront"
+			"ParticlesLeftWheelFront",
 			"TitleScreenVictory",
-			"Particles",
 			"Scanmap",
 			"Scanmapback",
 			"WorldReferenceSprite"

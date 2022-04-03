@@ -175,6 +175,8 @@
 			"Scanmapback",
 			"WorldReferenceSprite",
 			"MinimapViewport",
+			"TrackRight",
+			"TrackLeft",
 			"HUDScienceProgressBulbFinal",
 			"HUDScienceLid"
 		],

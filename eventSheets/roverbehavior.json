@@ -592,57 +592,151 @@
 					],
 					"actions": [
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 591789622364616,
-							"parameters": {
-								"object-to-create": "TrackLeft",
-								"layer": "\"Objects\"",
-								"x": "Rover.ImagePointX(\"LeftWheelPoint\")",
-								"y": "Rover.ImagePointY(\"LeftWheelPoint\")",
-								"create-hierarchy": false
-							}
+							"callFunction": "AddTrack",
+							"sid": 926116208229537,
+							"parameters": [
+								"Rover.ImagePointX(\"LeftWheelPoint\")",
+								"Rover.ImagePointY(\"LeftWheelPoint\")",
+								"Rover.Angle"
+							]
 						},
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 329511984395059,
-							"parameters": {
-								"object-to-create": "TrackRight",
-								"layer": "\"Objects\"",
-								"x": "Rover.ImagePointX(\"RightWheelPoint\")",
-								"y": "Rover.ImagePointY(\"RightWheelPoint\")",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-angle",
-							"objectClass": "TrackLeft",
-							"sid": 840426735958168,
-							"parameters": {
-								"angle": "Rover.Angle"
-							}
-						},
-						{
-							"id": "set-angle",
-							"objectClass": "TrackRight",
-							"sid": 392296138560249,
-							"parameters": {
-								"angle": "Rover.Angle"
-							}
-						},
-						{
-							"id": "move-to-bottom",
-							"objectClass": "TrackLeft",
-							"sid": 199171540337127
-						},
-						{
-							"id": "move-to-bottom",
-							"objectClass": "TrackRight",
-							"sid": 870079612308010
+							"callFunction": "AddTrack",
+							"sid": 819177856741052,
+							"parameters": [
+								"Rover.ImagePointX(\"RightWheelPoint\")",
+								"Rover.ImagePointY(\"RightWheelPoint\")",
+								"Rover.Angle"
+							]
 						}
 					],
 					"sid": 425422573070335
+				},
+				{
+					"functionName": "AddTrack",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "X",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 957915111902466
+						},
+						{
+							"name": "Y",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 450526140393650
+						},
+						{
+							"name": "A",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 968960972813875
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 943328909615554,
+							"parameters": {
+								"object-to-create": "Track",
+								"layer": "\"Tracks\"",
+								"x": "X",
+								"y": "Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "Track",
+							"sid": 652537996890141,
+							"parameters": {
+								"angle": "A"
+							}
+						},
+						{
+							"id": "push",
+							"objectClass": "TrackX",
+							"sid": 894253945641473,
+							"parameters": {
+								"where": "back",
+								"value": "X",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "push",
+							"objectClass": "TrackY",
+							"sid": 277015635898630,
+							"parameters": {
+								"where": "back",
+								"value": "Y",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "push",
+							"objectClass": "TrackAngle",
+							"sid": 425082033082394,
+							"parameters": {
+								"where": "back",
+								"value": "A",
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 835575350696150
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 425596515199171
+						},
+						{
+							"id": "for-each-element",
+							"objectClass": "TrackX",
+							"sid": 672690222998770,
+							"parameters": {
+								"axes": "x"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 346807368840435,
+							"parameters": {
+								"object-to-create": "Track",
+								"layer": "\"OldTracks\"",
+								"x": "TrackX.At(TrackX.CurX)",
+								"y": "TrackY.At(TrackX.CurX)",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "Track",
+							"sid": 498041520788731,
+							"parameters": {
+								"angle": "TrackAngle.At(TrackX.CurX)"
+							}
+						}
+					],
+					"sid": 491344463460249
 				}
 			],
 			"sid": 588147220148797

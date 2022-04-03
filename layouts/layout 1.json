@@ -117,6 +117,73 @@
 			"global": false
 		},
 		{
+			"name": "Tracks",
+			"overriden": 0,
+			"subLayers": [
+				{
+					"name": "OldTracks",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [],
+					"sid": 574523242349869,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": false,
+					"color": [
+						1,
+						1,
+						1,
+						0.3
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": true,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				}
+			],
+			"instances": [],
+			"sid": 868689801820522,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": true,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Objects",
 			"overriden": 0,
 			"subLayers": [],
@@ -1836,7 +1903,7 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 59,
+							"uid": 65,
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
@@ -1865,7 +1932,7 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 60,
+							"uid": 66,
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
@@ -1894,7 +1961,7 @@
 								"enable-collisions": true,
 								"live-preview": false
 							},
-							"uid": 61,
+							"uid": 67,
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
@@ -2167,7 +2234,38 @@
 		}
 	],
 	"sid": 341147204882528,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "TrackX",
+			"properties": {
+				"width": 1,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 59,
+			"instanceVariables": {}
+		},
+		{
+			"type": "TrackY",
+			"properties": {
+				"width": 1,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 60,
+			"instanceVariables": {}
+		},
+		{
+			"type": "TrackAngle",
+			"properties": {
+				"width": 1,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 61,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 4000,
 	"height": 4000,

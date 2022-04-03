@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -189,7 +197,10 @@
 			"TitleScreenIntro3",
 			"IntroEye",
 			"HUDRestartButton",
-			"HUDMenuButton"
+			"HUDMenuButton",
+			"TrackX",
+			"TrackY",
+			"TrackAngle"
 		],
 		"subfolders": []
 	},

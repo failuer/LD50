@@ -652,6 +652,36 @@
 								"Y",
 								"A"
 							]
+						},
+						{
+							"id": "push",
+							"objectClass": "TrackX",
+							"sid": 894253945641473,
+							"parameters": {
+								"where": "back",
+								"value": "X",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "push",
+							"objectClass": "TrackY",
+							"sid": 277015635898630,
+							"parameters": {
+								"where": "back",
+								"value": "Y",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "push",
+							"objectClass": "TrackAngle",
+							"sid": 425082033082394,
+							"parameters": {
+								"where": "back",
+								"value": "A",
+								"axis": "x"
+							}
 						}
 					],
 					"sid": 835575350696150
@@ -703,13 +733,43 @@
 						{
 							"id": "set-angle",
 							"objectClass": "Track",
-							"sid": 649433795131594,
+							"sid": 700161535508160,
 							"parameters": {
-								"angle": "Rover.Angle"
+								"angle": "A"
 							}
 						}
 					],
 					"sid": 887939556765421
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 425596515199171
+						},
+						{
+							"id": "for-each-element",
+							"objectClass": "TrackX",
+							"sid": 672690222998770,
+							"parameters": {
+								"axes": "x"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "DrawTrack",
+							"sid": 160968144969641,
+							"parameters": [
+								"TrackX.At(TrackX.CurX)",
+								"TrackY.At(TrackX.CurX)",
+								"TrackAngle.At(TrackX.CurX)"
+							]
+						}
+					],
+					"sid": 491344463460249
 				}
 			],
 			"sid": 588147220148797

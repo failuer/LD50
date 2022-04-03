@@ -2200,7 +2200,38 @@
 		}
 	],
 	"sid": 341147204882528,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "TrackX",
+			"properties": {
+				"width": 1,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 59,
+			"instanceVariables": {}
+		},
+		{
+			"type": "TrackY",
+			"properties": {
+				"width": 1,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 60,
+			"instanceVariables": {}
+		},
+		{
+			"type": "TrackAngle",
+			"properties": {
+				"width": 1,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 61,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 4000,
 	"height": 4000,

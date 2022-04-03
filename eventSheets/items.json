@@ -15,12 +15,12 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 339964882721716,
+					"sid": 222672301569758,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "MaxBatteryEnergy - BatteryEnergy"
+						"value": "clamp(BatteryEnergy+60, 0, MaxBatteryEnergy)"
 					}
 				},
 				{

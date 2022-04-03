@@ -1418,6 +1418,35 @@
 										"angle": 0,
 										"zElevation": 0
 									}
+								},
+								{
+									"type": "MinimapViewport",
+									"properties": {
+										"initially-visible": false,
+										"initial-animation": "Animation 1",
+										"initial-frame": 0,
+										"enable-collisions": false,
+										"live-preview": false
+									},
+									"uid": 41,
+									"instanceVariables": {},
+									"behaviors": {},
+									"world": {
+										"x": 1480,
+										"y": 1510,
+										"width": 1304,
+										"height": 804,
+										"originX": 0,
+										"originY": 0,
+										"color": [
+											1,
+											1,
+											1,
+											1
+										],
+										"angle": 0,
+										"zElevation": 0
+									}
 								}
 							],
 							"sid": 531172690772923,

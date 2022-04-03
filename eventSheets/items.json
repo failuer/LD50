@@ -24,6 +24,15 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 235839939580574,
+					"parameters": {
+						"variable": "EnergyObjectsPicked",
+						"value": "EnergyObjectsPicked + 1"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "EnergyItem",
 					"sid": 439268920911267

@@ -911,12 +911,12 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 0,
-								"y": 0,
+								"x": 96,
+								"y": 26,
 								"width": 420,
 								"height": 240,
-								"originX": 0,
-								"originY": 0,
+								"originX": 0.22857142857142856,
+								"originY": 0.10833333333333334,
 								"color": [
 									1,
 									1,

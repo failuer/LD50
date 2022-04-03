@@ -1826,6 +1826,122 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "ComputerSide",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 59,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 210,
+								"y": -120,
+								"width": 240,
+								"height": 420,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 1.5707963267948966,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "ComputerSide",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 60,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 210,
+								"y": 360,
+								"width": 240,
+								"height": 420,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 4.71238898038469,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "ComputerSideBackground",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 61,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 210,
+								"y": 770,
+								"width": 420,
+								"height": 587,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "ComputerSideBackground",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 62,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 210,
+								"y": -526,
+								"width": 420,
+								"height": 587,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 831298812854621,

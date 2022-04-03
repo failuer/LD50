@@ -1942,6 +1942,64 @@
 								"angle": 0,
 								"zElevation": 0
 							}
+						},
+						{
+							"type": "HUDRestartButton",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 63,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 61.5,
+								"y": 193,
+								"width": 33,
+								"height": 16,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "HUDMenuButton",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 64,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 27.5,
+								"y": 193,
+								"width": 33,
+								"height": 16,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
 						}
 					],
 					"sid": 831298812854621,

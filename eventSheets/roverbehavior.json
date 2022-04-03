@@ -49,6 +49,14 @@
 				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
+					"sid": 406338670925405,
+					"parameters": {
+						"variable": "isPlayerRoverInteractionEnabled"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
 					"sid": 789474505943321,
 					"parameters": {
 						"variable": "isGameOver"
@@ -211,6 +219,15 @@
 					"behaviorType": "MoveTo",
 					"parameters": {
 						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / MaxBatteryEnergy)"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 979652406845505,
+					"parameters": {
+						"x": "RoverPlaceholder.X - Computer.LeftInset/2 + Computer.RightInset/2",
+						"y": "RoverPlaceholder.Y - Computer.TopInset/2 + Computer.BottomInset/2"
 					}
 				}
 			],

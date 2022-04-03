@@ -104,6 +104,26 @@
 			"sid": 772418464571404
 		},
 		{
+			"eventType": "variable",
+			"name": "isGameOver",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 323060241863691
+		},
+		{
+			"eventType": "variable",
+			"name": "isPlayerRoverInteractionEnabled",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 894614790548159
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

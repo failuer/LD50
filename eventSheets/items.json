@@ -36,6 +36,17 @@
 					"id": "destroy",
 					"objectClass": "EnergyItem",
 					"sid": 439268920911267
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 555673149803572,
+					"parameters": {
+						"audio-file": "energy",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 239432750274780
@@ -66,6 +77,17 @@
 					"id": "destroy",
 					"objectClass": "ScienceItem1",
 					"sid": 282423673408509
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 597339258881620,
+					"parameters": {
+						"audio-file": "science",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 876500545748601
@@ -96,6 +118,17 @@
 					"id": "destroy",
 					"objectClass": "ScienceItem2",
 					"sid": 274459616616341
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 433533710999761,
+					"parameters": {
+						"audio-file": "science",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 877849674080063
@@ -126,6 +159,17 @@
 					"id": "destroy",
 					"objectClass": "ScienceItem3",
 					"sid": 306718228099271
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 556115191614373,
+					"parameters": {
+						"audio-file": "science",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 488337963115836
@@ -156,6 +200,17 @@
 					"id": "destroy",
 					"objectClass": "ScienceItem4",
 					"sid": 885768331254143
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 892154978239412,
+					"parameters": {
+						"audio-file": "science",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 574322104878132
@@ -186,6 +241,17 @@
 					"id": "destroy",
 					"objectClass": "ScienceItem5",
 					"sid": 463454005864979
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 559138355461681,
+					"parameters": {
+						"audio-file": "science",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 373880239389080
@@ -216,6 +282,17 @@
 					"id": "destroy",
 					"objectClass": "ScienceItem6",
 					"sid": 807560094661499
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 580151222343212,
+					"parameters": {
+						"audio-file": "joy",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 298146244508452

@@ -1,0 +1,37 @@
+{
+	"name": "WorldReferenceSprite",
+	"plugin-id": "Sprite",
+	"sid": 939784995839861,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 680,
+						"height": 402,
+						"originX": 0.5007352941176471,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6390374,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 227788809586693,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

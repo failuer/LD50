@@ -3,7 +3,32 @@
 	"plugin-id": "Sprite",
 	"sid": 304816652814091,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "LeftInset",
+			"type": "number",
+			"desc": "",
+			"sid": 990540521724032
+		},
+		{
+			"name": "RightInset",
+			"type": "number",
+			"desc": "",
+			"sid": 531447371838969
+		},
+		{
+			"name": "TopInset",
+			"type": "number",
+			"desc": "",
+			"sid": 614057230412269
+		},
+		{
+			"name": "BottomInset",
+			"type": "number",
+			"desc": "",
+			"sid": 819257915973867
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -40,6 +65,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.9380952380952381,
+								"y": 0.9
+							}
+						],
 						"duration": 1
 					}
 				],

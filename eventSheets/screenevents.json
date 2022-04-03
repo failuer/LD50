@@ -259,6 +259,55 @@
 				}
 			],
 			"sid": 364816967768396
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Computer",
+					"sid": 568764720094702
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Computer",
+					"sid": 743602204618689,
+					"parameters": {
+						"instance-variable": "TopInset",
+						"value": "Computer.ImagePointY(0)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Computer",
+					"sid": 502259868559503,
+					"parameters": {
+						"instance-variable": "LeftInset",
+						"value": "Computer.ImagePointX(0)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Computer",
+					"sid": 553320758248700,
+					"parameters": {
+						"instance-variable": "BottomInset",
+						"value": "Computer.Height - Computer.ImagePointY(1)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Computer",
+					"sid": 146036020209437,
+					"parameters": {
+						"instance-variable": "RightInset",
+						"value": "Computer.Width - Computer.ImagePointX(1)"
+					}
+				}
+			],
+			"sid": 639903112270976
 		}
 	],
 	"sid": 479293197521303

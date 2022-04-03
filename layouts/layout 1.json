@@ -349,11 +349,6 @@
 								"stop-on-solids": true,
 								"enabled": true
 							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"world": {
@@ -1489,7 +1484,12 @@
 								"live-preview": false
 							},
 							"uid": 15,
-							"instanceVariables": {},
+							"instanceVariables": {
+								"LeftInset": 0,
+								"RightInset": 0,
+								"TopInset": 0,
+								"BottomInset": 0
+							},
 							"behaviors": {},
 							"world": {
 								"x": 96,

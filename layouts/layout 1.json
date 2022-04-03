@@ -997,6 +997,39 @@
 			"overriden": 0,
 			"subLayers": [
 				{
+					"name": "Darkness",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [],
+					"sid": 657383580348552,
+					"effectTypes": [],
+					"isInitiallyVisible": false,
+					"isInitiallyInteractive": false,
+					"color": [
+						1,
+						1,
+						1,
+						0
+					],
+					"backgroundColor": [
+						0,
+						0,
+						0,
+						1
+					],
+					"isTransparent": false,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				},
+				{
 					"name": "PauseScreen",
 					"overriden": 0,
 					"subLayers": [],
@@ -1037,10 +1070,10 @@
 						{
 							"type": "GameOverScreenText",
 							"properties": {
-								"text": "... it's getting dark ...\n\nClick to play again.",
+								"text": "Out... of... energy...\ncan... not... go... further...",
 								"enable-bbcode": true,
 								"font": "Retro Gaming",
-								"size": 12,
+								"size": 8,
 								"line-height": 0,
 								"bold": false,
 								"italic": false,
@@ -1060,10 +1093,10 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 95.41857833126022,
-								"y": 25.1101521924369,
-								"width": 300.4406087697476,
-								"height": 192.37898417775864,
+								"x": 95,
+								"y": 25,
+								"width": 300,
+								"height": 192,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -1080,7 +1113,7 @@
 					"sid": 451643955927175,
 					"effectTypes": [],
 					"isInitiallyVisible": false,
-					"isInitiallyInteractive": true,
+					"isInitiallyInteractive": false,
 					"color": [
 						1,
 						1,
@@ -1114,7 +1147,7 @@
 							"type": "TitleScreenVictory1",
 							"properties": {
 								"text": "Out... of... energy...\ncan... not... go... further...",
-								"enable-bbcode": true,
+								"enable-bbcode": false,
 								"font": "Retro Gaming",
 								"size": 8,
 								"line-height": 0,
@@ -1506,39 +1539,6 @@
 							"parallaxX": 0,
 							"parallaxY": 0,
 							"scaleRate": 0,
-							"forceOwnTexture": false,
-							"renderingMode": "3d",
-							"drawOrder": "z-order",
-							"useRenderCells": false,
-							"blendMode": "normal",
-							"zElevation": 0,
-							"global": false
-						},
-						{
-							"name": "Darkness",
-							"overriden": 0,
-							"subLayers": [],
-							"instances": [],
-							"sid": 657383580348552,
-							"effectTypes": [],
-							"isInitiallyVisible": true,
-							"isInitiallyInteractive": false,
-							"color": [
-								1,
-								1,
-								1,
-								0
-							],
-							"backgroundColor": [
-								0,
-								0,
-								0,
-								1
-							],
-							"isTransparent": false,
-							"parallaxX": 1,
-							"parallaxY": 1,
-							"scaleRate": 1,
 							"forceOwnTexture": false,
 							"renderingMode": "3d",
 							"drawOrder": "z-order",

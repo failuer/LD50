@@ -137,6 +137,24 @@
 						"variable": "isGameOver"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 541485865512945,
+					"parameters": {
+						"layer": "\"VictoryText\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 366671763274101,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -168,6 +186,15 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 415214419701130,
+					"parameters": {
+						"variable": "TypewriterText",
+						"value": "GameOverScreenText.Text"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "GameOverScreenText",
 					"sid": 959642526652016,
@@ -178,9 +205,9 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "GameOverScreenText",
-					"sid": 288873959127314,
+					"sid": 702845785993605,
 					"parameters": {
-						"text": "\"... getting ... dark ...\"",
+						"text": "TypewriterText",
 						"duration": "4"
 					}
 				},
@@ -303,6 +330,15 @@
 					"parameters": {
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 916969179534569,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "0"
 					}
 				},
 				{

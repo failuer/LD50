@@ -428,14 +428,6 @@
 							"parameters": {
 								"layer": "\"GameOver\""
 							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 615101158446443,
-							"parameters": {
-								"layer": "\"VictoryPicture\""
-							}
 						}
 					],
 					"actions": [
@@ -445,24 +437,6 @@
 							"sid": 674796505294804,
 							"parameters": {
 								"layer": "\"Start\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 507767400979796,
-							"parameters": {
-								"layer": "\"VictoryText\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 749573535537873,
-							"parameters": {
-								"layer": "\"VictoryPicture\"",
 								"visibility": "invisible"
 							}
 						},
@@ -498,6 +472,35 @@
 				}
 			],
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 858792529616722
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 615101158446443,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 409729398015223,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 784466847788897
 		}
 	],
 	"sid": 479293197521303

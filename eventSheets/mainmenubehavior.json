@@ -85,6 +85,14 @@
 			],
 			"actions": [
 				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 405331457443257,
+					"parameters": {
+						"tag": "\"menumusic\""
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 267463547813714,
@@ -176,15 +184,20 @@
 						"layer": "\"Intro1\"",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 313955600972834,
+					"parameters": {
+						"audio-file": "Menu",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"menumusic\""
+					}
 				}
 			],
 			"sid": 747419629371726
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 793958008625940
 		}
 	],
 	"sid": 667171540167617

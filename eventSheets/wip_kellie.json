@@ -18,7 +18,6 @@
 					"id": "add-to-eventvar",
 					"objectClass": "System",
 					"sid": 622732874792923,
-					"disabled": true,
 					"parameters": {
 						"variable": "SciencePoints",
 						"value": "1"
@@ -44,7 +43,6 @@
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 502588019058673,
-					"disabled": true,
 					"parameters": {
 						"variable": "BatteryEnergy",
 						"value": "100"

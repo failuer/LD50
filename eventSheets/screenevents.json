@@ -96,11 +96,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-released",
-					"objectClass": "Keyboard",
-					"sid": 690740051338141,
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 220544915767164,
 					"parameters": {
-						"key": 27
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 477662283664943,
+					"parameters": {
+						"layer": "7"
 					}
 				}
 			],

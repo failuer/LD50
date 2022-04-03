@@ -72,6 +72,15 @@
 						"layer": "7"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 655526807615645,
+					"parameters": {
+						"layer": "5"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -112,15 +121,6 @@
 					"sid": 592302410737589,
 					"parameters": {
 						"variable": "isGameOver"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 916015315571722,
-					"parameters": {
-						"layer": "6"
 					},
 					"isInverted": true
 				}

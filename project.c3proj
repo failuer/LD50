@@ -173,7 +173,10 @@
 			"TitleScreenVictory",
 			"Scanmap",
 			"Scanmapback",
-			"WorldReferenceSprite"
+			"WorldReferenceSprite",
+			"MinimapViewport",
+			"HUDScienceProgressBulbFinal",
+			"HUDScienceLid"
 		],
 		"subfolders": []
 	},
@@ -201,7 +204,8 @@
 			"World",
 			"Items",
 			"ScreenEvents",
-			"Minimap"
+			"Minimap",
+			"Music"
 		],
 		"subfolders": []
 	},
@@ -221,6 +225,31 @@
 					"name": "pin.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 929022032547025
+				},
+				{
+					"name": "Track1-Spacebell.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 718693257283880
+				},
+				{
+					"name": "Track2-Spacebass.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 517401145602606
+				},
+				{
+					"name": "Track3-Spacedrums.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 256737745672272
+				},
+				{
+					"name": "Track4-RobotalkAmbiance.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 951879768681829
+				},
+				{
+					"name": "Track5-AmbianceDiscordaddition.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 639055242106140
 				}
 			],
 			"subfolders": []

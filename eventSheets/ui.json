@@ -31,13 +31,76 @@
 				{
 					"id": "set-width",
 					"objectClass": "HUDScienceProgressBar",
-					"sid": 636866997636325,
+					"sid": 411729064685054,
 					"parameters": {
-						"width": "clamp((SciencePoints/7)*62, 0, 62)"
+						"width": "clamp((SciencePoints/5)*44, 0, 44)"
 					}
 				}
 			],
 			"sid": 130202103904732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 349599693277064,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "HUDScienceLid",
+					"sid": 738270888314069,
+					"parameters": {
+						"angle": "65",
+						"distance": "3"
+					}
+				},
+				{
+					"id": "rotate-toward-position",
+					"objectClass": "HUDScienceLid",
+					"sid": 310599066996700,
+					"parameters": {
+						"degrees": "90",
+						"x": "480",
+						"y": "400"
+					}
+				}
+			],
+			"sid": 168980741012987
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 291037829438443,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 5,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 539594321580782,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 225594858050071
 		}
 	],
 	"sid": 481527273385569

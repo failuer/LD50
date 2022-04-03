@@ -65,6 +65,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "BatteryEnergyRecharge",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 585896322037099
+		},
+		{
+			"eventType": "variable",
 			"name": "RoverAngleSpeed",
 			"type": "number",
 			"initialValue": "0",

@@ -1471,6 +1471,39 @@
 							"blendMode": "normal",
 							"zElevation": 0,
 							"global": false
+						},
+						{
+							"name": "Darkness",
+							"overriden": 0,
+							"subLayers": [],
+							"instances": [],
+							"sid": 657383580348552,
+							"effectTypes": [],
+							"isInitiallyVisible": true,
+							"isInitiallyInteractive": false,
+							"color": [
+								1,
+								1,
+								1,
+								0
+							],
+							"backgroundColor": [
+								0,
+								0,
+								0,
+								1
+							],
+							"isTransparent": false,
+							"parallaxX": 1,
+							"parallaxY": 1,
+							"scaleRate": 1,
+							"forceOwnTexture": false,
+							"renderingMode": "3d",
+							"drawOrder": "z-order",
+							"useRenderCells": false,
+							"blendMode": "normal",
+							"zElevation": 0,
+							"global": false
 						}
 					],
 					"instances": [

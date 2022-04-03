@@ -40,9 +40,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 555673149803572,
+					"sid": 833366459244393,
 					"parameters": {
-						"audio-file": "energy",
+						"audio-file": "Energy_pickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -81,9 +81,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 597339258881620,
+					"sid": 301098286478232,
 					"parameters": {
-						"audio-file": "science",
+						"audio-file": "Sciencepickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -122,9 +122,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 433533710999761,
+					"sid": 857240982021212,
 					"parameters": {
-						"audio-file": "science",
+						"audio-file": "Sciencepickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -163,9 +163,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 556115191614373,
+					"sid": 657789667075243,
 					"parameters": {
-						"audio-file": "science",
+						"audio-file": "Sciencepickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -204,9 +204,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 892154978239412,
+					"sid": 833396456937801,
 					"parameters": {
-						"audio-file": "science",
+						"audio-file": "Sciencepickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -245,9 +245,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 559138355461681,
+					"sid": 415678332816164,
 					"parameters": {
-						"audio-file": "science",
+						"audio-file": "Sciencepickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""
@@ -286,9 +286,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 580151222343212,
+					"sid": 291677684232533,
 					"parameters": {
-						"audio-file": "joy",
+						"audio-file": "Sciencepickup",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""

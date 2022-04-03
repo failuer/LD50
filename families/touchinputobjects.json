@@ -1,0 +1,13 @@
+{
+	"name": "TouchInputObjects",
+	"plugin-id": "Tilemap",
+	"sid": 222437092607767,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"GroundTileMapCollision",
+		"GroundTileMap",
+		"DecorationTileMap"
+	]
+}

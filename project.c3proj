@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -170,7 +178,8 @@
 			"TrackRight",
 			"TrackLeft",
 			"HUDScienceProgressBulbFinal",
-			"HUDScienceLid"
+			"HUDScienceLid",
+			"Touch"
 		],
 		"subfolders": []
 	},
@@ -179,7 +188,8 @@
 	"families": {
 		"items": [
 			"MinimapItems",
-			"WheelParticles"
+			"WheelParticles",
+			"TouchInputObjects"
 		],
 		"subfolders": []
 	},
@@ -211,16 +221,6 @@
 		"sound": {
 			"items": [
 				{
-					"name": "crunch.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 377705885658600
-				},
-				{
-					"name": "pin.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 929022032547025
-				},
-				{
 					"name": "Track1-Spacebell.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 718693257283880
@@ -246,54 +246,64 @@
 					"sid": 639055242106140
 				},
 				{
-					"name": "death.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 365676814090201
-				},
-				{
-					"name": "energy.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 456281079389043
-				},
-				{
 					"name": "hello.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 594646157248507
 				},
 				{
-					"name": "Itsgettingdark.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 331018679166746
-				},
-				{
-					"name": "joy.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 722367171901011
-				},
-				{
-					"name": "littlesong.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 201228994934349
-				},
-				{
-					"name": "mybatteryisrunninglow.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 201288302033700
-				},
-				{
-					"name": "scansound.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 843298930181618
-				},
-				{
-					"name": "science.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 582401881624435
-				},
-				{
 					"name": "woah.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 103135471064147
+				},
+				{
+					"name": "Crash1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 669433607006005
+				},
+				{
+					"name": "Crash2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 752431696970024
+				},
+				{
+					"name": "Crash3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599839958154454
+				},
+				{
+					"name": "Crashonly.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 826395920928075
+				},
+				{
+					"name": "Driveloop1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 436616428625516
+				},
+				{
+					"name": "Driveloop2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 146502059152093
+				},
+				{
+					"name": "Energy_pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 221713580945830
+				},
+				{
+					"name": "Sciencepickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 108841739129633
+				},
+				{
+					"name": "Driveloop1LOUDER.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 955661453718895
+				},
+				{
+					"name": "Itsgettingdark.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 254731004050877
 				}
 			],
 			"subfolders": []

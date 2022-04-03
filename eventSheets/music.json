@@ -54,11 +54,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 112377863346978,
+					"sid": 556383083328217,
 					"parameters": {
 						"audio-file": "Track4-RobotalkAmbiance",
 						"loop": "looping",
-						"volume": "-10",
+						"volume": "-25",
 						"tag-optional": "\"ambiance\""
 					}
 				},
@@ -163,7 +163,7 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 649150116971739,
+					"sid": 216409363799422,
 					"parameters": {
 						"tag": "\"bass\"",
 						"db": "-30",

@@ -101,6 +101,37 @@
 				}
 			],
 			"sid": 225594858050071
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 824676798878892
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 313328097107727,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 344320575957896,
+					"parameters": {
+						"layer": "\"Darkness\"",
+						"opacity": "clamp(BatteryEnergyRecharge-BatteryEnergy, 0, 80)"
+					}
+				}
+			],
+			"sid": 805110016907573
 		}
 	],
 	"sid": 481527273385569

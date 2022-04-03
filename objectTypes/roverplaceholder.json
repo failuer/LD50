@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 315723844082327,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "RoverAbsoluteMaxSpeed",
+			"type": "number",
+			"desc": "The rover can never move faster than this",
+			"sid": 484744700762288
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "MoveTo",

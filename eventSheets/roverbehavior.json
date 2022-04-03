@@ -22,6 +22,15 @@
 						"y": "-100",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "RoverPlaceholder",
+					"sid": 405013244198390,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed"
+					}
 				}
 			],
 			"sid": 202999105665634
@@ -75,10 +84,10 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 683348075514547,
+					"sid": 222219878576108,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "(RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed) * dt"
+						"value": "(RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed) * dt * 10"
 					}
 				},
 				{
@@ -148,6 +157,15 @@
 					"sid": 767177670886291,
 					"parameters": {
 						"frame-number": "Rover.AnimationFrame"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "RoverPlaceholder",
+					"sid": 419819261237405,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / MaxBatteryEnergy)"
 					}
 				}
 			],

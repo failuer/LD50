@@ -41,6 +41,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "MaxBatteryEnergy",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 635685121835507
+		},
+		{
+			"eventType": "variable",
 			"name": "BatteryEnergy",
 			"type": "number",
 			"initialValue": "100",

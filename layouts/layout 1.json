@@ -131,11 +131,13 @@
 						"live-preview": false
 					},
 					"uid": 6,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RoverAbsoluteMaxSpeed": 500
+					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 500,
+								"max-speed": 0,
 								"acceleration": 200,
 								"deceleration": 400,
 								"rotate-speed": 100,

@@ -158,6 +158,17 @@
 						"text": "\"... getting ... dark ...\"",
 						"duration": "4"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 158610377178413,
+					"parameters": {
+						"audio-file": "Itsgettingdark",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 701491773499881

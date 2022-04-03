@@ -1,10 +1,16 @@
 {
-	"name": "Particles",
+	"name": "ParticlesLeftWheelFront",
 	"plugin-id": "Particles",
-	"sid": 674604499136733,
+	"sid": 208177626674805,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 726368117155657
+		}
+	],
 	"effectTypes": [],
 	"image": {
 		"width": 250,
@@ -14,7 +20,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3133175,
+		"imageSpriteId": 8031473,
 		"useCollisionPoly": true
 	}
 }

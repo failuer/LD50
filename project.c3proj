@@ -103,6 +103,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "blacknwhite",
 			"name": "Black & white",
@@ -157,7 +165,11 @@
 			"ComputerSideBackground",
 			"HUDBatteryProgressBar",
 			"HUDScienceProgressBar",
-			"Particles"
+			"ParticlesRightWheel",
+			"Particle",
+			"ParticlesLeftWheel",
+			"ParticlesRightWheelFront",
+			"ParticlesLeftWheelFront"
 		],
 		"subfolders": []
 	},
@@ -165,7 +177,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"MinimapItems"
+			"MinimapItems",
+			"WheelParticles"
 		],
 		"subfolders": []
 	},

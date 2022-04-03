@@ -1,0 +1,14 @@
+{
+	"name": "WheelParticles",
+	"plugin-id": "Particles",
+	"sid": 882897465346873,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ParticlesRightWheelFront",
+		"ParticlesRightWheel",
+		"ParticlesLeftWheelFront",
+		"ParticlesLeftWheel"
+	]
+}

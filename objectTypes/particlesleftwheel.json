@@ -1,0 +1,26 @@
+{
+	"name": "ParticlesLeftWheel",
+	"plugin-id": "Particles",
+	"sid": 180392467983993,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 973755156535569
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1437225,
+		"useCollisionPoly": true
+	}
+}

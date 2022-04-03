@@ -490,7 +490,7 @@
 						{
 							"type": "GameOverScreenText",
 							"properties": {
-								"text": "... it's getting dark ...",
+								"text": "... it's getting dark ...\n\nClick to play again.",
 								"enable-bbcode": true,
 								"font": "Retro Gaming",
 								"size": 12,
@@ -566,7 +566,7 @@
 						{
 							"type": "TitleScreenVictory",
 							"properties": {
-								"text": "Yay!",
+								"text": "Yay! You won. \n\nClick to play again.",
 								"enable-bbcode": true,
 								"font": "Retro Gaming",
 								"size": 12,

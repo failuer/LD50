@@ -30,6 +30,10 @@
 			"includeSheet": "Minimap"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Music"
+		},
+		{
 			"eventType": "variable",
 			"name": "SciencePoints",
 			"type": "number",
@@ -53,11 +57,21 @@
 			"eventType": "variable",
 			"name": "BatteryEnergy",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "60",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 556421426097518
+		},
+		{
+			"eventType": "variable",
+			"name": "BatteryEnergyRecharge",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 585896322037099
 		},
 		{
 			"eventType": "variable",
@@ -78,6 +92,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 388282501674860
+		},
+		{
+			"eventType": "variable",
+			"name": "EnergyObjectsPicked",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 772418464571404
 		},
 		{
 			"eventType": "block",

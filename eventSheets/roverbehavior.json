@@ -129,10 +129,10 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 222219878576108,
+					"sid": 474834703450618,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "(RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.MoveTo.MaxSpeed) * dt * 10"
+						"value": "ceil(RoverPlaceholder.MoveTo.Speed) * dt * 0.1"
 					}
 				},
 				{

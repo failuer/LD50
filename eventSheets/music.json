@@ -1,0 +1,393 @@
+{
+	"name": "Music",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "distortionVolume",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Distorsion begins at 50% battery and increases linearly",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 730128903582911
+		},
+		{
+			"eventType": "variable",
+			"name": "bassVolume",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Bass volume increase linearly with each science pickup",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 627654157034477
+		},
+		{
+			"eventType": "variable",
+			"name": "bellVolume",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Bell Volume goes to max after 1st energy pickup",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 448557567173310
+		},
+		{
+			"eventType": "variable",
+			"name": "drumsVolume",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Drums begins at 2nd science pickup and increases linearly",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 295025355870051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 277217355496108
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 444739290811983,
+					"parameters": {
+						"audio-file": "Track4-RobotalkAmbiance",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"ambiance\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 400853719855064,
+					"parameters": {
+						"audio-file": "Track1-Spacebell",
+						"loop": "looping",
+						"volume": "-Infinity",
+						"tag-optional": "\"bell\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 649973096959481,
+					"parameters": {
+						"audio-file": "Track3-Spacedrums",
+						"loop": "looping",
+						"volume": "-Infinity",
+						"tag-optional": "\"drums\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 924299440617666,
+					"parameters": {
+						"audio-file": "Track2-Spacebass",
+						"loop": "looping",
+						"volume": "-Infinity",
+						"tag-optional": "\"bass\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 333317847039219,
+					"parameters": {
+						"audio-file": "Track5-AmbianceDiscordaddition",
+						"loop": "looping",
+						"volume": "-Infinity",
+						"tag-optional": "\"distortion\""
+					}
+				}
+			],
+			"sid": 483543362198956
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 456449752911803
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 573765145370736,
+					"parameters": {
+						"variable": "distortionVolume",
+						"value": "-(BatteryEnergy/MaxBatteryEnergy) * 50"
+					}
+				},
+				{
+					"id": "set-volume",
+					"objectClass": "Audio",
+					"sid": 933960971075417,
+					"parameters": {
+						"tag": "\"distortion\"",
+						"db": "distortionVolume"
+					}
+				}
+			],
+			"sid": 910378225814662
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 925916241167966,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 614989628930868
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 649150116971739,
+					"parameters": {
+						"tag": "\"bass\"",
+						"db": "-30",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 956824294161894
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 610186925418041,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 234174750701961
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 162036058226086,
+					"parameters": {
+						"tag": "\"bass\"",
+						"db": "-20",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 331784089409618,
+					"parameters": {
+						"tag": "\"drums\"",
+						"db": "-20",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 336268633241500
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 133857659574635,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 477799697777867
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 616252024426804,
+					"parameters": {
+						"tag": "\"bass\"",
+						"db": "-10",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 122926362565768,
+					"parameters": {
+						"tag": "\"drums\"",
+						"db": "-10",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 606515886973727
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 458548607612226,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 187105650923413
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 983316002094900,
+					"parameters": {
+						"tag": "\"bass\"",
+						"db": "-5",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 672777984763884,
+					"parameters": {
+						"tag": "\"drums\"",
+						"db": "-5",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 993204572110140
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 151057081143569,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 921505433555362
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 742351055020408,
+					"parameters": {
+						"tag": "\"bass\"",
+						"db": "0",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 463627337960208,
+					"parameters": {
+						"tag": "\"drums\"",
+						"db": "0",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 639808392676765
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 765867202958842,
+					"parameters": {
+						"variable": "EnergyObjectsPicked",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 263751770676641
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 803267514146768,
+					"parameters": {
+						"tag": "\"bell\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 531262338057768
+		}
+	],
+	"sid": 553605035247824
+}

@@ -158,6 +158,32 @@
 			],
 			"sid": 450173094292714,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 223399462239195,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ScienceItem6",
+					"sid": 714090183712618,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 288494105164362
 		}
 	],
 	"sid": 654866358727230

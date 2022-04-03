@@ -188,7 +188,9 @@
 			"TitleScreenIntro1",
 			"TitleScreenIntro2",
 			"TitleScreenIntro3",
-			"IntroEye"
+			"IntroEye",
+			"HUDRestartButton",
+			"HUDMenuButton"
 		],
 		"subfolders": []
 	},

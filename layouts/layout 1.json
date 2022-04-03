@@ -1350,8 +1350,8 @@
 										"tile-height": 4,
 										"tile-x-offset": 0,
 										"tile-y-offset": 0,
-										"tile-x-spacing": 2,
-										"tile-y-spacing": 2,
+										"tile-x-spacing": 0,
+										"tile-y-spacing": 0,
 										"tile-x-drawing-offset": 0,
 										"tile-y-drawing-offset": 0,
 										"drawing-mode": "top-to-right"
@@ -1363,16 +1363,16 @@
 										"tilemapData": {
 											"width": 15,
 											"height": 10,
-											"max-width": 187,
-											"max-height": 177,
-											"data": "33099x0"
+											"max-width": 212,
+											"max-height": 201,
+											"data": "42612x0"
 										},
 										"tile-width": 4,
 										"tile-height": 4,
 										"tile-x-offset": 0,
 										"tile-y-offset": 0,
-										"tile-x-spacing": 2,
-										"tile-y-spacing": 2
+										"tile-x-spacing": 0,
+										"tile-y-spacing": 0
 									},
 									"world": {
 										"x": 14,

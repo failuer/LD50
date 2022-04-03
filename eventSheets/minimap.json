@@ -22,6 +22,36 @@
 			"sid": 446330124793026
 		},
 		{
+			"eventType": "variable",
+			"name": "LastRoverX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 578091876422670
+		},
+		{
+			"eventType": "variable",
+			"name": "LastRoverY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 183713132674611
+		},
+		{
+			"eventType": "variable",
+			"name": "MinimapAnimationFrameDuration",
+			"type": "number",
+			"initialValue": "0.3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 953015354030030
+		},
+		{
 			"functionName": "MinimapSetTile",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -56,11 +86,11 @@
 				{
 					"id": "set-tile",
 					"objectClass": "Minitilemap",
-					"sid": 138791626000227,
+					"sid": 426692178327004,
 					"parameters": {
 						"tile-x": "Minitilemap.PositionToTileX((X - Computer.ImagePointX(0) - MinimapViewport.X) * MinimapScaleX + Minitilemap.X)",
 						"tile-y": "Minitilemap.PositionToTileY((Y - Computer.ImagePointY(0) - MinimapViewport.Y) * MinimapScaleY + Minitilemap.Y)",
-						"tile": "Tile",
+						"tile": "Tile*14 + (floor(time*1000) % 14)",
 						"state": "normal"
 					}
 				}
@@ -102,30 +132,13 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "for-each",
+					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 445140091328212,
+					"sid": 102976051567556,
 					"parameters": {
-						"object": "MinimapItems"
+						"interval-seconds": "MinimapAnimationFrameDuration"
 					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "MinimapSetTile",
-					"sid": 364988951338995,
-					"parameters": [
-						"MinimapItems.X",
-						"MinimapItems.Y",
-						"1"
-					]
-				}
-			],
-			"sid": 526939829326464
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+				},
 				{
 					"id": "every-tick",
 					"objectClass": "System",
@@ -135,15 +148,96 @@
 			"actions": [
 				{
 					"callFunction": "MinimapSetTile",
-					"sid": 572381284370356,
+					"sid": 847067783099095,
+					"parameters": [
+						"LastRoverX",
+						"LastRoverY",
+						"3"
+					]
+				},
+				{
+					"callFunction": "MinimapSetTile",
+					"sid": 251704257686177,
 					"parameters": [
 						"RoverPlaceholder.X",
 						"RoverPlaceholder.Y",
-						"2"
+						"0"
 					]
 				}
 			],
 			"sid": 713497417495531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 874752115205698,
+					"parameters": {
+						"interval-seconds": "MinimapAnimationFrameDuration"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 498653768316326,
+					"parameters": {
+						"object": "MinimapItems"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "MinimapSetTile",
+					"sid": 620165962686935,
+					"parameters": [
+						"MinimapItems.X",
+						"MinimapItems.Y",
+						"1"
+					]
+				}
+			],
+			"sid": 145101888515832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 475340235603655,
+					"parameters": {
+						"interval-seconds": "MinimapAnimationFrameDuration"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 918327401092528
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 778158660927038,
+					"parameters": {
+						"variable": "LastRoverX",
+						"value": "RoverPlaceholder.X"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 443910679618255,
+					"parameters": {
+						"variable": "LastRoverY",
+						"value": "RoverPlaceholder.Y"
+					}
+				}
+			],
+			"sid": 337068457082730
 		}
 	],
 	"sid": 403520120466049

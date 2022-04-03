@@ -185,6 +185,11 @@
 					"parameters": {
 						"object": "MinimapItems"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "MinimapItems",
+					"sid": 323022301193293
 				}
 			],
 			"actions": [

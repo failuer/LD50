@@ -34,19 +34,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 207222792120764,
+					"sid": 323860713095683,
 					"parameters": {
 						"variable": "MinimapScaleX",
-						"value": "Minitilemap.Width / GroundTileMap.Width"
+						"value": "Minitilemap.Width / MinimapViewport.Width"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 537198833665999,
+					"sid": 285935302586564,
 					"parameters": {
 						"variable": "MinimapScaleY",
-						"value": " (Minitilemap.Height / GroundTileMap.Height)"
+						"value": " (Minitilemap.Height / MinimapViewport.Height)"
 					}
 				}
 			],
@@ -68,10 +68,10 @@
 				{
 					"id": "set-tile",
 					"objectClass": "Minitilemap",
-					"sid": 183691959218533,
+					"sid": 960537824797210,
 					"parameters": {
-						"tile-x": "Minitilemap.PositionToTileX((MinimapItems.X - Computer.ImagePointX(0)) * MinimapScaleX + Minitilemap.x)",
-						"tile-y": "Minitilemap.PositionToTileY((MinimapItems.Y - Computer.ImagePointY(0)) * MinimapScaleY+ Minitilemap.Y)",
+						"tile-x": "Minitilemap.PositionToTileX((MinimapItems.X - Computer.ImagePointX(0) - MinimapViewport.X) * MinimapScaleX + Minitilemap.X)",
+						"tile-y": "Minitilemap.PositionToTileY((MinimapItems.Y - Computer.ImagePointY(0) - MinimapViewport.Y) * MinimapScaleY + Minitilemap.Y)",
 						"tile": "1",
 						"state": "normal"
 					}

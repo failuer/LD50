@@ -173,7 +173,8 @@
 			"TitleScreenVictory",
 			"Scanmap",
 			"Scanmapback",
-			"WorldReferenceSprite"
+			"WorldReferenceSprite",
+			"MinimapViewport"
 		],
 		"subfolders": []
 	},

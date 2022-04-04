@@ -211,7 +211,9 @@
 			"TrackAngle",
 			"MainMenuInstructionsText",
 			"MinimapPing",
-			"MainMenuMission"
+			"MainMenuMission",
+			"MainMenuIntroText1",
+			"MainMenuIntroText2"
 		],
 		"subfolders": []
 	},

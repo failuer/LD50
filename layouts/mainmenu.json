@@ -257,77 +257,22 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TitleScreenIntro3",
+					"type": "MainMenuIntroText1",
 					"properties": {
-						"text": "...and it's getting dark.",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 55,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 211.48260653883042,
-						"y": 145.14898683522938,
-						"width": 412.5868058506706,
-						"height": 42.699291719021744,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.00006226056965520643,
-						"zElevation": 1
-					}
-				},
-				{
-					"type": "TitleScreenIntro2",
-					"properties": {
-						"text": "Battery is low...",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 46,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 210.58014119756587,
-						"y": 88.86295386517175,
-						"width": 408.6066265965442,
-						"height": 43,
+						"x": 208.04713691178011,
+						"y": 88.27507067904061,
+						"width": 187.6,
+						"height": 19.599999999999998,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -337,7 +282,36 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 1
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MainMenuIntroText2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 209.99999578737823,
+						"y": 151.72492714714093,
+						"width": 282.79999999999995,
+						"height": 19.599999999999998,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

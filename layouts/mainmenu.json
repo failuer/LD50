@@ -183,7 +183,7 @@
 				{
 					"type": "MainMenuInstructionsText",
 					"properties": {
-						"text": "Click to navigate the rover\nThe rover's energy drains while driving\nCollect energy and find all the artefacts to win",
+						"text": "Click to navigate the rover\nThe rover's energy drains while driving\nCollect energy and all the science artefacts to win",
 						"enable-bbcode": true,
 						"font": "Retro Gaming",
 						"size": 8,
@@ -206,10 +206,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 4.0394194224611795,
+						"x": -0.15914699942642585,
 						"y": 174.18188065951153,
-						"width": 415.7383211112656,
-						"height": 61.21926830997357,
+						"width": 419.9368875331532,
+						"height": 66.35084949228063,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -257,35 +257,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "IntroEye",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 58,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 234.42372136108816,
-						"y": 132.54594818423226,
-						"width": 17,
-						"height": 19,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "TitleScreenIntro3",
 					"properties": {
 						"text": "...and it's getting dark.",
@@ -311,10 +282,52 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 210,
-						"y": 91.40389454471007,
-						"width": 420,
-						"height": 182.80778908942014,
+						"x": 211.48260653883042,
+						"y": 145.14898683522938,
+						"width": 412.5868058506706,
+						"height": 42.699291719021744,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.00006226056965520643,
+						"zElevation": 1
+					}
+				},
+				{
+					"type": "TitleScreenIntro2",
+					"properties": {
+						"text": "Battery is low...",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 46,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 210.58014119756587,
+						"y": 88.86295386517175,
+						"width": 408.6066265965442,
+						"height": 43,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -393,17 +406,17 @@
 				{
 					"type": "TitleScreenIntro1",
 					"properties": {
-						"text": "MISSION: FIND ALL THE ARTEFACTS",
+						"text": "MISSION: FIND ALL THE SCIENCE ARTEFACTS",
 						"enable-bbcode": true,
 						"font": "Retro Gaming",
-						"size": 12,
+						"size": 10,
 						"line-height": -1,
 						"bold": true,
 						"italic": true,
 						"color": [
-							0.13725490196078433,
-							0.09803921568627451,
-							0.17647058823529413,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -416,52 +429,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 211.06816121315697,
-						"y": 30.017826269878174,
-						"width": 396.4892402324672,
-						"height": 43,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
-					"type": "TitleScreenIntro2",
-					"properties": {
-						"text": "Battery is low...",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 54,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 213.81399203227076,
-						"y": 208.7011380644704,
-						"width": 247,
-						"height": 43,
+						"x": 211.43881861360776,
+						"y": 214.60521169437123,
+						"width": 412.05685105140043,
+						"height": 50.41314800901583,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -209,7 +209,8 @@
 			"TrackX",
 			"TrackY",
 			"TrackAngle",
-			"MainMenuInstructionsText"
+			"MainMenuInstructionsText",
+			"MinimapPing"
 		],
 		"subfolders": []
 	},

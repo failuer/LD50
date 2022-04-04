@@ -59,12 +59,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-touching-object",
+					"id": "on-tap",
 					"objectClass": "Touch",
-					"sid": 492892026841452,
-					"parameters": {
-						"object": "TouchInputObjects"
-					}
+					"sid": 890429175768679
 				},
 				{
 					"id": "compare-boolean-eventvar",
@@ -131,6 +128,15 @@
 						"image-point": "0",
 						"mode": "direct"
 					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 667239393920213,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "10"
+					}
 				}
 			],
 			"sid": 856755711598844
@@ -158,6 +164,7 @@
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 474834703450618,
+					"disabled": true,
 					"parameters": {
 						"variable": "BatteryEnergy",
 						"value": "ceil(RoverPlaceholder.MoveTo.Speed) * dt * 0.1"

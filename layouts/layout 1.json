@@ -403,14 +403,14 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
-						"RoverAbsoluteMaxSpeed": 200,
+						"RoverAbsoluteMaxSpeed": 100,
 						"MaxSavedTracks": 5000
 					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
 								"max-speed": 0,
-								"acceleration": 150,
+								"acceleration": 300,
 								"deceleration": 400,
 								"rotate-speed": 100,
 								"set-angle": true,

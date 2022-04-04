@@ -42,6 +42,15 @@
 						"volume": "-Infinity",
 						"tag-optional": "\"engineSound\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 228795538464528,
+					"parameters": {
+						"variable": "LastRoverAngle",
+						"value": "RoverPlaceholder.Angle"
+					}
 				}
 			],
 			"sid": 202999105665634

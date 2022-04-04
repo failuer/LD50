@@ -41,6 +41,17 @@
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "true"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 443213940092534,
+					"parameters": {
+						"audio-file": "hello",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 130246729142681

@@ -213,7 +213,8 @@
 			"MinimapPing",
 			"MainMenuMission",
 			"MainMenuIntroText1",
-			"MainMenuIntroText2"
+			"MainMenuIntroText2",
+			"GameOverText"
 		],
 		"subfolders": []
 	},

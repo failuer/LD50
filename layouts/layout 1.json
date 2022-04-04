@@ -1136,37 +1136,24 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "GameOverScreenText",
+							"type": "GameOverText",
 							"properties": {
-								"text": "Out... of... energy...\ncan... not... go... further...",
-								"enable-bbcode": true,
-								"font": "Retro Gaming",
-								"size": 8,
-								"line-height": 0,
-								"bold": false,
-								"italic": false,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"horizontal-alignment": "center",
-								"vertical-alignment": "center",
-								"wrapping": "word",
 								"initially-visible": true,
-								"origin": "top-left"
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
 							},
-							"uid": 7,
+							"uid": 69,
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 95,
-								"y": 25,
-								"width": 300,
-								"height": 192,
-								"originX": 0,
-								"originY": 0,
+								"x": 246.7735001047285,
+								"y": 121.27680858491932,
+								"width": 216.35062785080004,
+								"height": 11.209877090715029,
+								"originX": 0.5,
+								"originY": 0.5,
 								"color": [
 									1,
 									1,

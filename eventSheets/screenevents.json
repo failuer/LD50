@@ -115,9 +115,18 @@
 					}
 				},
 				{
+					"id": "start-animation",
+					"objectClass": "GameOverText",
+					"sid": 390755664984373,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 415214419701130,
+					"disabled": true,
 					"parameters": {
 						"variable": "TypewriterText",
 						"value": "GameOverScreenText.Text"
@@ -127,6 +136,7 @@
 					"id": "set-text",
 					"objectClass": "GameOverScreenText",
 					"sid": 959642526652016,
+					"disabled": true,
 					"parameters": {
 						"text": "\"\""
 					}
@@ -135,6 +145,7 @@
 					"id": "typewriter-text",
 					"objectClass": "GameOverScreenText",
 					"sid": 702845785993605,
+					"disabled": true,
 					"parameters": {
 						"text": "TypewriterText",
 						"duration": "4"

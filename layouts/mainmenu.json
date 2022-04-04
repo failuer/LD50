@@ -404,35 +404,22 @@
 					}
 				},
 				{
-					"type": "TitleScreenIntro1",
+					"type": "MainMenuMission",
 					"properties": {
-						"text": "MISSION: FIND ALL THE SCIENCE ARTEFACTS",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 10,
-						"line-height": -1,
-						"bold": true,
-						"italic": true,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 53,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 211.43881861360776,
-						"y": 214.60521169437123,
-						"width": 412.05685105140043,
-						"height": 50.41314800901583,
+						"x": 207.9438763588595,
+						"y": 216.3858448464432,
+						"width": 344.7768660226213,
+						"height": 8.706486515722759,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -442,7 +429,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 1
+						"zElevation": 0
 					}
 				}
 			],

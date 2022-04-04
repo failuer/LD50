@@ -52,6 +52,17 @@
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "ScorescreenText",
+					"sid": 510603209069760,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "10000000000",
+						"type": "once",
+						"tag": "\"playTime\""
+					}
 				}
 			],
 			"sid": 801788442606558
@@ -271,6 +282,15 @@
 						"layer": "\"VictoryPicture\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 886554961253587,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -281,6 +301,16 @@
 					"parameters": {
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "false"
+					}
+				},
+				{
+					"id": "pause-resume-timer",
+					"objectClass": "ScorescreenText",
+					"sid": 675504903385168,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"playTime\"",
+						"state": "paused"
 					}
 				},
 				{
@@ -436,14 +466,14 @@
 				{
 					"id": "on-tap",
 					"objectClass": "Touch",
-					"sid": 858792529616722
+					"sid": 208423441477899
 				},
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 270713755961855,
+					"sid": 387134592693695,
 					"parameters": {
-						"layer": "\"VictoryPicture\""
+						"layer": "\"Scorescreen\""
 					}
 				}
 			],
@@ -451,7 +481,7 @@
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 919800828775758,
+					"sid": 120841345297173,
 					"parameters": {
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "false"
@@ -460,7 +490,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 954866601303175,
+					"sid": 342168790636800,
 					"parameters": {
 						"layout": "MainMenu"
 					}
@@ -468,7 +498,16 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 612726508445548,
+					"sid": 136325927641116,
+					"parameters": {
+						"layer": "\"Scorescreen\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 944958102000655,
 					"parameters": {
 						"layer": "\"VictoryPicture\"",
 						"visibility": "invisible"
@@ -477,7 +516,7 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 557546444375180,
+					"sid": 857521689613125,
 					"parameters": {
 						"layer": "\"VictoryText\"",
 						"visibility": "invisible"
@@ -486,15 +525,80 @@
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 770727798866066
+					"sid": 158100363215793
 				},
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 300231458987992
+					"sid": 763351523478289
 				}
 			],
-			"sid": 784466847788897
+			"sid": 698745179439657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 537672379188196
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 923187511387510,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 703760260955788,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 612719886754795,
+					"parameters": {
+						"layer": "\"VictoryPicture\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 796420931993815,
+					"parameters": {
+						"layer": "\"VictoryText\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScorescreenText",
+					"sid": 427073879894153,
+					"parameters": {
+						"text": "\"You completed the game in \" &  round(ScorescreenText.Timer.CurrentTime(\"playTime\")*100) / 100 & \" seconds.\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 410368240151318,
+					"parameters": {
+						"layer": "\"Scorescreen\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 291127422403375
 		},
 		{
 			"eventType": "block",

@@ -2200,6 +2200,86 @@
 					"blendMode": "normal",
 					"zElevation": 0,
 					"global": false
+				},
+				{
+					"name": "Scorescreen",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [
+						{
+							"type": "ScorescreenText",
+							"properties": {
+								"text": "You completed the game in 10 seconds.",
+								"enable-bbcode": true,
+								"font": "Retro Gaming",
+								"size": 14,
+								"line-height": 0,
+								"bold": false,
+								"italic": false,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"horizontal-alignment": "center",
+								"vertical-alignment": "center",
+								"wrapping": "word",
+								"initially-visible": true,
+								"origin": "top-left"
+							},
+							"uid": 47,
+							"instanceVariables": {},
+							"behaviors": {
+								"Timer": {
+									"properties": {}
+								}
+							},
+							"world": {
+								"x": 60,
+								"y": 0,
+								"width": 300,
+								"height": 240,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						}
+					],
+					"sid": 509034677126288,
+					"effectTypes": [],
+					"isInitiallyVisible": false,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.047058823529411764,
+						0.047058823529411764,
+						0.047058823529411764,
+						1
+					],
+					"isTransparent": false,
+					"parallaxX": 0,
+					"parallaxY": 0,
+					"scaleRate": 0,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
 				}
 			],
 			"instances": [],

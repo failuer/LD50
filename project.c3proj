@@ -119,6 +119,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "blacknwhite",
 			"name": "Black & white",
@@ -217,7 +225,8 @@
 			"GameOverText",
 			"StartMenuTutorialText",
 			"VictoryHowever",
-			"VictoryAccomplished"
+			"VictoryAccomplished",
+			"ScorescreenText"
 		],
 		"subfolders": []
 	},

@@ -142,10 +142,10 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 258225358292764,
+					"sid": 240131001837721,
 					"parameters": {
 						"variable": "BatteryEnergyToDrain",
-						"value": "10"
+						"value": "3"
 					}
 				}
 			],
@@ -186,7 +186,7 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 880126048930143,
+					"sid": 629678619107497,
 					"parameters": {
 						"variable": "BatteryEnergyToDrain",
 						"value": "clamp(BatteryEnergyToDrain, 0, 2)"
@@ -194,6 +194,37 @@
 				}
 			],
 			"sid": 284854129716941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 892350570175174,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "RoverPlaceholder",
+					"sid": 305156468141846,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 316487344037829,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "0.4"
+					}
+				}
+			],
+			"sid": 525889612795011
 		},
 		{
 			"eventType": "block",

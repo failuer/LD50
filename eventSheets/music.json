@@ -441,10 +441,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 697375478459987,
+					"sid": 978627616514478,
 					"parameters": {
 						"tag": "\"bell\"",
-						"db": "-10",
+						"db": "-15",
 						"duration": "4",
 						"ending": "keep-playing"
 					}
@@ -473,10 +473,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 236930571487117,
+					"sid": 741981008579991,
 					"parameters": {
 						"tag": "\"bass\"",
-						"db": "-5",
+						"db": "-10",
 						"duration": "1",
 						"ending": "keep-playing"
 					}

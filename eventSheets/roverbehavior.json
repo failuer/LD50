@@ -299,6 +299,14 @@
 						"tag": "\"engineSound\"",
 						"playback-rate": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed"
 					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Rover",
+					"sid": 198379979765489,
+					"parameters": {
+						"speed": "clamp(10 * (RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed),5 , 20)"
+					}
 				}
 			],
 			"sid": 132601009957553
@@ -475,6 +483,14 @@
 							"id": "move-to-bottom",
 							"objectClass": "WheelParticles",
 							"sid": 665371841507261
+						},
+						{
+							"id": "set-timeout",
+							"objectClass": "WheelParticles",
+							"sid": 735981072927619,
+							"parameters": {
+								"timeout": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed"
+							}
 						}
 					],
 					"sid": 748988502032487

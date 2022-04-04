@@ -205,7 +205,7 @@
 						"initial-speed-randomiser": 0,
 						"size-randomiser": 0,
 						"grow-rate-randomiser": 20,
-						"acceleration": -150,
+						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 0,
 						"life-speed-randomiser": 0,
@@ -256,7 +256,7 @@
 						"initial-speed-randomiser": 0,
 						"size-randomiser": 0,
 						"grow-rate-randomiser": 20,
-						"acceleration": -150,
+						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 0,
 						"life-speed-randomiser": 0,
@@ -307,7 +307,7 @@
 						"initial-speed-randomiser": 0,
 						"size-randomiser": 0,
 						"grow-rate-randomiser": 20,
-						"acceleration": -150,
+						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 0,
 						"life-speed-randomiser": 0,
@@ -358,7 +358,7 @@
 						"initial-speed-randomiser": 0,
 						"size-randomiser": 0,
 						"grow-rate-randomiser": 20,
-						"acceleration": -150,
+						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 0,
 						"life-speed-randomiser": 0,
@@ -403,14 +403,14 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
-						"RoverAbsoluteMaxSpeed": 500,
+						"RoverAbsoluteMaxSpeed": 200,
 						"MaxSavedTracks": 5000
 					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
 								"max-speed": 0,
-								"acceleration": 200,
+								"acceleration": 150,
 								"deceleration": 400,
 								"rotate-speed": 100,
 								"set-angle": true,

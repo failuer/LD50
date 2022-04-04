@@ -968,6 +968,15 @@
 								"volume": "0",
 								"tag-optional": "\"crashSound\""
 							}
+						},
+						{
+							"id": "move-at-angle",
+							"objectClass": "RoverPlaceholder",
+							"sid": 549965089446084,
+							"parameters": {
+								"angle": "RoverPlaceholder.Angle-180",
+								"distance": "12"
+							}
 						}
 					],
 					"sid": 329954197970729

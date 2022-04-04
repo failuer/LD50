@@ -348,6 +348,17 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 235406701987266,
+					"parameters": {
+						"audio-file": "woah",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "VictoryRoverEnd",
 					"sid": 194128088869129,

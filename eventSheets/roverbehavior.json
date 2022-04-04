@@ -594,9 +594,12 @@
 							"behaviorType": "MoveTo"
 						},
 						{
-							"id": "every-tick",
+							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 351027711825131
+							"sid": 725197216875713,
+							"parameters": {
+								"interval-seconds": "dt*2"
+							}
 						}
 					],
 					"actions": [
@@ -746,6 +749,57 @@
 						}
 					],
 					"sid": 491344463460249
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 903358529836561
+						},
+						{
+							"id": "evaluate-expression",
+							"objectClass": "System",
+							"sid": 660179068125224,
+							"parameters": {
+								"value": "TrackX.Width > RoverPlaceholder.MaxSavedTracks"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "TrackX",
+							"sid": 237446427836489,
+							"parameters": {
+								"width": "RoverPlaceholder.MaxSavedTracks",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "TrackY",
+							"sid": 502716626008446,
+							"parameters": {
+								"width": "RoverPlaceholder.MaxSavedTracks",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "TrackAngle",
+							"sid": 712228912918160,
+							"parameters": {
+								"width": "RoverPlaceholder.MaxSavedTracks",
+								"height": "1",
+								"depth": "1"
+							}
+						}
+					],
+					"sid": 549603179605412
 				}
 			],
 			"sid": 588147220148797

@@ -403,7 +403,8 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
-						"RoverAbsoluteMaxSpeed": 500
+						"RoverAbsoluteMaxSpeed": 500,
+						"MaxSavedTracks": 5000
 					},
 					"behaviors": {
 						"MoveTo": {

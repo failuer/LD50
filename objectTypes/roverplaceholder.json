@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "The rover can never move faster than this",
 			"sid": 484744700762288
+		},
+		{
+			"name": "MaxSavedTracks",
+			"type": "number",
+			"desc": "",
+			"sid": 723667612747138
 		}
 	],
 	"behaviorTypes": [

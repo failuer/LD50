@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "StartMenuTutorialText",
 	"plugin-id": "Sprite",
-	"sid": 989730474417753,
+	"sid": 405011859867498,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5863010,
+						"imageSpriteId": 2790751,
 						"collisionPoly": {
 							"points": [
 								0.1270718232044199,
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 227172645660026,
+				"sid": 918957446337632,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -48,8 +48,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 210.9999971594922,
-						"y": 143.00000309625767,
+						"x": 210.00000430888483,
+						"y": 151.00000309625767,
 						"width": 77,
 						"height": 25,
 						"originX": 0.5,
@@ -181,37 +181,24 @@
 					}
 				},
 				{
-					"type": "MainMenuInstructionsText",
+					"type": "StartMenuTutorialText",
 					"properties": {
-						"text": "Click to navigate the rover\nThe rover's energy drains while driving\nCollect energy and all the science artefacts to win",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 68,
+					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -0.15914699942642585,
-						"y": 174.18188065951153,
-						"width": 419.9368875331532,
-						"height": 66.35084949228063,
-						"originX": 0,
-						"originY": 0,
+						"x": 209,
+						"y": 201,
+						"width": 181,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

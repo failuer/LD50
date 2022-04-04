@@ -215,7 +215,7 @@
 			"MainMenuIntroText1",
 			"MainMenuIntroText2",
 			"GameOverText",
-			"Sprite"
+			"StartMenuTutorialText"
 		],
 		"subfolders": []
 	},

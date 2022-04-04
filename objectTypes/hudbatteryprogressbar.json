@@ -3,9 +3,21 @@
 	"plugin-id": "TiledBg",
 	"sid": 806816649763532,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "IsLow",
+			"type": "boolean",
+			"desc": "",
+			"sid": 245322051015936
+		}
+	],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "replacecolor",
+			"name": "ReplaceColor"
+		}
+	],
 	"image": {
 		"width": 3,
 		"height": 6,

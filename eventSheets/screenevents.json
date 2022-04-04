@@ -514,6 +514,64 @@
 				}
 			],
 			"sid": 784466847788897
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 840616793609656,
+					"parameters": {
+						"variable": "BatteryIsLow"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 337268155121683,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "HUDBatteryProgressBar",
+					"sid": 997167535630414,
+					"parameters": {
+						"effect": "\"ReplaceColor\"",
+						"parameter-index": "2",
+						"value": "25+(1+sin(time*360))/2 * 100"
+					}
+				}
+			],
+			"sid": 588420173315613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 199892251467068
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "HUDBatteryProgressBar",
+					"sid": 154890073033053,
+					"parameters": {
+						"effect": "\"ReplaceColor\"",
+						"parameter-index": "2",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 102167102722237
 		}
 	],
 	"sid": 479293197521303

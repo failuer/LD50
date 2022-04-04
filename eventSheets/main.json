@@ -134,10 +134,61 @@
 			"sid": 715964412734084
 		},
 		{
+			"eventType": "variable",
+			"name": "BatteryIsLow",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 612558446740090
+		},
+		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 819455068916533,
+					"parameters": {
+						"value": "BatteryEnergy < 25"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 126026092411544,
+					"parameters": {
+						"variable": "BatteryIsLow",
+						"value": "true"
+					}
+				}
+			],
 			"sid": 215527374446500
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 160770600341386
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 710959368417356,
+					"parameters": {
+						"variable": "BatteryIsLow",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 422508790998336
 		}
 	],
 	"sid": 220466056769178

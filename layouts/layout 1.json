@@ -1781,8 +1781,29 @@
 								"image-angle": 0
 							},
 							"uid": 21,
-							"instanceVariables": {},
+							"instanceVariables": {
+								"IsLow": false
+							},
 							"behaviors": {},
+							"effects": {
+								"ReplaceColor": {
+									"parameters": {
+										"source-color": [
+											0.8392156862745098,
+											0.9215686274509803,
+											0.6666666666666666,
+											1
+										],
+										"replace-color": [
+											0.8313725490196079,
+											0.03137254901960784,
+											0.03137254901960784,
+											1
+										],
+										"tolerance": 1
+									}
+								}
+							},
 							"world": {
 								"x": 14,
 								"y": 108,

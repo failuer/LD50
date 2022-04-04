@@ -186,9 +186,48 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MinimapPing",
+					"sid": 980702689191237,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 288494105164362
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 337626185574731,
+					"parameters": {
+						"variable": "SciencePoints",
+						"comparison": 5,
+						"value": "6"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 940722517792073
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "MinimapPing",
+					"sid": 305139829344157,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 512891265055248
 		}
 	],
 	"sid": 654866358727230

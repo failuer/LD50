@@ -40,11 +40,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 833366459244393,
+					"sid": 731914813697551,
 					"parameters": {
 						"audio-file": "Energy_pickup",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-3",
 						"tag-optional": "\"\""
 					}
 				}
@@ -284,11 +284,19 @@
 					"sid": 807560094661499
 				},
 				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 177746918077770,
+					"parameters": {
+						"tag": "\"distortion\""
+					}
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 291677684232533,
+					"sid": 382863925171811,
 					"parameters": {
-						"audio-file": "Sciencepickup",
+						"audio-file": "joy",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""

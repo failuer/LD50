@@ -163,9 +163,20 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 216409363799422,
+					"sid": 863153490895567,
 					"parameters": {
 						"tag": "\"bass\"",
+						"db": "-25",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 895509175929347,
+					"parameters": {
+						"tag": "\"ambiance\"",
 						"db": "-30",
 						"duration": "2",
 						"ending": "keep-playing"
@@ -215,6 +226,17 @@
 						"duration": "2",
 						"ending": "keep-playing"
 					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 653671303862961,
+					"parameters": {
+						"tag": "\"ambiance\"",
+						"db": "-35",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
 				}
 			],
 			"sid": 336268633241500
@@ -242,10 +264,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 616252024426804,
+					"sid": 503269967921394,
 					"parameters": {
 						"tag": "\"bass\"",
-						"db": "-10",
+						"db": "-15",
 						"duration": "2",
 						"ending": "keep-playing"
 					}
@@ -253,10 +275,21 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 122926362565768,
+					"sid": 221395147889755,
 					"parameters": {
 						"tag": "\"drums\"",
-						"db": "-10",
+						"db": "-15",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 484004363234023,
+					"parameters": {
+						"tag": "\"ambiance\"",
+						"db": "-40",
 						"duration": "2",
 						"ending": "keep-playing"
 					}
@@ -287,10 +320,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 983316002094900,
+					"sid": 580745245528798,
 					"parameters": {
 						"tag": "\"bass\"",
-						"db": "-5",
+						"db": "-10",
 						"duration": "2",
 						"ending": "keep-playing"
 					}
@@ -298,10 +331,21 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 672777984763884,
+					"sid": 630693246474201,
 					"parameters": {
 						"tag": "\"drums\"",
-						"db": "-5",
+						"db": "-10",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 281549655232547,
+					"parameters": {
+						"tag": "\"ambiance\"",
+						"db": "-45",
 						"duration": "2",
 						"ending": "keep-playing"
 					}
@@ -332,10 +376,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 742351055020408,
+					"sid": 864084955240778,
 					"parameters": {
 						"tag": "\"bass\"",
-						"db": "0",
+						"db": "-5",
 						"duration": "2",
 						"ending": "keep-playing"
 					}
@@ -343,10 +387,21 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 463627337960208,
+					"sid": 903635591873951,
 					"parameters": {
 						"tag": "\"drums\"",
-						"db": "0",
+						"db": "-5",
+						"duration": "2",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 219283436772868,
+					"parameters": {
+						"tag": "\"ambiance\"",
+						"db": "-50",
 						"duration": "2",
 						"ending": "keep-playing"
 					}
@@ -377,10 +432,10 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 930959535144265,
+					"sid": 746485201846016,
 					"parameters": {
 						"tag": "\"bell\"",
-						"db": "-5",
+						"db": "-10",
 						"duration": "3",
 						"ending": "keep-playing"
 					}

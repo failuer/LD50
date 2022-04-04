@@ -35,12 +35,12 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 980624987235347,
+					"sid": 513252613317679,
 					"parameters": {
 						"audio-file": "Driveloop1LOUDER",
 						"loop": "looping",
-						"volume": "-Infinity",
-						"tag-optional": "\"drivingsound\""
+						"volume": "0",
+						"tag-optional": "\"engineSound\""
 					}
 				}
 			],
@@ -276,18 +276,18 @@
 				{
 					"id": "set-volume",
 					"objectClass": "Audio",
-					"sid": 685468632708249,
+					"sid": 593033211542614,
 					"parameters": {
-						"tag": "\"drivingsound\"",
-						"db": "-10"
+						"tag": "\"engineSound\"",
+						"db": "0"
 					}
 				},
 				{
 					"id": "set-playback-rate",
 					"objectClass": "Audio",
-					"sid": 207362089249807,
+					"sid": 150966126304499,
 					"parameters": {
-						"tag": "\"drivingsound\"",
+						"tag": "\"engineSound\"",
 						"playback-rate": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed"
 					}
 				}
@@ -326,9 +326,9 @@
 				{
 					"id": "set-volume",
 					"objectClass": "Audio",
-					"sid": 863832628545035,
+					"sid": 159755232637482,
 					"parameters": {
-						"tag": "\"drivingsound\"",
+						"tag": "\"engineSound\"",
 						"db": "-Infinity"
 					}
 				}

@@ -332,6 +332,16 @@
 					"name": "death.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 807633455996930
+				},
+				{
+					"name": "joy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 510932191699493
+				},
+				{
+					"name": "scansound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 259564045493428
 				}
 			],
 			"subfolders": []

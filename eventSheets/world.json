@@ -171,6 +171,11 @@
 						"comparison": 5,
 						"value": "5"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 682151054603959
 				}
 			],
 			"actions": [

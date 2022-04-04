@@ -183,7 +183,7 @@
 				{
 					"type": "MainMenuInstructionsText",
 					"properties": {
-						"text": "Click to navigate the rover\nEnergy drains each time you click, and while driving\nCollect Energy and find all the Artefacts to win",
+						"text": "Click to navigate the rover\nThe rover's energy drains while driving\nCollect energy and find all the artefacts to win",
 						"enable-bbcode": true,
 						"font": "Retro Gaming",
 						"size": 8,

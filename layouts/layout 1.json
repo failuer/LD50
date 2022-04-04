@@ -1148,10 +1148,10 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 246.7735001047285,
-								"y": 121.27680858491932,
-								"width": 216.35062785080004,
-								"height": 11.209877090715029,
+								"x": 243.96954890887736,
+								"y": 112.15722942196578,
+								"width": 193,
+								"height": 10,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
@@ -1199,48 +1199,6 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "TitleScreenVictory2",
-							"properties": {
-								"text": "...however... my... mission...\nwas... accomplished...\n",
-								"enable-bbcode": true,
-								"font": "Retro Gaming",
-								"size": 8,
-								"line-height": 0,
-								"bold": false,
-								"italic": false,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"horizontal-alignment": "center",
-								"vertical-alignment": "center",
-								"wrapping": "word",
-								"initially-visible": true,
-								"origin": "top-left"
-							},
-							"uid": 47,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": 96,
-								"y": 121,
-								"width": 300,
-								"height": 60,
-								"originX": 0,
-								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
 							"type": "GameOverText",
 							"properties": {
 								"initially-visible": true,
@@ -1253,10 +1211,68 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 252.56612692588635,
+								"x": 246.80354648519517,
 								"y": 85.2107388204779,
-								"width": 216.35062785080004,
-								"height": 11.209877090715029,
+								"width": 193,
+								"height": 10,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "VictoryHowever",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 70,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 250.36041234402592,
+								"y": 114.75170022159455,
+								"width": 51,
+								"height": 6,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "VictoryAccomplished",
+							"properties": {
+								"initially-visible": false,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 71,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 250.25135167542308,
+								"y": 151.2322540283203,
+								"width": 127,
+								"height": 7,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [

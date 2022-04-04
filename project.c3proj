@@ -215,7 +215,9 @@
 			"MainMenuIntroText1",
 			"MainMenuIntroText2",
 			"GameOverText",
-			"StartMenuTutorialText"
+			"StartMenuTutorialText",
+			"VictoryHowever",
+			"VictoryAccomplished"
 		],
 		"subfolders": []
 	},

@@ -301,9 +301,41 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 834022370952547,
+					"sid": 251167002665065,
 					"parameters": {
-						"seconds": "8"
+						"seconds": "9"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VictoryHowever",
+					"sid": 494041473647213,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 157959000146330,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "VictoryAccomplished",
+					"sid": 295179360325372,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 800373999630192,
+					"parameters": {
+						"seconds": "3.5"
 					}
 				},
 				{

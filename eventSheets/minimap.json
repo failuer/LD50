@@ -195,11 +195,11 @@
 			"actions": [
 				{
 					"callFunction": "MinimapSetTile",
-					"sid": 620165962686935,
+					"sid": 467428502748676,
 					"parameters": [
 						"MinimapItems.X",
 						"MinimapItems.Y",
-						"1"
+						"2"
 					]
 				}
 			],
@@ -243,6 +243,39 @@
 				}
 			],
 			"sid": 337068457082730
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 724119237514700,
+					"parameters": {
+						"interval-seconds": "MinimapAnimationFrameDuration"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 243799392983497,
+					"parameters": {
+						"object": "EnergyItem"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "MinimapSetTile",
+					"sid": 502549531492045,
+					"parameters": [
+						"EnergyItem.X",
+						"EnergyItem.Y",
+						"1"
+					]
+				}
+			],
+			"sid": 985019074985695
 		}
 	],
 	"sid": 403520120466049

@@ -143,9 +143,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 158610377178413,
+					"sid": 128222605112643,
 					"parameters": {
-						"audio-file": "Itsgettingdark",
+						"audio-file": "death",
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"\""

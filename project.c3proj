@@ -319,11 +319,6 @@
 					"sid": 955661453718895
 				},
 				{
-					"name": "Itsgettingdark.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 254731004050877
-				},
-				{
 					"name": "Track6-Ambiance.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 965356425828652
@@ -332,6 +327,11 @@
 					"name": "Menu.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 584336752956081
+				},
+				{
+					"name": "death.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 807633455996930
 				}
 			],
 			"subfolders": []

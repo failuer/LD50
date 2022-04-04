@@ -135,31 +135,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 582178837174220,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [],
-			"sid": 110870701543303
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 847153596693218,
-					"parameters": {
-						"key": 69
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [],
 			"sid": 215527374446500
 		}

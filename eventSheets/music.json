@@ -122,10 +122,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 573765145370736,
+					"sid": 533722807330350,
 					"parameters": {
 						"variable": "distortionVolume",
-						"value": "-(BatteryEnergy/MaxBatteryEnergy) * 50"
+						"value": "-(BatteryEnergy/MaxBatteryEnergy) * 70"
 					}
 				},
 				{

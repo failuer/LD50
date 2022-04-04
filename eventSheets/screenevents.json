@@ -106,6 +106,15 @@
 						"layer": "\"VictoryPicture\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 677574960817177,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -142,35 +151,6 @@
 					"sid": 390755664984373,
 					"parameters": {
 						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 415214419701130,
-					"disabled": true,
-					"parameters": {
-						"variable": "TypewriterText",
-						"value": "GameOverScreenText.Text"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "GameOverScreenText",
-					"sid": 959642526652016,
-					"disabled": true,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "typewriter-text",
-					"objectClass": "GameOverScreenText",
-					"sid": 702845785993605,
-					"disabled": true,
-					"parameters": {
-						"text": "TypewriterText",
-						"duration": "4"
 					}
 				},
 				{
@@ -475,6 +455,24 @@
 					"parameters": {
 						"layer": "\"Scorescreen\""
 					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 511765440240031,
+					"parameters": {
+						"layer": "\"VictoryText\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 260676837892846,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [

@@ -2212,7 +2212,7 @@
 								"text": "You completed the game in 10 seconds.",
 								"enable-bbcode": true,
 								"font": "Retro Gaming",
-								"size": 14,
+								"size": 10,
 								"line-height": 0,
 								"bold": false,
 								"italic": false,

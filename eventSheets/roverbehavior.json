@@ -59,9 +59,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap",
+					"id": "on-any-touch-end",
 					"objectClass": "Touch",
-					"sid": 890429175768679
+					"sid": 584656198138417
 				},
 				{
 					"id": "compare-boolean-eventvar",

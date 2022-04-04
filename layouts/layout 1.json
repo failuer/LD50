@@ -1199,48 +1199,6 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "TitleScreenVictory1",
-							"properties": {
-								"text": "Out... of... energy...\ncan... not... go... further...",
-								"enable-bbcode": false,
-								"font": "Retro Gaming",
-								"size": 8,
-								"line-height": 0,
-								"bold": false,
-								"italic": false,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"horizontal-alignment": "center",
-								"vertical-alignment": "center",
-								"wrapping": "word",
-								"initially-visible": false,
-								"origin": "top-left"
-							},
-							"uid": 24,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": 96,
-								"y": 60,
-								"width": 300,
-								"height": 60,
-								"originX": 0,
-								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
 							"type": "TitleScreenVictory2",
 							"properties": {
 								"text": "...however... my... mission...\nwas... accomplished...\n",
@@ -1259,7 +1217,7 @@
 								"horizontal-alignment": "center",
 								"vertical-alignment": "center",
 								"wrapping": "word",
-								"initially-visible": false,
+								"initially-visible": true,
 								"origin": "top-left"
 							},
 							"uid": 47,
@@ -1272,6 +1230,35 @@
 								"height": 60,
 								"originX": 0,
 								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "GameOverText",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 7,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 252.56612692588635,
+								"y": 85.2107388204779,
+								"width": 216.35062785080004,
+								"height": 11.209877090715029,
+								"originX": 0.5,
+								"originY": 0.5,
 								"color": [
 									1,
 									1,

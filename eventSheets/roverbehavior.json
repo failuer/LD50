@@ -233,15 +233,6 @@
 					}
 				},
 				{
-					"id": "set-max-speed",
-					"objectClass": "RoverPlaceholder",
-					"sid": 419819261237405,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / MaxBatteryEnergy)"
-					}
-				},
-				{
 					"id": "scroll-to-position",
 					"objectClass": "System",
 					"sid": 979652406845505,
@@ -405,6 +396,46 @@
 				}
 			],
 			"sid": 455469305590896
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movement",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 420124151460018
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 364346729753582,
+							"parameters": {
+								"variable": "BatteryIsLow"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "RoverPlaceholder",
+							"sid": 971121977666570,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / (MaxBatteryEnergy-75))"
+							}
+						}
+					],
+					"sid": 486915381337787
+				}
+			],
+			"sid": 156581562358216
 		},
 		{
 			"eventType": "group",

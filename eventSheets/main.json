@@ -75,6 +75,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "BatteryEnergyToDrain",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 826865420765776
+		},
+		{
+			"eventType": "variable",
 			"name": "RoverAngleSpeed",
 			"type": "number",
 			"initialValue": "0",

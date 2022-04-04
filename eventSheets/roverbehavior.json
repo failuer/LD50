@@ -133,13 +133,67 @@
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 667239393920213,
+					"disabled": true,
 					"parameters": {
 						"variable": "BatteryEnergy",
+						"value": "10"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 258225358292764,
+					"parameters": {
+						"variable": "BatteryEnergyToDrain",
 						"value": "10"
 					}
 				}
 			],
 			"sid": 856755711598844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 342308422200721,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 250542693865634,
+					"parameters": {
+						"variable": "BatteryEnergyToDrain",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 301718626655538,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "clamp(BatteryEnergyToDrain, 0, 2)"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 880126048930143,
+					"parameters": {
+						"variable": "BatteryEnergyToDrain",
+						"value": "clamp(BatteryEnergyToDrain, 0, 2)"
+					}
+				}
+			],
+			"sid": 284854129716941
 		},
 		{
 			"eventType": "block",

@@ -2217,9 +2217,9 @@
 								"bold": false,
 								"italic": false,
 								"color": [
-									1,
-									1,
-									1,
+									0.9568627450980393,
+									0.9176470588235294,
+									0.6392156862745098,
 									1
 								],
 								"horizontal-alignment": "center",

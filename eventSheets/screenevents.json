@@ -307,18 +307,18 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "TitleScreenVictory1",
-					"sid": 801928501659021,
+					"sid": 498876837449852,
 					"parameters": {
 						"text": "TypewriterText",
-						"duration": "6"
+						"duration": "4"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 615117582775130,
+					"sid": 997329246098394,
 					"parameters": {
-						"seconds": "7"
+						"seconds": "4.5"
 					}
 				},
 				{
@@ -349,18 +349,18 @@
 				{
 					"id": "typewriter-text",
 					"objectClass": "TitleScreenVictory2",
-					"sid": 277611335663227,
+					"sid": 988876931108709,
 					"parameters": {
 						"text": "TypewriterText",
-						"duration": "6"
+						"duration": "4"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 820467863203594,
+					"sid": 862779263289687,
 					"parameters": {
-						"seconds": "8"
+						"seconds": "4"
 					}
 				},
 				{

@@ -35,11 +35,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 513252613317679,
+					"sid": 548850515475063,
 					"parameters": {
 						"audio-file": "Driveloop1LOUDER",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-Infinity",
 						"tag-optional": "\"engineSound\""
 					}
 				}
@@ -276,10 +276,10 @@
 				{
 					"id": "set-volume",
 					"objectClass": "Audio",
-					"sid": 593033211542614,
+					"sid": 991353215949956,
 					"parameters": {
 						"tag": "\"engineSound\"",
-						"db": "0"
+						"db": "-10"
 					}
 				},
 				{

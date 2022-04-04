@@ -15,15 +15,15 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "RoverBehavior"
-		},
-		{
-			"eventType": "include",
 			"includeSheet": "WIP_Kellie"
 		},
 		{
 			"eventType": "include",
 			"includeSheet": "ScreenEvents"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "RoverBehavior"
 		},
 		{
 			"eventType": "include",

@@ -54,7 +54,7 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 370581886206479,
+					"sid": 273192027033428,
 					"parameters": {
 						"audio-file": "Track6-Ambiance",
 						"loop": "looping",
@@ -116,6 +116,15 @@
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 456449752911803
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 509700505677641,
+					"parameters": {
+						"variable": "isGameOver"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -432,16 +441,92 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 746485201846016,
+					"sid": 697375478459987,
 					"parameters": {
 						"tag": "\"bell\"",
 						"db": "-10",
-						"duration": "3",
+						"duration": "4",
 						"ending": "keep-playing"
 					}
 				}
 			],
 			"sid": 531262338057768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 506097735784875,
+					"parameters": {
+						"variable": "isGameOver"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 378823521893103
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 236930571487117,
+					"parameters": {
+						"tag": "\"bass\"",
+						"db": "-5",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 776037048958523,
+					"parameters": {
+						"tag": "\"ambiance\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 876171711437590,
+					"parameters": {
+						"tag": "\"bell\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 414076990581413,
+					"parameters": {
+						"tag": "\"drums\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 438645900916411,
+					"parameters": {
+						"tag": "\"distortion\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 151276257271900
 		}
 	],
 	"sid": 553605035247824

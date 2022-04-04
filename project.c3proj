@@ -208,7 +208,8 @@
 			"HUDMenuButton",
 			"TrackX",
 			"TrackY",
-			"TrackAngle"
+			"TrackAngle",
+			"MainMenuInstructionsText"
 		],
 		"subfolders": []
 	},

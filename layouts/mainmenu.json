@@ -179,6 +179,48 @@
 						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "MainMenuInstructionsText",
+					"properties": {
+						"text": "Click to navigate the rover\nEnergy drains each time you click, and while driving\nCollect Energy and find all the Artefacts to win",
+						"enable-bbcode": true,
+						"font": "Retro Gaming",
+						"size": 8,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 68,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4.0394194224611795,
+						"y": 174.18188065951153,
+						"width": 415.7383211112656,
+						"height": 61.21926830997357,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 442174163638205,
@@ -351,20 +393,20 @@
 				{
 					"type": "TitleScreenIntro1",
 					"properties": {
-						"text": "MISSION: FIND ALL SCIENCE",
+						"text": "MISSION: FIND ALL THE ARTEFACTS",
 						"enable-bbcode": true,
 						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
+						"size": 12,
+						"line-height": -1,
+						"bold": true,
+						"italic": true,
 						"color": [
-							0,
-							0,
-							0,
+							0.13725490196078433,
+							0.09803921568627451,
+							0.17647058823529413,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -374,9 +416,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 136.32354109692338,
+						"x": 211.06816121315697,
 						"y": 30.017826269878174,
-						"width": 247,
+						"width": 396.4892402324672,
 						"height": 43,
 						"originX": 0.5,
 						"originY": 0.5,

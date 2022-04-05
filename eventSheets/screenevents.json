@@ -41,6 +41,28 @@
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "true"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 443213940092534,
+					"parameters": {
+						"audio-file": "hello",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "ScorescreenText",
+					"sid": 510603209069760,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "10000000000",
+						"type": "once",
+						"tag": "\"playTime\""
+					}
 				}
 			],
 			"sid": 801788442606558
@@ -84,6 +106,15 @@
 						"layer": "\"VictoryPicture\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 677574960817177,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -115,29 +146,11 @@
 					}
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 415214419701130,
+					"id": "start-animation",
+					"objectClass": "GameOverText",
+					"sid": 390755664984373,
 					"parameters": {
-						"variable": "TypewriterText",
-						"value": "GameOverScreenText.Text"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "GameOverScreenText",
-					"sid": 959642526652016,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "typewriter-text",
-					"objectClass": "GameOverScreenText",
-					"sid": 702845785993605,
-					"parameters": {
-						"text": "TypewriterText",
-						"duration": "4"
+						"from": "beginning"
 					}
 				},
 				{
@@ -249,6 +262,15 @@
 						"layer": "\"VictoryPicture\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 886554961253587,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -259,6 +281,16 @@
 					"parameters": {
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "false"
+					}
+				},
+				{
+					"id": "pause-resume-timer",
+					"objectClass": "ScorescreenText",
+					"sid": 675504903385168,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"playTime\"",
+						"state": "paused"
 					}
 				},
 				{
@@ -280,103 +312,51 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "TitleScreenVictory1",
-					"sid": 804027960095335,
+					"id": "start-animation",
+					"objectClass": "GameOverText",
+					"sid": 400117048112363,
 					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 701577153317833,
-					"parameters": {
-						"variable": "TypewriterText",
-						"value": "TitleScreenVictory1.Text"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TitleScreenVictory1",
-					"sid": 598449582465200,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "typewriter-text",
-					"objectClass": "TitleScreenVictory1",
-					"sid": 801928501659021,
-					"parameters": {
-						"text": "TypewriterText",
-						"duration": "6"
+						"from": "beginning"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 615117582775130,
+					"sid": 251167002665065,
 					"parameters": {
-						"seconds": "7"
+						"seconds": "9"
 					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "TitleScreenVictory2",
-					"sid": 685844118037277,
+					"objectClass": "VictoryHowever",
+					"sid": 494041473647213,
 					"parameters": {
 						"visibility": "visible"
 					}
 				},
 				{
-					"id": "set-eventvar-value",
+					"id": "wait",
 					"objectClass": "System",
-					"sid": 460810469239059,
+					"sid": 157959000146330,
 					"parameters": {
-						"variable": "TypewriterText",
-						"value": "TitleScreenVictory2.Text"
+						"seconds": "2"
 					}
 				},
 				{
-					"id": "set-text",
-					"objectClass": "TitleScreenVictory2",
-					"sid": 374161042369196,
+					"id": "set-visible",
+					"objectClass": "VictoryAccomplished",
+					"sid": 295179360325372,
 					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "typewriter-text",
-					"objectClass": "TitleScreenVictory2",
-					"sid": 277611335663227,
-					"parameters": {
-						"text": "TypewriterText",
-						"duration": "6"
+						"visibility": "visible"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 820467863203594,
+					"sid": 800373999630192,
 					"parameters": {
-						"seconds": "8"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "TitleScreenVictory1",
-					"sid": 534464701448273,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "TitleScreenVictory2",
-					"sid": 433328750829164,
-					"parameters": {
-						"visibility": "invisible"
+						"seconds": "3.5"
 					}
 				},
 				{
@@ -386,6 +366,17 @@
 					"parameters": {
 						"layer": "\"VictoryPicture\"",
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 235406701987266,
+					"parameters": {
+						"audio-file": "woah",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -455,22 +446,40 @@
 				{
 					"id": "on-tap",
 					"objectClass": "Touch",
-					"sid": 858792529616722
+					"sid": 208423441477899
 				},
 				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
-					"sid": 270713755961855,
+					"sid": 387134592693695,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 511765440240031,
+					"parameters": {
+						"layer": "\"VictoryText\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 260676837892846,
 					"parameters": {
 						"layer": "\"VictoryPicture\""
-					}
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 919800828775758,
+					"sid": 120841345297173,
 					"parameters": {
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "false"
@@ -479,7 +488,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 954866601303175,
+					"sid": 342168790636800,
 					"parameters": {
 						"layout": "MainMenu"
 					}
@@ -487,7 +496,16 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 612726508445548,
+					"sid": 136325927641116,
+					"parameters": {
+						"layer": "\"Scorescreen\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 944958102000655,
 					"parameters": {
 						"layer": "\"VictoryPicture\"",
 						"visibility": "invisible"
@@ -496,7 +514,7 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 557546444375180,
+					"sid": 857521689613125,
 					"parameters": {
 						"layer": "\"VictoryText\"",
 						"visibility": "invisible"
@@ -505,15 +523,80 @@
 				{
 					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 770727798866066
+					"sid": 158100363215793
 				},
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
-					"sid": 300231458987992
+					"sid": 763351523478289
 				}
 			],
-			"sid": 784466847788897
+			"sid": 698745179439657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 537672379188196
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 923187511387510,
+					"parameters": {
+						"layer": "\"VictoryPicture\""
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 703760260955788,
+					"parameters": {
+						"layer": "\"Scorescreen\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 612719886754795,
+					"parameters": {
+						"layer": "\"VictoryPicture\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 796420931993815,
+					"parameters": {
+						"layer": "\"VictoryText\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScorescreenText",
+					"sid": 427073879894153,
+					"parameters": {
+						"text": "\"You completed the game in \" &  round(ScorescreenText.Timer.CurrentTime(\"playTime\")*100) / 100 & \" seconds.\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 410368240151318,
+					"parameters": {
+						"layer": "\"Scorescreen\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 291127422403375
 		},
 		{
 			"eventType": "block",

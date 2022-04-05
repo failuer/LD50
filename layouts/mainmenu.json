@@ -48,8 +48,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 210.9999971594922,
-						"y": 153.00000309625767,
+						"x": 210.00000430888483,
+						"y": 151.00000309625767,
 						"width": 77,
 						"height": 25,
 						"originX": 0.5,
@@ -179,6 +179,35 @@
 						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "StartMenuTutorialText",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 209,
+						"y": 201,
+						"width": 181,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 442174163638205,
@@ -215,7 +244,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "IntroEye",
+					"type": "MainMenuIntroText1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -223,56 +252,43 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 58,
+					"uid": 46,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 234.42372136108816,
-						"y": 132.54594818423226,
-						"width": 17,
-						"height": 19,
+						"x": 208.04713691178011,
+						"y": 88.27507067904061,
+						"width": 187.6,
+						"height": 19.599999999999998,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.5
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
 					}
 				},
 				{
-					"type": "TitleScreenIntro3",
+					"type": "MainMenuIntroText2",
 					"properties": {
-						"text": "...and it's getting dark.",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 55,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 210,
-						"y": 91.40389454471007,
-						"width": 420,
-						"height": 182.80778908942014,
+						"x": 209.99999578737823,
+						"y": 151.72492714714093,
+						"width": 282.79999999999995,
+						"height": 19.599999999999998,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -282,7 +298,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 1
+						"zElevation": 0
 					}
 				}
 			],
@@ -349,35 +365,22 @@
 					}
 				},
 				{
-					"type": "TitleScreenIntro1",
+					"type": "MainMenuMission",
 					"properties": {
-						"text": "MISSION: FIND ALL SCIENCE",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "center",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 53,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 136.32354109692338,
-						"y": 30.017826269878174,
-						"width": 247,
-						"height": 43,
+						"x": 207.9438763588595,
+						"y": 216.3858448464432,
+						"width": 344.7768660226213,
+						"height": 8.706486515722759,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -387,49 +390,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 1
-					}
-				},
-				{
-					"type": "TitleScreenIntro2",
-					"properties": {
-						"text": "Battery is low...",
-						"enable-bbcode": true,
-						"font": "Retro Gaming",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 54,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 213.81399203227076,
-						"y": 208.7011380644704,
-						"width": 247,
-						"height": 43,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 1
+						"zElevation": 0
 					}
 				}
 			],

@@ -1,0 +1,15 @@
+{
+	"name": "ScorescreenText",
+	"plugin-id": "Text",
+	"sid": 422861972089874,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 206662472721894
+		}
+	],
+	"effectTypes": []
+}

@@ -59,11 +59,16 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 584656198138417
+				},
+				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
-					"sid": 492892026841452,
+					"sid": 774020553346092,
 					"parameters": {
-						"object": "TouchInputObjects"
+						"object": "ComputerScreen"
 					}
 				},
 				{
@@ -131,9 +136,103 @@
 						"image-point": "0",
 						"mode": "direct"
 					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 667239393920213,
+					"disabled": true,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "10"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 240131001837721,
+					"parameters": {
+						"variable": "BatteryEnergyToDrain",
+						"value": "3"
+					}
 				}
 			],
 			"sid": 856755711598844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 342308422200721,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 250542693865634,
+					"parameters": {
+						"variable": "BatteryEnergyToDrain",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 301718626655538,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "clamp(BatteryEnergyToDrain, 0, 2)"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 629678619107497,
+					"parameters": {
+						"variable": "BatteryEnergyToDrain",
+						"value": "clamp(BatteryEnergyToDrain, 0, 2)"
+					}
+				}
+			],
+			"sid": 284854129716941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 892350570175174,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "RoverPlaceholder",
+					"sid": 305156468141846,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 316487344037829,
+					"parameters": {
+						"variable": "BatteryEnergy",
+						"value": "0.4"
+					}
+				}
+			],
+			"sid": 525889612795011
 		},
 		{
 			"eventType": "block",
@@ -158,6 +257,7 @@
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 474834703450618,
+					"disabled": true,
 					"parameters": {
 						"variable": "BatteryEnergy",
 						"value": "ceil(RoverPlaceholder.MoveTo.Speed) * dt * 0.1"
@@ -881,9 +981,9 @@
 						{
 							"id": "set-volume",
 							"objectClass": "Audio",
-							"sid": 365645971321098,
+							"sid": 325201769653990,
 							"parameters": {
-								"tag": "\"drivingsound\"",
+								"tag": "\"engineSound\"",
 								"db": "-Infinity"
 							}
 						},
@@ -906,6 +1006,15 @@
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"crashSound\""
+							}
+						},
+						{
+							"id": "move-at-angle",
+							"objectClass": "RoverPlaceholder",
+							"sid": 549965089446084,
+							"parameters": {
+								"angle": "RoverPlaceholder.Angle-180",
+								"distance": "12"
 							}
 						}
 					],

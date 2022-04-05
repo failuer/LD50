@@ -226,7 +226,8 @@
 			"StartMenuTutorialText",
 			"VictoryHowever",
 			"VictoryAccomplished",
-			"ScorescreenText"
+			"ScorescreenText",
+			"ComputerScreen"
 		],
 		"subfolders": []
 	},

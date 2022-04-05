@@ -64,6 +64,14 @@
 					"sid": 584656198138417
 				},
 				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 774020553346092,
+					"parameters": {
+						"object": "ComputerScreen"
+					}
+				},
+				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 406338670925405,

@@ -87,7 +87,6 @@
 					"id": "set-tile",
 					"objectClass": "Minitilemap",
 					"sid": 426692178327004,
-					"disabled": true,
 					"parameters": {
 						"tile-x": "Minitilemap.PositionToTileX((X - Computer.ImagePointX(0) - MinimapViewport.X) * MinimapScaleX + Minitilemap.X)",
 						"tile-y": "Minitilemap.PositionToTileY((Y - Computer.ImagePointY(0) - MinimapViewport.Y) * MinimapScaleY + Minitilemap.Y)",

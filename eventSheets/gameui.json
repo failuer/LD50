@@ -1,0 +1,22 @@
+{
+	"name": "GameUI",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 745043442467632
+				}
+			],
+			"actions": [],
+			"sid": 966040297381507
+		},
+		{
+			"eventType": "script",
+			"script": ""
+		}
+	],
+	"sid": 885636272964707
+}

@@ -1,0 +1,27 @@
+{
+	"name": "EditorItemShelf",
+	"plugin-id": "NinePatch",
+	"sid": 928830374668094,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ItemName",
+			"type": "string",
+			"desc": "",
+			"sid": 564915446497134
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 24,
+		"height": 24,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4851043,
+		"useCollisionPoly": true
+	}
+}

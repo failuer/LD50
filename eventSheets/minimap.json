@@ -87,6 +87,7 @@
 					"id": "set-tile",
 					"objectClass": "Minitilemap",
 					"sid": 426692178327004,
+					"disabled": true,
 					"parameters": {
 						"tile-x": "Minitilemap.PositionToTileX((X - Computer.ImagePointX(0) - MinimapViewport.X) * MinimapScaleX + Minitilemap.X)",
 						"tile-y": "Minitilemap.PositionToTileY((Y - Computer.ImagePointY(0) - MinimapViewport.Y) * MinimapScaleY + Minitilemap.Y)",
@@ -159,8 +160,8 @@
 					"callFunction": "MinimapSetTile",
 					"sid": 251704257686177,
 					"parameters": [
-						"RoverPlaceholder.X",
-						"RoverPlaceholder.Y",
+						"Rovar.X",
+						"Rovar.Y",
 						"0"
 					]
 				}
@@ -229,7 +230,7 @@
 					"sid": 778158660927038,
 					"parameters": {
 						"variable": "LastRoverX",
-						"value": "RoverPlaceholder.X"
+						"value": "Rovar.X"
 					}
 				},
 				{
@@ -238,7 +239,7 @@
 					"sid": 443910679618255,
 					"parameters": {
 						"variable": "LastRoverY",
-						"value": "RoverPlaceholder.Y"
+						"value": "Rovar.Y"
 					}
 				}
 			],

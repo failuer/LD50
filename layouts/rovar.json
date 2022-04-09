@@ -1,0 +1,175 @@
+{
+	"name": "Rovar",
+	"layers": [
+		{
+			"name": "Rovar",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Rovar",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {
+						"RoverAbsoluteMaxSpeed": 100,
+						"MaxSavedTracks": 5000
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"MoveTo": {
+							"properties": {
+								"max-speed": 0,
+								"acceleration": 300,
+								"deceleration": 400,
+								"rotate-speed": 100,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1.66319739818573,
+						"y": 2.030301094055176,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RoverShadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "still",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 19,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"BlackWhite": {
+							"parameters": {
+								"threshold": 0.5
+							}
+						},
+						"RadialPixellate": {
+							"parameters": {
+								"size": 1
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.025,
+								"intensity": 1
+							}
+						}
+					},
+					"world": {
+						"x": 1.66319739818573,
+						"y": 2.030301094055176,
+						"width": 26,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RoverSprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "still",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1.66319739818573,
+						"y": 2.030301094055176,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 434384610671056,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": true
+		}
+	],
+	"sid": 516362378526158,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 840,
+	"height": 480,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Rovar"
+}

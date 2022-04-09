@@ -1,0 +1,27 @@
+{
+	"name": "EditorSelectionMarkerFrame",
+	"plugin-id": "NinePatch",
+	"sid": 891985421310718,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ItemName",
+			"type": "string",
+			"desc": "",
+			"sid": 931717725104075
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 24,
+		"height": 24,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7228635,
+		"useCollisionPoly": true
+	}
+}

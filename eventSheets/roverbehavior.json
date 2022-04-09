@@ -25,11 +25,11 @@
 				},
 				{
 					"id": "set-max-speed",
-					"objectClass": "RoverPlaceholder",
+					"objectClass": "Rovar",
 					"sid": 405013244198390,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed"
+						"max-speed": "Rovar.RoverAbsoluteMaxSpeed"
 					}
 				},
 				{
@@ -49,7 +49,7 @@
 					"sid": 228795538464528,
 					"parameters": {
 						"variable": "LastRoverAngle",
-						"value": "RoverPlaceholder.Angle"
+						"value": "Rovar.Angle"
 					}
 				}
 			],
@@ -128,7 +128,7 @@
 				},
 				{
 					"id": "move-to-object",
-					"objectClass": "RoverPlaceholder",
+					"objectClass": "Rovar",
 					"sid": 467517095850707,
 					"behaviorType": "MoveTo",
 					"parameters": {
@@ -216,7 +216,7 @@
 				},
 				{
 					"id": "is-moving",
-					"objectClass": "RoverPlaceholder",
+					"objectClass": "Rovar",
 					"sid": 305156468141846,
 					"behaviorType": "MoveTo"
 				}
@@ -260,24 +260,24 @@
 					"disabled": true,
 					"parameters": {
 						"variable": "BatteryEnergy",
-						"value": "ceil(RoverPlaceholder.MoveTo.Speed) * dt * 0.1"
+						"value": "ceil(Rovar.MoveTo.Speed) * dt * 0.1"
 					}
 				},
 				{
 					"id": "set-position-to-another-object",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 301932000434326,
 					"parameters": {
-						"object": "RoverPlaceholder",
+						"object": "Rovar",
 						"image-point-optional": "0"
 					}
 				},
 				{
 					"id": "set-angle",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 370945752114799,
 					"parameters": {
-						"angle": "RoverPlaceholder.Angle"
+						"angle": "Rovar.Angle"
 					}
 				},
 				{
@@ -286,7 +286,7 @@
 					"sid": 184016930270601,
 					"parameters": {
 						"variable": "RoverAngleSpeed",
-						"value": "(RoverPlaceholder.MoveTo.MovingAngle-LastRoverAngle)/dt"
+						"value": "(Rovar.MoveTo.MovingAngle-LastRoverAngle)/dt"
 					}
 				},
 				{
@@ -295,7 +295,7 @@
 					"sid": 566680745967665,
 					"parameters": {
 						"variable": "LastRoverAngle",
-						"value": "RoverPlaceholder.MoveTo.MovingAngle"
+						"value": "Rovar.MoveTo.MovingAngle"
 					}
 				},
 				{
@@ -303,8 +303,8 @@
 					"objectClass": "RoverShadow",
 					"sid": 165797771887878,
 					"parameters": {
-						"x": "RoverPlaceholder.X + 3",
-						"y": "RoverPlaceholder.Y + 3"
+						"x": "Rovar.X + 3",
+						"y": "Rovar.Y + 3"
 					}
 				},
 				{
@@ -312,7 +312,7 @@
 					"objectClass": "RoverShadow",
 					"sid": 768538376519416,
 					"parameters": {
-						"angle": "RoverPlaceholder.Angle"
+						"angle": "Rovar.Angle"
 					}
 				},
 				{
@@ -320,7 +320,7 @@
 					"objectClass": "RoverShadow",
 					"sid": 301338422019993,
 					"parameters": {
-						"animation": "Rover.AnimationName",
+						"animation": "RoverSprite.AnimationName",
 						"from": "beginning"
 					}
 				},
@@ -329,7 +329,7 @@
 					"objectClass": "RoverShadow",
 					"sid": 767177670886291,
 					"parameters": {
-						"frame-number": "Rover.AnimationFrame"
+						"frame-number": "RoverSprite.AnimationFrame"
 					}
 				},
 				{
@@ -337,8 +337,8 @@
 					"objectClass": "System",
 					"sid": 979652406845505,
 					"parameters": {
-						"x": "RoverPlaceholder.X - Computer.LeftInset/2 + Computer.RightInset/2",
-						"y": "RoverPlaceholder.Y - Computer.TopInset/2 + Computer.BottomInset/2"
+						"x": "Rovar.X - Computer.LeftInset/2 + Computer.RightInset/2",
+						"y": "Rovar.Y - Computer.TopInset/2 + Computer.BottomInset/2"
 					}
 				}
 			],
@@ -349,7 +349,7 @@
 			"conditions": [
 				{
 					"id": "is-moving",
-					"objectClass": "RoverPlaceholder",
+					"objectClass": "Rovar",
 					"sid": 556868525232068,
 					"behaviorType": "MoveTo"
 				},
@@ -366,7 +366,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 752352443381666,
 					"parameters": {
 						"animation": "\"rolling\"",
@@ -388,15 +388,15 @@
 					"sid": 150966126304499,
 					"parameters": {
 						"tag": "\"engineSound\"",
-						"playback-rate": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed"
+						"playback-rate": "Rovar.MoveTo.Speed / Rovar.RoverAbsoluteMaxSpeed"
 					}
 				},
 				{
 					"id": "set-animation-speed",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 198379979765489,
 					"parameters": {
-						"speed": "clamp(10 * (RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed),5 , 20)"
+						"speed": "clamp(10 * (Rovar.MoveTo.Speed / Rovar.RoverAbsoluteMaxSpeed),5 , 20)"
 					}
 				}
 			],
@@ -407,7 +407,7 @@
 			"conditions": [
 				{
 					"id": "on-arrived",
-					"objectClass": "RoverPlaceholder",
+					"objectClass": "Rovar",
 					"sid": 502236373119033,
 					"behaviorType": "MoveTo"
 				},
@@ -424,7 +424,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 611137338120259,
 					"parameters": {
 						"animation": "\"still\"",
@@ -460,7 +460,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 490529487122457,
 					"parameters": {
 						"animation": "\"left\"",
@@ -487,7 +487,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Rover",
+					"objectClass": "RoverSprite",
 					"sid": 350713736902704,
 					"parameters": {
 						"animation": "\"right\"",
@@ -524,11 +524,11 @@
 					"actions": [
 						{
 							"id": "set-max-speed",
-							"objectClass": "RoverPlaceholder",
+							"objectClass": "Rovar",
 							"sid": 971121977666570,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / (MaxBatteryEnergy-75))"
+								"max-speed": "Rovar.RoverAbsoluteMaxSpeed * (BatteryEnergy / (MaxBatteryEnergy-75))"
 							}
 						}
 					],
@@ -560,7 +560,7 @@
 							"sid": 185133189166106,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Rover",
+								"pin-to": "RoverSprite",
 								"image-point": "\"RightWheelPoint\"",
 								"angle": true,
 								"width-type": "no",
@@ -574,7 +574,7 @@
 							"sid": 101843316389045,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Rover",
+								"pin-to": "RoverSprite",
 								"image-point": "\"LeftWheelPoint\"",
 								"angle": true,
 								"width-type": "no",
@@ -588,7 +588,7 @@
 							"sid": 583217503868019,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Rover",
+								"pin-to": "RoverSprite",
 								"image-point": "\"LeftWheelPointFront\"",
 								"angle": true,
 								"width-type": "no",
@@ -602,7 +602,7 @@
 							"sid": 667846934344084,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Rover",
+								"pin-to": "RoverSprite",
 								"image-point": "\"RightWheelPointFront\"",
 								"angle": true,
 								"width-type": "no",
@@ -620,7 +620,7 @@
 							"objectClass": "WheelParticles",
 							"sid": 735981072927619,
 							"parameters": {
-								"timeout": "RoverPlaceholder.MoveTo.Speed / RoverPlaceholder.RoverAbsoluteMaxSpeed"
+								"timeout": "Rovar.MoveTo.Speed / Rovar.RoverAbsoluteMaxSpeed"
 							}
 						}
 					],
@@ -631,7 +631,7 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "RoverPlaceholder",
+							"objectClass": "Rovar",
 							"sid": 394961411732328,
 							"behaviorType": "MoveTo"
 						},
@@ -698,7 +698,7 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "RoverPlaceholder",
+							"objectClass": "Rovar",
 							"sid": 323335966574585,
 							"behaviorType": "MoveTo",
 							"isInverted": true
@@ -736,7 +736,7 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "RoverPlaceholder",
+							"objectClass": "Rovar",
 							"sid": 642285710256493,
 							"behaviorType": "MoveTo"
 						},
@@ -754,18 +754,18 @@
 							"callFunction": "AddTrack",
 							"sid": 926116208229537,
 							"parameters": [
-								"Rover.ImagePointX(\"LeftWheelPoint\")",
-								"Rover.ImagePointY(\"LeftWheelPoint\")",
-								"Rover.Angle"
+								"RoverSprite.ImagePointX(\"LeftWheelPoint\")",
+								"RoverSprite.ImagePointY(\"LeftWheelPoint\")",
+								"RoverSprite.Angle"
 							]
 						},
 						{
 							"callFunction": "AddTrack",
 							"sid": 819177856741052,
 							"parameters": [
-								"Rover.ImagePointX(\"RightWheelPoint\")",
-								"Rover.ImagePointY(\"RightWheelPoint\")",
-								"Rover.Angle"
+								"RoverSprite.ImagePointX(\"RightWheelPoint\")",
+								"RoverSprite.ImagePointY(\"RightWheelPoint\")",
+								"RoverSprite.Angle"
 							]
 						}
 					],
@@ -910,7 +910,7 @@
 							"objectClass": "System",
 							"sid": 660179068125224,
 							"parameters": {
-								"value": "TrackX.Width > RoverPlaceholder.MaxSavedTracks"
+								"value": "TrackX.Width > Rovar.MaxSavedTracks"
 							}
 						}
 					],
@@ -920,7 +920,7 @@
 							"objectClass": "TrackX",
 							"sid": 237446427836489,
 							"parameters": {
-								"width": "RoverPlaceholder.MaxSavedTracks",
+								"width": "Rovar.MaxSavedTracks",
 								"height": "1",
 								"depth": "1"
 							}
@@ -930,7 +930,7 @@
 							"objectClass": "TrackY",
 							"sid": 502716626008446,
 							"parameters": {
-								"width": "RoverPlaceholder.MaxSavedTracks",
+								"width": "Rovar.MaxSavedTracks",
 								"height": "1",
 								"depth": "1"
 							}
@@ -940,7 +940,7 @@
 							"objectClass": "TrackAngle",
 							"sid": 712228912918160,
 							"parameters": {
-								"width": "RoverPlaceholder.MaxSavedTracks",
+								"width": "Rovar.MaxSavedTracks",
 								"height": "1",
 								"depth": "1"
 							}
@@ -963,7 +963,7 @@
 					"conditions": [
 						{
 							"id": "on-hit-solid",
-							"objectClass": "RoverPlaceholder",
+							"objectClass": "Rovar",
 							"sid": 175487086512658,
 							"behaviorType": "MoveTo"
 						},
@@ -989,7 +989,7 @@
 						},
 						{
 							"id": "set-animation",
-							"objectClass": "Rover",
+							"objectClass": "RoverSprite",
 							"sid": 127190522303881,
 							"parameters": {
 								"animation": "\"still\"",
@@ -1010,10 +1010,10 @@
 						},
 						{
 							"id": "move-at-angle",
-							"objectClass": "RoverPlaceholder",
+							"objectClass": "Rovar",
 							"sid": 549965089446084,
 							"parameters": {
-								"angle": "RoverPlaceholder.Angle-180",
+								"angle": "Rovar.Angle-180",
 								"distance": "12"
 							}
 						}

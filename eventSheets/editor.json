@@ -1,0 +1,558 @@
+{
+	"name": "Editor",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "ViewWidth",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 205783237779812
+		},
+		{
+			"eventType": "variable",
+			"name": "ViewHeight",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 474559070953205
+		},
+		{
+			"eventType": "variable",
+			"name": "PickedUID",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 502593595401800
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pan with mouse and keyboard (middle mouse & WASD)",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "script",
+					"script": "// Pan with middle mouse button\nvar x = runtime.layout.scrollX;\nvar y = runtime.layout.scrollY;\nvar scrollspeed = runtime.dt * 100;\nif (runtime.keyboard.isKeyDown('KeyW')) {\n\ty-=scrollspeed;\n}\n\nif (runtime.keyboard.isKeyDown(\"KeyS\")) {\n\ty+=scrollspeed;\n}\n\nif (runtime.keyboard.isKeyDown(\"KeyA\")) {\n\tx-=scrollspeed;\n}\n\nif (runtime.keyboard.isKeyDown(\"KeyD\")) {\n\tx+=scrollspeed;\n}\n\nconst MouseLeft = 0;\nconst MouseMiddle = 1;\nconst MouseRight = 2;\n\nif (runtime.mouse.isMouseButtonDown(MouseMiddle)) {\n\tif (localVars.dragFrom) {\n\t\tx += localVars.dragFrom[0] - runtime.mouse.getMouseX();\n\t\ty += localVars.dragFrom[1] - runtime.mouse.getMouseY();\n\t} else {\n\t\tlocalVars.dragFrom = runtime.mouse.getMousePosition();\n\t}\n} else {\n\tlocalVars.dragFrom = undefined;\n}\nruntime.layout.scrollX = x;\nruntime.layout.scrollY = y;"
+				}
+			],
+			"sid": 860344511043721
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Picking and placing items",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 100397136201641,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "EditorItems"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 584873788806798,
+							"parameters": {
+								"object": "EditorItemShelf"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-from-sprite",
+							"objectClass": "Mouse",
+							"sid": 237352833560416,
+							"parameters": {
+								"sprite": "EditorItems"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "EditorItemShelf",
+							"sid": 646395690809414,
+							"parameters": {
+								"instance-variable": "ItemName",
+								"value": "EditorItems.ObjectTypeName"
+							}
+						}
+					],
+					"sid": 364505254138309
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Mouse",
+							"sid": 314865250386131,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 336272420694681,
+							"parameters": {
+								"object": "EditorItemShelf"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object-by-name",
+							"objectClass": "System",
+							"sid": 469201803597013,
+							"parameters": {
+								"object-name": "EditorItemShelf.ItemName",
+								"layer": "\"Items\"",
+								"x": "Mouse.X",
+								"y": "Mouse.Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 799130512555176,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "EditorItemShelf",
+							"sid": 723422552215561,
+							"parameters": {
+								"instance-variable": "ItemName",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 705488224228952
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 565501315200037,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "EditorShelf2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 831115615840477,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "EditorItemShelf",
+							"sid": 519284601140191,
+							"parameters": {
+								"instance-variable": "ItemName",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 959560622503425
+				}
+			],
+			"sid": 946579204205113
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Selecting placed items",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Deselecting"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "EditorItems",
+							"sid": 578969350451676,
+							"parameters": {
+								"unique-id": "PickedUID"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "EditorItems",
+							"sid": 626739416975869,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 638294347105809
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 941458507241273,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "EditorItems"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EditorShelf2",
+							"sid": 124334255908682,
+							"parameters": {
+								"instance-variable": "ItemName",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 778255245176390,
+							"parameters": {
+								"object": "EditorItemShelf"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 800177938728887,
+							"parameters": {
+								"variable": "PickedUID",
+								"value": "EditorItems.UID"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "EditorItems",
+							"sid": 834989234891466,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 253136837181126
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 569354693759318
+						},
+						{
+							"id": "object-uid-exists",
+							"objectClass": "System",
+							"sid": 281915588235598,
+							"parameters": {
+								"uid": "PickedUID"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 483470150324395
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 369477129326978,
+							"parameters": {
+								"key": 8
+							}
+						},
+						{
+							"id": "object-uid-exists",
+							"objectClass": "System",
+							"sid": 788327280239856,
+							"parameters": {
+								"uid": "PickedUID"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "EditorItems",
+							"sid": 625276293760989,
+							"parameters": {
+								"unique-id": "PickedUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "EditorItems",
+							"sid": 413682848239522
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 390718229747384,
+							"parameters": {
+								"variable": "PickedUID",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "EditorItems",
+							"sid": 105853816724413,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 316117813711262
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "object-uid-exists",
+							"objectClass": "System",
+							"sid": 982545998986424,
+							"parameters": {
+								"uid": "PickedUID"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "EditorItems",
+							"sid": 140091995509016,
+							"parameters": {
+								"unique-id": "PickedUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "EditorSelectionMarkerFrame",
+							"sid": 954114119860313,
+							"parameters": {
+								"x": "EditorItems.X - EditorItems.Width/2- 2",
+								"y": "EditorItems.Y - EditorItems.Height / 2 - 2"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "EditorSelectionMarkerFrame",
+							"sid": 345940902467254,
+							"parameters": {
+								"width": "EditorItems.Width + 4",
+								"height": "EditorItems.Height + 4"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "EditorSelectionMarkerFrame",
+							"sid": 578204440530865,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 960969627565380
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 767934968362479
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "EditorSelectionMarkerFrame",
+							"sid": 882946468880947,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 133300140200606
+				}
+			],
+			"sid": 133533525717743
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 468079020064030,
+					"parameters": {
+						"interval-seconds": "0.2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 200900734525291,
+					"parameters": {
+						"layer": "\"Items\"",
+						"scale": "1"
+					}
+				}
+			],
+			"sid": 469856314717121
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Move selected item",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 364497845943557,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "has-pointer-lock",
+							"objectClass": "Mouse",
+							"sid": 639725794525757
+						},
+						{
+							"id": "object-uid-exists",
+							"objectClass": "System",
+							"sid": 901126914913893,
+							"parameters": {
+								"uid": "PickedUID"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "EditorItems",
+							"sid": 635054400995251,
+							"parameters": {
+								"unique-id": "PickedUID"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 328246590599390
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-movement",
+							"objectClass": "Mouse",
+							"sid": 632705122295832
+						},
+						{
+							"id": "object-uid-exists",
+							"objectClass": "System",
+							"sid": 617183345463878,
+							"parameters": {
+								"uid": "PickedUID"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "EditorItems",
+							"sid": 438663708069040,
+							"parameters": {
+								"unique-id": "PickedUID"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 660577010231195,
+							"parameters": {
+								"object": "EditorItems"
+							}
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 393218486429835,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "EditorItems",
+							"sid": 896824175801332,
+							"parameters": {
+								"x": "EditorItems.X + Mouse.MovementX",
+								"y": "EditorItems.Y + Mouse.MovementY"
+							}
+						}
+					],
+					"sid": 880133552793239
+				}
+			],
+			"sid": 573246196083869
+		}
+	],
+	"sid": 650638988709756
+}

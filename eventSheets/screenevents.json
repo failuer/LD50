@@ -404,37 +404,37 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Computer",
-					"sid": 743602204618689,
+					"sid": 509557540184361,
 					"parameters": {
 						"instance-variable": "TopInset",
-						"value": "Computer.ImagePointY(0)"
+						"value": "Computer.ImagePointY(\"TopLeft\")"
 					}
 				},
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Computer",
-					"sid": 502259868559503,
+					"sid": 417194999197232,
 					"parameters": {
 						"instance-variable": "LeftInset",
-						"value": "Computer.ImagePointX(0)"
+						"value": "Computer.ImagePointX(\"TopLeft\")"
 					}
 				},
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Computer",
-					"sid": 553320758248700,
+					"sid": 210780692676264,
 					"parameters": {
 						"instance-variable": "BottomInset",
-						"value": "Computer.Height - Computer.ImagePointY(1)"
+						"value": "Computer.Height - Computer.ImagePointY(\"BottomRight\")"
 					}
 				},
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Computer",
-					"sid": 146036020209437,
+					"sid": 162762345389391,
 					"parameters": {
 						"instance-variable": "RightInset",
-						"value": "Computer.Width - Computer.ImagePointX(1)"
+						"value": "Computer.Width - Computer.ImagePointX(\"BottomRight\")"
 					}
 				}
 			],

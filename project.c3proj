@@ -95,6 +95,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "PlatformInfo",
+			"name": "Platform info",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
@@ -122,6 +138,22 @@
 			"type": "behavior",
 			"id": "Timer",
 			"name": "Timer",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -165,7 +197,7 @@
 			"Keyboard",
 			"Audio",
 			"Mouse",
-			"RoverPlaceholder",
+			"Rovar",
 			"RoverTarget",
 			"ScienceItem1",
 			"EnergyItem",
@@ -174,7 +206,7 @@
 			"TitleScreenText2",
 			"GameOverScreenText",
 			"GroundTileMapCollision",
-			"Rover",
+			"RoverSprite",
 			"DecorationTileMap",
 			"ScienceItem2",
 			"ScienceItem3",
@@ -227,24 +259,45 @@
 			"VictoryHowever",
 			"VictoryAccomplished",
 			"ScorescreenText",
-			"ComputerScreen"
+			"ComputerScreen",
+			"Tilemap",
+			"ViewportCenter",
+			"PlatformInfo",
+			"EditorItemShelf",
+			"EditorShelf2",
+			"EditorSelectionMarkerFrame",
+			"EditorSelectionMarker"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"Rovar",
+				"RoverShadow",
+				"RoverSprite"
+			],
+			"selectMode": "all"
+		}
+	],
 	"families": {
 		"items": [
 			"MinimapItems",
 			"WheelParticles",
-			"TouchInputObjects"
+			"TouchInputObjects",
+			"EditorItems"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"MainMenu"
+			"MainMenu",
+			"GameUI",
+			"Level",
+			"Rovar",
+			"Editor"
 		],
 		"subfolders": []
 	},
@@ -259,13 +312,26 @@
 			"ScreenEvents",
 			"Minimap",
 			"Music",
-			"MainMenuBehavior"
+			"MainMenuBehavior",
+			"GameUI",
+			"Level",
+			"Rovar",
+			"Editor"
 		],
 		"subfolders": []
 	},
 	"rootFileFolders": {
 		"script": {
-			"items": [],
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 414579195652604,
+					"script-info": {
+						"purpose": "main"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"sound": {
@@ -499,5 +565,5 @@
 	},
 	"viewportWidth": 420,
 	"viewportHeight": 240,
-	"firstLayout": "MainMenu"
+	"firstLayout": "Layout 1"
 }

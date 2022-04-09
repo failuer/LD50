@@ -1,0 +1,24 @@
+{
+	"name": "EditorItems",
+	"plugin-id": "Sprite",
+	"sid": 732684413932517,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 434512947333897
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"ScienceItem5",
+		"ScienceItem3",
+		"ScienceItem1",
+		"EnergyItem",
+		"ScienceItem2",
+		"ScienceItem4",
+		"ScienceItem6",
+		"Rovar"
+	]
+}

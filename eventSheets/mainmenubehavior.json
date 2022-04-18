@@ -203,6 +203,131 @@
 				}
 			],
 			"sid": 747419629371726
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 840501684603047
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 982302555704187
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 876047762593917,
+					"parameters": {
+						"object": "MainMenuStartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainMenuStartButton",
+					"sid": 132685896905405,
+					"parameters": {
+						"animation": "\"hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 134741772482341
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 586284693282925
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 138616085752730,
+					"parameters": {
+						"object": "MainMenuStartButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainMenuStartButton",
+					"sid": 509112080732367,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 444523193312151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 571491295239526,
+					"parameters": {
+						"object": "MainMenuStartButton"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 803348359190150,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainMenuStartButton",
+					"sid": 884289843928187,
+					"parameters": {
+						"animation": "\"pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 765139692273729
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 119058073835438,
+					"parameters": {
+						"object": "MainMenuStartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainMenuStartButton",
+					"sid": 151265031155291,
+					"parameters": {
+						"animation": "\"pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 707234862915639
 		}
 	],
 	"sid": 667171540167617

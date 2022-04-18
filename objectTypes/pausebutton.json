@@ -1,0 +1,57 @@
+{
+	"name": "PauseButton",
+	"plugin-id": "Sprite",
+	"sid": 863803713427769,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 35,
+						"height": 98,
+						"originX": 0.5142857142857142,
+						"originY": 0.7551020408163265,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3468923,
+						"collisionPoly": {
+							"points": [
+								0.05714285714285714,
+								0.02040816326530612,
+								0.5,
+								0.01020408163265306,
+								0.9142857142857143,
+								0.02040816326530612,
+								0.9142857142857143,
+								0.5,
+								0.9142857142857143,
+								0.9693877551020408,
+								0.5,
+								0.9795918367346939,
+								0.05714285714285714,
+								0.9693877551020408,
+								0.05714285714285714,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 361264277903839,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

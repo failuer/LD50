@@ -15,6 +15,10 @@
 			],
 			"actions": [
 				{
+					"callFunction": "blinkEnergyIncreaseUI",
+					"sid": 405883955070814
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 681420543516953,

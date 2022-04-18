@@ -2,6 +2,37 @@
 	"name": "UI",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "EnergyIncreaseAnimationPlaying",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "Keeps track of wether the energy increase blink animation is currently playing.",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 788752313149670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 264508841755092
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "HUDBatteryProgressBar",
+					"sid": 777483955067748,
+					"parameters": {
+						"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
+					}
+				}
+			],
+			"sid": 800668220726326
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -17,6 +48,15 @@
 						"variable": "isGameOver"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 383799306130660,
+					"parameters": {
+						"variable": "EnergyIncreaseAnimationPlaying"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -26,15 +66,6 @@
 					"sid": 340570175971629,
 					"parameters": {
 						"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 411729064685054,
-					"disabled": true,
-					"parameters": {
-						"width": "clamp((SciencePoints/5)*44, 0, 44)"
 					}
 				}
 			],
@@ -76,12 +107,6 @@
 				}
 			],
 			"sid": 168980741012987
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 225594858050071
 		},
 		{
 			"eventType": "block",
@@ -860,6 +885,490 @@
 				}
 			],
 			"sid": 998562411239884
+    },
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI Animations",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "blinkLatestSciencePointUI",
+					"functionDescription": "Plays an animation that brings attention to the increase of the science counter",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 587404407587130,
+							"parameters": {
+								"width": "clamp((SciencePoints/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 688691423354606,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 153886281850969,
+							"parameters": {
+								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 807284658624065,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 347178415162127,
+							"parameters": {
+								"width": "clamp((SciencePoints/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 583943414510971,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 714808685876669,
+							"parameters": {
+								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 675090262922380,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 957768352564772,
+							"parameters": {
+								"width": "clamp((SciencePoints/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 694544089002460,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 182812326554211,
+							"parameters": {
+								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 901818913782890,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 382219392578193,
+							"parameters": {
+								"width": "clamp((SciencePoints/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 283320873561808,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 872354326436631,
+							"parameters": {
+								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 150508391258233,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDScienceProgressBar",
+							"sid": 524449475405986,
+							"parameters": {
+								"width": "clamp((SciencePoints/5)*44, 0, 44)"
+							}
+						}
+					],
+					"sid": 126222909829125
+				},
+				{
+					"functionName": "blinkFinalSciencePointUI",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 612967279764671,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 318589951457666,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 365420127257656,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 113973304993881,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 376347794492978,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 523246043887021,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 364140582832441,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 400899023813120,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 576389375477028,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 403515420925410,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 230836347928553,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 543360740557657,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 524195728155277,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 539039380428078,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 423332025823166,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 596232549807325,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HUDScienceProgressBulbFinal",
+							"sid": 197969387329730,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 567937249927819
+				},
+				{
+					"functionName": "blinkEnergyIncreaseUI",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 757443634225965,
+							"parameters": {
+								"variable": "EnergyIncreaseAnimationPlaying",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 917712294548355,
+							"parameters": {
+								"variable": "BatteryEnergyAtTimeOfPickup",
+								"value": "BatteryEnergy"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 301694233527238,
+							"parameters": {
+								"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 467151690523427,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 778912081529036,
+							"parameters": {
+								"width": "clamp(((BatteryEnergyAtTimeOfPickup)/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 239256861830038,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 647943946771137,
+							"parameters": {
+								"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 235145889966325,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 146092219014214,
+							"parameters": {
+								"width": "clamp(((BatteryEnergyAtTimeOfPickup)/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 673929233598871,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 105193113747129,
+							"parameters": {
+								"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 141662776103956,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 375234498635816,
+							"parameters": {
+								"width": "clamp(((BatteryEnergyAtTimeOfPickup)/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 144523787804757,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 202253758908961,
+							"parameters": {
+								"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 455073819975961,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 863578170188467,
+							"parameters": {
+								"width": "clamp(((BatteryEnergyAtTimeOfPickup)/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 749662213242792,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "HUDBatteryProgressBar",
+							"sid": 900517693193044,
+							"parameters": {
+								"width": "clamp((BatteryEnergy/MaxBatteryEnergy)*59, 0, 59)"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 576731749420944,
+							"parameters": {
+								"variable": "EnergyIncreaseAnimationPlaying",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 148449482692975
+				}
+			],
+			"sid": 739229890749450
 		}
 	],
 	"sid": 481527273385569

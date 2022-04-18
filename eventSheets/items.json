@@ -74,6 +74,10 @@
 					}
 				},
 				{
+					"callFunction": "blinkLatestSciencePointUI",
+					"sid": 443967232503253
+				},
+				{
 					"id": "destroy",
 					"objectClass": "ScienceItem1",
 					"sid": 282423673408509
@@ -113,6 +117,10 @@
 						"variable": "SciencePoints",
 						"value": "1"
 					}
+				},
+				{
+					"callFunction": "blinkLatestSciencePointUI",
+					"sid": 547643576174794
 				},
 				{
 					"id": "destroy",
@@ -156,6 +164,10 @@
 					}
 				},
 				{
+					"callFunction": "blinkLatestSciencePointUI",
+					"sid": 648415014397894
+				},
+				{
 					"id": "destroy",
 					"objectClass": "ScienceItem3",
 					"sid": 306718228099271
@@ -195,6 +207,10 @@
 						"variable": "SciencePoints",
 						"value": "1"
 					}
+				},
+				{
+					"callFunction": "blinkLatestSciencePointUI",
+					"sid": 713206746114543
 				},
 				{
 					"id": "destroy",
@@ -238,6 +254,10 @@
 					}
 				},
 				{
+					"callFunction": "blinkLatestSciencePointUI",
+					"sid": 128333875927072
+				},
+				{
 					"id": "destroy",
 					"objectClass": "ScienceItem5",
 					"sid": 463454005864979
@@ -277,6 +297,10 @@
 						"variable": "SciencePoints",
 						"value": "1"
 					}
+				},
+				{
+					"callFunction": "blinkFinalSciencePointUI",
+					"sid": 365416899033079
 				},
 				{
 					"id": "destroy",

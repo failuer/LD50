@@ -32,6 +32,7 @@
 					"id": "set-width",
 					"objectClass": "HUDScienceProgressBar",
 					"sid": 411729064685054,
+					"disabled": true,
 					"parameters": {
 						"width": "clamp((SciencePoints/5)*44, 0, 44)"
 					}
@@ -78,28 +79,8 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 291037829438443,
-					"parameters": {
-						"variable": "SciencePoints",
-						"comparison": 5,
-						"value": "6"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 539594321580782,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
+			"conditions": [],
+			"actions": [],
 			"sid": 225594858050071
 		},
 		{
@@ -317,6 +298,439 @@
 				}
 			],
 			"sid": 502841886048895
+		},
+		{
+			"functionName": "blinkLatestSciencePointUI",
+			"functionDescription": "Plays an animation that brings attention to the increase of the science counter",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 907799373450856,
+					"parameters": {
+						"width": "clamp((SciencePoints/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 917694593740617,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 967462295142711,
+					"parameters": {
+						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 442922065550017,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 506273378372058,
+					"parameters": {
+						"width": "clamp((SciencePoints/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 667104871440181,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 465520289080554,
+					"parameters": {
+						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 790340050305837,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 624757721063164,
+					"parameters": {
+						"width": "clamp((SciencePoints/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 749952568456554,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 802348991476404,
+					"parameters": {
+						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 845731173588627,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 707709258250664,
+					"parameters": {
+						"width": "clamp((SciencePoints/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 726407746507459,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 747529112940453,
+					"parameters": {
+						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 404522591237824,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HUDScienceProgressBar",
+					"sid": 972726015540742,
+					"parameters": {
+						"width": "clamp((SciencePoints/5)*44, 0, 44)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 458339196733045,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 122457385679864
+		},
+		{
+			"functionName": "blinkFinalSciencePointUI",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 485023109698335,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 513392980951242,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 868671884065562,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 612397140763020,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 245386577514474,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 870861318289610,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 120628799929338,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 526984849747271,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 582578527624223,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 881157775312837,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 686135563722744,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 617450332271812,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 234446639071053,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 270389120381508,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 877653377301776,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 138892057696641,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HUDScienceProgressBulbFinal",
+					"sid": 788042617364630,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 733953497771794,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 128069793118388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 971282373284717
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 848257754359326,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 629528894628831,
+					"parameters": {
+						"animation": "\"hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 875054640826881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 591005563471006
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 835863704367528,
+					"parameters": {
+						"object": "HUDRestartButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 294094934626044,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 232276662034202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 188821071096148,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 830171781227282,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 907233579555053,
+					"parameters": {
+						"animation": "\"pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 232431724982282
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 650409777624770,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 287580823383808,
+					"parameters": {
+						"animation": "\"pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 262706914669652
 		}
 	],
 	"sid": 481527273385569

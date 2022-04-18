@@ -227,7 +227,8 @@
 			"VictoryHowever",
 			"VictoryAccomplished",
 			"ScorescreenText",
-			"ComputerScreen"
+			"ComputerScreen",
+			"PauseButton"
 		],
 		"subfolders": []
 	},

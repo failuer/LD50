@@ -385,6 +385,51 @@
 				}
 			],
 			"sid": 707234862915639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 711020263305521
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 450685703176593,
+					"parameters": {
+						"variable": "HighscoreString",
+						"comparison": 1,
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "HighScoreScreenText",
+					"sid": 905043150948433,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "HighScoreScreenText",
+					"sid": 713000419900026,
+					"parameters": {
+						"text": "HighscoreString"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HighScoreScreenText",
+					"sid": 674568486457136,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 933474112655273
 		}
 	],
 	"sid": 667171540167617

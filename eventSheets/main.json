@@ -164,6 +164,16 @@
 			"sid": 178247427648786
 		},
 		{
+			"eventType": "variable",
+			"name": "HighscoreString",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 239724021741950
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

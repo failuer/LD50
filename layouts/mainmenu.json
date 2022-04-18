@@ -39,7 +39,7 @@
 					"type": "MainMenuStartButton",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "default",
 						"initial-frame": 0,
 						"enable-collisions": false,
 						"live-preview": false

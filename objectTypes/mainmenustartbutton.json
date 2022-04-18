@@ -21,34 +21,56 @@
 						"imageSpriteId": 2364878,
 						"useCollisionPoly": true,
 						"duration": 1
-					},
+					}
+				],
+				"sid": 266809431838924,
+				"name": "default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
 					{
 						"width": 77,
 						"height": 25,
-						"originX": 0.5,
+						"originX": 0.474025974025974,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9439412,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 77,
-						"height": 25,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 6679540,
+						"imageSpriteId": 1220132,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 266809431838924,
-				"name": "Animation 1",
+				"sid": 606228533686579,
+				"name": "hover",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 77,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1463620,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 646770604950992,
+				"name": "pressed",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -12,14 +12,35 @@
 			],
 			"actions": [
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 150233804658420,
+					"parameters": {
+						"object-to-create": "FadeOut",
+						"layer": "\"Fade\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeOut",
+					"sid": 754742870520121,
+					"parameters": {
+						"width": "LayoutWidth*2",
+						"height": "LayoutHeight*2"
+					}
+				},
+				{
 					"id": "stop-all",
 					"objectClass": "Audio",
-					"sid": 696131693543806
+					"sid": 433556621600647
 				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 548634471129484,
+					"sid": 549281590025068,
 					"parameters": {
 						"variable": "isPlayerRoverInteractionEnabled",
 						"value": "false"
@@ -151,6 +172,27 @@
 						"layer": "\"Intro2\"",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 927478943914488,
+					"parameters": {
+						"object-to-create": "FadeOut",
+						"layer": "\"Fade\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeOut",
+					"sid": 670736057496543,
+					"parameters": {
+						"width": "LayoutWidth*2",
+						"height": "LayoutHeight*2"
+					}
 				}
 			],
 			"sid": 305187051962862
@@ -199,6 +241,27 @@
 						"loop": "looping",
 						"volume": "0",
 						"tag-optional": "\"menumusic\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 627651412355269,
+					"parameters": {
+						"object-to-create": "FadeOut",
+						"layer": "\"Fade\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeOut",
+					"sid": 161194439894659,
+					"parameters": {
+						"width": "LayoutWidth*2",
+						"height": "LayoutHeight*2"
 					}
 				}
 			],

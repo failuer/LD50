@@ -1194,6 +1194,39 @@
 					"global": false
 				},
 				{
+					"name": "GameOverFade",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [],
+					"sid": 295315134895738,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						1,
+						1,
+						1,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				},
+				{
 					"name": "VictoryText",
 					"overriden": 0,
 					"subLayers": [],
@@ -2271,6 +2304,46 @@
 								"height": 240,
 								"originX": 0,
 								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "FadeOut",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 68,
+							"instanceVariables": {},
+							"behaviors": {
+								"Fade": {
+									"properties": {
+										"fade-in-time": 0,
+										"wait-time": 0.2,
+										"fade-out-time": 1,
+										"destroy": true,
+										"enabled": true,
+										"live-preview": false
+									}
+								}
+							},
+							"world": {
+								"x": 615,
+								"y": -369,
+								"width": 16,
+								"height": 16,
+								"originX": 0.064,
+								"originY": 0.064,
 								"color": [
 									1,
 									1,

@@ -127,6 +127,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "blacknwhite",
 			"name": "Black & white",
@@ -228,7 +236,8 @@
 			"VictoryAccomplished",
 			"ScorescreenText",
 			"ComputerScreen",
-			"PauseButton"
+			"PauseButton",
+			"FadeOut"
 		],
 		"subfolders": []
 	},

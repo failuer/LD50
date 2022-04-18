@@ -26,6 +26,27 @@
 					}
 				},
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 385754718041480,
+					"parameters": {
+						"object-to-create": "FadeOut",
+						"layer": "\"Screens\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "FadeOut",
+					"sid": 933399364338004,
+					"parameters": {
+						"width": "LayoutWidth*2",
+						"height": "LayoutHeight*2"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 344348288488438,
@@ -139,7 +160,7 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 991392474279900,
+					"sid": 897791346307318,
 					"parameters": {
 						"layer": "\"GameOver\"",
 						"visibility": "visible"

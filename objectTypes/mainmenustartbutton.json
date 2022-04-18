@@ -64,30 +64,6 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8149987,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 77,
-						"height": 25,
-						"originX": 0.474025974025974,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 1802416,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 77,
-						"height": 25,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
 						"imageSpriteId": 1463620,
 						"useCollisionPoly": true,
 						"duration": 1

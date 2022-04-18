@@ -325,320 +325,6 @@
 			"sid": 502841886048895
 		},
 		{
-			"functionName": "blinkLatestSciencePointUI",
-			"functionDescription": "Plays an animation that brings attention to the increase of the science counter",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": true,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 907799373450856,
-					"parameters": {
-						"width": "clamp((SciencePoints/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 917694593740617,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 967462295142711,
-					"parameters": {
-						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 442922065550017,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 506273378372058,
-					"parameters": {
-						"width": "clamp((SciencePoints/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 667104871440181,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 465520289080554,
-					"parameters": {
-						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 790340050305837,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 624757721063164,
-					"parameters": {
-						"width": "clamp((SciencePoints/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 749952568456554,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 802348991476404,
-					"parameters": {
-						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 845731173588627,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 707709258250664,
-					"parameters": {
-						"width": "clamp((SciencePoints/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 726407746507459,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 747529112940453,
-					"parameters": {
-						"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 404522591237824,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "HUDScienceProgressBar",
-					"sid": 972726015540742,
-					"parameters": {
-						"width": "clamp((SciencePoints/5)*44, 0, 44)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 458339196733045,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 122457385679864
-		},
-		{
-			"functionName": "blinkFinalSciencePointUI",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 485023109698335,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 513392980951242,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 868671884065562,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 612397140763020,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 245386577514474,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 870861318289610,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 120628799929338,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 526984849747271,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 582578527624223,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 881157775312837,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 686135563722744,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 617450332271812,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 234446639071053,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 270389120381508,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 877653377301776,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 138892057696641,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "HUDScienceProgressBulbFinal",
-					"sid": 788042617364630,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 733953497771794,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 128069793118388
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Button Hover",
@@ -885,7 +571,7 @@
 				}
 			],
 			"sid": 998562411239884
-    },
+		},
 		{
 			"eventType": "group",
 			"disabled": false,
@@ -906,7 +592,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 587404407587130,
+							"sid": 221572426513966,
 							"parameters": {
 								"width": "clamp((SciencePoints/5)*44, 0, 44)"
 							}
@@ -914,7 +600,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 688691423354606,
+							"sid": 271196441432435,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -922,7 +608,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 153886281850969,
+							"sid": 623077135175440,
 							"parameters": {
 								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
 							}
@@ -930,7 +616,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 807284658624065,
+							"sid": 120253904788075,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -938,7 +624,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 347178415162127,
+							"sid": 180701127005298,
 							"parameters": {
 								"width": "clamp((SciencePoints/5)*44, 0, 44)"
 							}
@@ -946,7 +632,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 583943414510971,
+							"sid": 661696213640294,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -954,7 +640,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 714808685876669,
+							"sid": 881798492858024,
 							"parameters": {
 								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
 							}
@@ -962,7 +648,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 675090262922380,
+							"sid": 860425512190153,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -970,7 +656,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 957768352564772,
+							"sid": 759423733398231,
 							"parameters": {
 								"width": "clamp((SciencePoints/5)*44, 0, 44)"
 							}
@@ -978,7 +664,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 694544089002460,
+							"sid": 390855832914529,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -986,7 +672,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 182812326554211,
+							"sid": 753331290987066,
 							"parameters": {
 								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
 							}
@@ -994,7 +680,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 901818913782890,
+							"sid": 157726923357390,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1002,7 +688,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 382219392578193,
+							"sid": 158268607425976,
 							"parameters": {
 								"width": "clamp((SciencePoints/5)*44, 0, 44)"
 							}
@@ -1010,7 +696,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 283320873561808,
+							"sid": 942124059778365,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1018,7 +704,7 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 872354326436631,
+							"sid": 893921924210846,
 							"parameters": {
 								"width": "clamp(((SciencePoints-1)/5)*44, 0, 44)"
 							}
@@ -1026,7 +712,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 150508391258233,
+							"sid": 858742294806517,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1034,13 +720,21 @@
 						{
 							"id": "set-width",
 							"objectClass": "HUDScienceProgressBar",
-							"sid": 524449475405986,
+							"sid": 452520914157303,
 							"parameters": {
 								"width": "clamp((SciencePoints/5)*44, 0, 44)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 751948395576691,
+							"parameters": {
+								"seconds": "0.1"
 							}
 						}
 					],
-					"sid": 126222909829125
+					"sid": 255747178434552
 				},
 				{
 					"functionName": "blinkFinalSciencePointUI",
@@ -1055,7 +749,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 612967279764671,
+							"sid": 155854828339903,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1063,7 +757,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 318589951457666,
+							"sid": 767328238412473,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1071,7 +765,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 365420127257656,
+							"sid": 896676585848792,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1079,7 +773,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 113973304993881,
+							"sid": 791459348683250,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1087,7 +781,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 376347794492978,
+							"sid": 856189872672383,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1095,7 +789,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 523246043887021,
+							"sid": 737849382286998,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1103,7 +797,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 364140582832441,
+							"sid": 951234293902553,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1111,7 +805,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 400899023813120,
+							"sid": 191917231250963,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1119,7 +813,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 576389375477028,
+							"sid": 570386609047960,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1127,7 +821,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 403515420925410,
+							"sid": 736778756463953,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1135,7 +829,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 230836347928553,
+							"sid": 588539031947515,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1143,7 +837,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 543360740557657,
+							"sid": 593032325578904,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1151,7 +845,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 524195728155277,
+							"sid": 685764936008211,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1159,7 +853,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 539039380428078,
+							"sid": 172863560004159,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1167,7 +861,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 423332025823166,
+							"sid": 855476748144160,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1175,7 +869,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 596232549807325,
+							"sid": 342495529145778,
 							"parameters": {
 								"seconds": "0.1"
 							}
@@ -1183,13 +877,21 @@
 						{
 							"id": "set-visible",
 							"objectClass": "HUDScienceProgressBulbFinal",
-							"sid": 197969387329730,
+							"sid": 648819135362763,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 883188105598014,
+							"parameters": {
+								"seconds": "0.1"
 							}
 						}
 					],
-					"sid": 567937249927819
+					"sid": 610007300692996
 				},
 				{
 					"functionName": "blinkEnergyIncreaseUI",

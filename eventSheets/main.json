@@ -154,6 +154,16 @@
 			"sid": 612558446740090
 		},
 		{
+			"eventType": "variable",
+			"name": "BatteryEnergyAtTimeOfPickup",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 178247427648786
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

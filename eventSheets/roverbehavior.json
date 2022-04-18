@@ -523,12 +523,16 @@
 					],
 					"actions": [
 						{
+							"type": "comment",
+							"text": "Sets the Rover's max speed while battery is low. Probably, due to an (async) issue, this formula can evaluate to be WAY overover 300. Thus, it is clamped to return max RoverPlaceholder.RoverAbsoluteMaxSpeed to never be over 100."
+						},
+						{
 							"id": "set-max-speed",
 							"objectClass": "RoverPlaceholder",
-							"sid": 971121977666570,
+							"sid": 580521560140774,
 							"behaviorType": "MoveTo",
 							"parameters": {
-								"max-speed": "RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / (MaxBatteryEnergy-75))"
+								"max-speed": "min(RoverPlaceholder.RoverAbsoluteMaxSpeed * (BatteryEnergy / (MaxBatteryEnergy-75)), RoverPlaceholder.RoverAbsoluteMaxSpeed)"
 							}
 						}
 					],

@@ -237,7 +237,8 @@
 			"ScorescreenText",
 			"ComputerScreen",
 			"PauseButton",
-			"FadeOut"
+			"FadeOut",
+			"HighScoreScreenText"
 		],
 		"subfolders": []
 	},
@@ -275,7 +276,16 @@
 	},
 	"rootFileFolders": {
 		"script": {
-			"items": [],
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 574950025103888,
+					"script-info": {
+						"purpose": "main"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"sound": {

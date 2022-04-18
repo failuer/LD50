@@ -2084,7 +2084,7 @@
 							"type": "HUDMenuButton",
 							"properties": {
 								"initially-visible": true,
-								"initial-animation": "Animation 1",
+								"initial-animation": "default",
 								"initial-frame": 0,
 								"enable-collisions": true,
 								"live-preview": false
@@ -2093,12 +2093,12 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": 27.5,
-								"y": 193,
+								"x": 11,
+								"y": 201,
 								"width": 33,
 								"height": 16,
-								"originX": 0.5,
-								"originY": 0.5,
+								"originX": 0,
+								"originY": 1,
 								"color": [
 									1,
 									1,

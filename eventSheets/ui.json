@@ -612,6 +612,125 @@
 				}
 			],
 			"sid": 128069793118388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 971282373284717
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 848257754359326,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 629528894628831,
+					"parameters": {
+						"animation": "\"hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 875054640826881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 591005563471006
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 835863704367528,
+					"parameters": {
+						"object": "HUDRestartButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 294094934626044,
+					"parameters": {
+						"animation": "\"default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 232276662034202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 188821071096148,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				},
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 830171781227282,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 907233579555053,
+					"parameters": {
+						"animation": "\"pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 232431724982282
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 650409777624770,
+					"parameters": {
+						"object": "HUDRestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HUDRestartButton",
+					"sid": 287580823383808,
+					"parameters": {
+						"animation": "\"pressed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 262706914669652
 		}
 	],
 	"sid": 481527273385569

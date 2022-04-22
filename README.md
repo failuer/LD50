@@ -11,3 +11,4 @@ Construct3 team project for Ludum Dare 50
     - Set Versions to x.y.z format (instead of x.y.z.w)
 - In Target Settings, Signing:
     - Uncheck and recheck "Automatically manage signing"
+- Select "Any iOS Device", Product -> Archive, Upload

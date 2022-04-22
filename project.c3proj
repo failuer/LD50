@@ -292,12 +292,12 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
+			"Editor",
 			"MainMenu",
 			"GameUI",
 			"Level",
 			"Rovar",
-			"Editor"
+			"Layout 1"
 		],
 		"subfolders": []
 	},
@@ -524,7 +524,7 @@
 		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
-		"useLoaderLayout": false,
+		"useLoaderLayout": true,
 		"fullscreenMode": "scale-outer",
 		"fullscreenQuality": "low",
 		"viewportFit": "auto",
@@ -565,5 +565,5 @@
 	},
 	"viewportWidth": 420,
 	"viewportHeight": 240,
-	"firstLayout": "MainMenu"
+	"firstLayout": "Editor"
 }
